@@ -44,11 +44,7 @@
         "@type": "SoftwareSourceCode",
         "name": "kumquat",
         "codeRepository": "https://github.com/kumquat-ben/kumquat",
-        "programmingLanguage": [
-          "Python",
-          "Rust",
-          "Terraform"
-        ],
+        "programmingLanguage": ["Python", "Rust", "Terraform"],
         "description": "The Kumquat repository contains the public Django website, the Rust blockchain, and AWS-hosted infrastructure for the product."
       }
     }
@@ -56,28 +52,20 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=DM+Sans:wght@400;500;700&amp;family=DM+Serif+Display:ital@0;1&amp;display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
   <style>
     :root {
-      --bg: #f7efe2;
-      --bg-soft: #fbf7ef;
-      --panel: rgba(255, 249, 238, 0.88);
-      --ink: #22160d;
-      --muted: #6c5a4b;
-      --line: rgba(34, 22, 13, 0.12);
-      --accent: #ef7a2f;
-      --accent-deep: #c95316;
-      --gold: #e2b65f;
-      --leaf: #6d8a39;
-      --shadow: 0 24px 80px rgba(80, 46, 18, 0.12);
-      --radius-xl: 36px;
-      --radius-lg: 24px;
-      --radius-md: 18px;
-      --container: 1180px;
-      --section-pad: clamp(4.5rem, 8vw, 8rem);
-    }
-
-    * {
-      box-sizing: border-box;
+      --kumquat-cream: #f7efe2;
+      --kumquat-paper: rgba(255, 250, 242, 0.9);
+      --kumquat-ink: #22160d;
+      --kumquat-muted: #6b5848;
+      --kumquat-line: rgba(34, 22, 13, 0.1);
+      --kumquat-orange: #ef7a2f;
+      --kumquat-orange-deep: #c95316;
+      --kumquat-gold: #e2b65f;
+      --kumquat-dark: #26180f;
+      --kumquat-shadow: 0 24px 60px rgba(78, 45, 18, 0.12);
+      --kumquat-radius: 28px;
     }
 
     html {
@@ -85,62 +73,325 @@
     }
 
     body {
-      margin: 0;
-      color: var(--ink);
       font-family: "DM Sans", sans-serif;
+      color: var(--kumquat-ink);
       background:
-        radial-gradient(circle at top left, rgba(239, 122, 47, 0.2), transparent 30%),
-        radial-gradient(circle at top right, rgba(226, 182, 95, 0.16), transparent 25%),
-        linear-gradient(180deg, #f8f1e6 0%, #f6ede0 48%, #f4ead9 100%);
+        radial-gradient(circle at top left, rgba(239, 122, 47, 0.16), transparent 28%),
+        radial-gradient(circle at bottom right, rgba(226, 182, 95, 0.16), transparent 30%),
+        linear-gradient(180deg, #fbf4e9 0%, #f6ede0 100%);
       overflow-x: hidden;
     }
 
-    body::before,
-    body::after {
-      content: "";
-      position: fixed;
-      inset: auto;
-      width: 34rem;
-      height: 34rem;
-      border-radius: 50%;
-      pointer-events: none;
-      filter: blur(40px);
-      opacity: 0.35;
-      z-index: -1;
+    h1, h2, h3, .display-font {
+      font-family: "DM Serif Display", serif;
+      letter-spacing: -0.03em;
     }
 
-    body::before {
-      top: -9rem;
-      left: -10rem;
-      background: rgba(239, 122, 47, 0.22);
-      animation: drift 16s ease-in-out infinite;
-    }
-
-    body::after {
-      right: -12rem;
-      bottom: 8rem;
-      background: rgba(226, 182, 95, 0.18);
-      animation: drift 20s ease-in-out infinite reverse;
+    p, li {
+      color: var(--kumquat-muted);
+      line-height: 1.75;
     }
 
     a {
-      color: inherit;
       text-decoration: none;
     }
 
-    img {
-      max-width: 100%;
-      display: block;
+    .site-nav {
+      background: rgba(247, 239, 226, 0.82);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(34, 22, 13, 0.06);
     }
 
-    .shell {
-      width: min(calc(100% - 2rem), var(--container));
-      margin: 0 auto;
+    .navbar-brand {
+      font-family: "DM Mono", monospace;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--kumquat-ink);
+    }
+
+    .brand-badge {
+      width: 2.6rem;
+      height: 2.6rem;
+      display: inline-grid;
+      place-items: center;
+      border-radius: 16px;
+      background: linear-gradient(135deg, #ffbe70, var(--kumquat-orange));
+      color: #fff8ea;
+      box-shadow: 0 12px 30px rgba(201, 83, 22, 0.28);
+      font-family: "DM Serif Display", serif;
+      font-size: 1.2rem;
+    }
+
+    .hero {
+      padding: 7rem 0 4rem;
+      position: relative;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.45rem 0.8rem;
+      border-radius: 999px;
+      border: 1px solid var(--kumquat-line);
+      background: rgba(255, 255, 255, 0.5);
+      font-family: "DM Mono", monospace;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--kumquat-muted);
+    }
+
+    .hero-title {
+      font-size: clamp(3rem, 8vw, 6.5rem);
+      line-height: 0.96;
+      margin: 1.25rem 0 1rem;
+    }
+
+    .hero-copy {
+      max-width: 42rem;
+      font-size: 1.08rem;
+    }
+
+    .hero-panel,
+    .content-card,
+    .metric-card,
+    .denom-card,
+    .footer-panel {
+      border: 1px solid var(--kumquat-line);
+      border-radius: var(--kumquat-radius);
+      background: var(--kumquat-paper);
+      box-shadow: var(--kumquat-shadow);
+    }
+
+    .hero-panel {
+      overflow: hidden;
+    }
+
+    .panel-header {
+      padding: 1.25rem 1.25rem 0;
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .mono {
+      font-family: "DM Mono", monospace;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--kumquat-muted);
+    }
+
+    .wallet-list {
+      padding: 1.25rem;
+      display: grid;
+      gap: 1rem;
+    }
+
+    .wallet-row {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      padding: 1rem;
+      border-radius: 22px;
+      background: linear-gradient(135deg, rgba(255, 237, 214, 0.96), rgba(255, 249, 239, 0.96));
+      border: 1px solid rgba(34, 22, 13, 0.08);
+      transition: transform 220ms ease, box-shadow 220ms ease;
+      animation: riseIn 700ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+    }
+
+    .wallet-row:nth-child(2) { animation-delay: 120ms; }
+    .wallet-row:nth-child(3) { animation-delay: 240ms; }
+    .wallet-row:nth-child(4) { animation-delay: 360ms; }
+
+    .wallet-row:hover,
+    .content-card:hover,
+    .metric-card:hover,
+    .denom-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .denom-badge {
+      min-width: 4.25rem;
+      height: 4.25rem;
+      display: inline-grid;
+      place-items: center;
+      border-radius: 20px;
+      background: linear-gradient(135deg, #f29a4a, #d9621d);
+      color: #fff7e9;
+      font-family: "DM Serif Display", serif;
+      font-size: 1.2rem;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.45);
+    }
+
+    .status-pill,
+    .btn-kumquat,
+    .btn-outline-kumquat {
+      border-radius: 999px;
+    }
+
+    .status-pill {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.35rem 0.7rem;
+      background: rgba(109, 138, 57, 0.1);
+      color: #607a2f;
+      font-family: "DM Mono", monospace;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      white-space: nowrap;
+    }
+
+    .wallet-total {
+      margin: 0 1.25rem 1.25rem;
+      padding: 1.25rem;
+      border-radius: 24px;
+      background: var(--kumquat-dark);
+      color: #fff7ea;
+    }
+
+    .wallet-total strong {
+      display: block;
+      font-family: "DM Serif Display", serif;
+      font-size: 2rem;
+      line-height: 1.1;
+    }
+
+    .btn-kumquat {
+      background: linear-gradient(135deg, var(--kumquat-orange), var(--kumquat-orange-deep));
+      color: #fff9ee;
+      border: 0;
+      padding: 0.9rem 1.35rem;
+      font-weight: 700;
+      box-shadow: 0 18px 36px rgba(201, 83, 22, 0.24);
+    }
+
+    .btn-kumquat:hover {
+      color: #fff9ee;
+      background: linear-gradient(135deg, var(--kumquat-orange-deep), var(--kumquat-orange));
+    }
+
+    .btn-outline-kumquat {
+      border: 1px solid var(--kumquat-line);
+      padding: 0.9rem 1.35rem;
+      background: rgba(255,255,255,0.48);
+      color: var(--kumquat-ink);
+      font-weight: 700;
+    }
+
+    .section-space {
+      padding: 1.5rem 0 4.5rem;
+    }
+
+    .section-heading {
+      margin-bottom: 2rem;
+    }
+
+    .content-card,
+    .metric-card,
+    .denom-card {
+      padding: 1.5rem;
+      height: 100%;
+      transition: transform 220ms ease;
+    }
+
+    .metric-number {
+      font-size: 2rem;
+      line-height: 1;
+      color: var(--kumquat-orange-deep);
+      font-family: "DM Serif Display", serif;
+      margin-bottom: 0.75rem;
+    }
+
+    .timeline-row {
+      padding-top: 1rem;
+      margin-top: 1rem;
+      border-top: 1px solid rgba(34, 22, 13, 0.08);
+    }
+
+    .layer-row {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      padding: 1rem 0;
+      border-top: 1px solid rgba(34, 22, 13, 0.08);
+    }
+
+    .layer-row:first-child {
+      border-top: 0;
+      padding-top: 0;
+    }
+
+    .pulse {
+      width: 0.9rem;
+      height: 0.9rem;
+      border-radius: 50%;
+      margin-top: 0.45rem;
+      background: radial-gradient(circle, #ffd089 0%, var(--kumquat-orange) 70%);
+      animation: pulse 2.2s ease-out infinite;
+      flex: 0 0 auto;
+    }
+
+    .denom-art {
+      width: 100%;
+      height: 4.5rem;
+      border-radius: 18px;
+      border: 1px solid rgba(34, 22, 13, 0.08);
+      background: linear-gradient(135deg, #ffddb6, #fff4e3);
+      position: relative;
+      overflow: hidden;
+      margin: 1rem 0 1.25rem;
+    }
+
+    .denom-art::before,
+    .denom-art::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(239, 122, 47, 0.14);
+    }
+
+    .denom-art::before {
+      width: 3rem;
+      height: 3rem;
+      top: 50%;
+      left: 1rem;
+      transform: translateY(-50%);
+    }
+
+    .denom-art::after {
+      width: 2rem;
+      height: 2rem;
+      right: 0.9rem;
+      top: 0.9rem;
+    }
+
+    .coin-art {
+      width: 5.5rem;
+      height: 5.5rem;
+      border-radius: 50%;
+      background: radial-gradient(circle at 30% 30%, #fff0c8, var(--kumquat-gold) 58%, #b88733 100%);
+      box-shadow: inset 0 2px 0 rgba(255,255,255,0.5), 0 18px 28px rgba(184, 135, 51, 0.15);
+      margin: 1rem 0 1.25rem;
+    }
+
+    .footer-panel {
+      padding: 2rem;
+      background: rgba(34, 22, 13, 0.96);
+      color: #fff8ee;
+    }
+
+    .footer-panel p,
+    .footer-panel .mono {
+      color: rgba(255, 248, 238, 0.72);
     }
 
     .reveal {
       opacity: 0;
-      transform: translateY(28px);
+      transform: translateY(24px);
       transition: opacity 700ms ease, transform 700ms cubic-bezier(0.22, 1, 0.36, 1);
     }
 
@@ -149,1138 +400,400 @@
       transform: translateY(0);
     }
 
-    .site-header {
-      position: sticky;
-      top: 0;
-      z-index: 20;
-      backdrop-filter: blur(18px);
-      background: rgba(247, 239, 226, 0.7);
-      border-bottom: 1px solid rgba(34, 22, 13, 0.06);
-    }
-
-    .site-header .shell {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-      padding: 1rem 0;
-    }
-
-    .brand {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.9rem;
-      font-weight: 700;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      font-size: 0.85rem;
-    }
-
-    .brand-mark {
-      width: 2.75rem;
-      height: 2.75rem;
-      border-radius: 18px;
-      display: grid;
-      place-items: center;
-      background: linear-gradient(145deg, #ffbf72, #ef7a2f);
-      box-shadow: inset 0 1px 0 rgba(255,255,255,0.55), 0 12px 30px rgba(201, 83, 22, 0.28);
-      color: #fff7e7;
-      font-family: "DM Serif Display", serif;
-      font-size: 1.4rem;
-    }
-
-    .nav {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-    }
-
-    .nav a {
-      color: var(--muted);
-      font-size: 0.94rem;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.6rem;
-      min-height: 3.3rem;
-      padding: 0 1.25rem;
-      border-radius: 999px;
-      border: 1px solid transparent;
-      font-weight: 700;
-      transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease, background 220ms ease;
-    }
-
-    .btn:hover {
-      transform: translateY(-2px);
-    }
-
-    .btn-primary {
-      color: #fff8ec;
-      background: linear-gradient(135deg, var(--accent), var(--accent-deep));
-      box-shadow: 0 18px 36px rgba(201, 83, 22, 0.28);
-    }
-
-    .btn-secondary {
-      border-color: var(--line);
-      background: rgba(255,255,255,0.5);
-    }
-
-    .hero {
-      padding: clamp(3rem, 7vw, 6rem) 0 var(--section-pad);
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.05fr 0.95fr;
-      gap: clamp(2rem, 4vw, 4rem);
-      align-items: center;
-    }
-
-    .eyebrow,
-    .meta-label {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.55rem;
-      padding: 0.45rem 0.8rem;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      background: rgba(255,255,255,0.45);
-      font-family: "DM Mono", monospace;
-      font-size: 0.78rem;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      color: var(--muted);
-    }
-
-    .hero h1 {
-      margin: 1.1rem 0 1rem;
-      font-family: "DM Serif Display", serif;
-      font-size: clamp(3.4rem, 8vw, 7.2rem);
-      line-height: 0.94;
-      letter-spacing: -0.04em;
-      max-width: 10ch;
-    }
-
-    .hero p {
-      max-width: 38rem;
-      color: var(--muted);
-      font-size: clamp(1rem, 1.6vw, 1.14rem);
-      line-height: 1.75;
-    }
-
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.9rem;
-      margin-top: 2rem;
-    }
-
-    .hero-stats {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 1rem;
-      margin-top: 2rem;
-    }
-
-    .stat {
-      padding: 1.05rem 1.1rem;
-      border-radius: var(--radius-md);
-      background: rgba(255,255,255,0.58);
-      border: 1px solid var(--line);
-      box-shadow: 0 12px 30px rgba(80, 46, 18, 0.06);
-    }
-
-    .stat strong {
-      display: block;
-      font-size: 1.35rem;
-      margin-bottom: 0.3rem;
-    }
-
-    .stat span {
-      color: var(--muted);
-      font-size: 0.9rem;
-      line-height: 1.5;
-    }
-
-    .hero-visual {
-      position: relative;
-      min-height: 44rem;
-      display: grid;
-      place-items: center;
-    }
-
-    .hero-card {
-      position: relative;
-      width: min(100%, 36rem);
-      aspect-ratio: 0.94;
-      border-radius: var(--radius-xl);
-      background:
-        linear-gradient(180deg, rgba(255,255,255,0.7), rgba(255,246,232,0.92)),
-        linear-gradient(120deg, rgba(255,255,255,0.6), rgba(255,255,255,0.1));
-      border: 1px solid rgba(34, 22, 13, 0.08);
-      box-shadow: var(--shadow);
-      overflow: hidden;
-      isolation: isolate;
-    }
-
-    .hero-card::before {
-      content: "";
-      position: absolute;
-      inset: 1rem;
-      border: 1px dashed rgba(34, 22, 13, 0.08);
-      border-radius: calc(var(--radius-xl) - 1rem);
-    }
-
-    .hero-card::after {
-      content: "";
-      position: absolute;
-      inset: auto -10% -30% auto;
-      width: 18rem;
-      height: 18rem;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(239, 122, 47, 0.26), transparent 70%);
-      z-index: -1;
-    }
-
-    .panel-top {
-      padding: 1.4rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .wallet-stack {
-      padding: 0 1.4rem 1.4rem;
-      display: grid;
-      gap: 1rem;
-    }
-
-    .wallet-bill {
-      position: relative;
-      display: grid;
-      grid-template-columns: auto 1fr auto;
-      gap: 1rem;
-      align-items: center;
-      padding: 1.1rem 1.15rem;
-      border-radius: 22px;
-      background: linear-gradient(135deg, rgba(255, 237, 214, 0.94), rgba(255, 247, 235, 0.96));
-      border: 1px solid rgba(34, 22, 13, 0.08);
-      transform: translateX(60px);
-      opacity: 0;
-      animation: slideIn 900ms cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
-    }
-
-    .wallet-bill:nth-child(2) {
-      animation-delay: 140ms;
-    }
-
-    .wallet-bill:nth-child(3) {
-      animation-delay: 280ms;
-    }
-
-    .wallet-bill:nth-child(4) {
-      animation-delay: 420ms;
-    }
-
-    .wallet-bill:hover {
-      transform: translateY(-5px) rotate(-0.5deg);
-    }
-
-    .denom {
-      width: 3.2rem;
-      height: 3.2rem;
-      border-radius: 18px;
-      display: grid;
-      place-items: center;
-      font-family: "DM Serif Display", serif;
-      font-size: 1.2rem;
-      color: #fff8ee;
-      background: linear-gradient(145deg, #f29a4a, #d9621d);
-      box-shadow: inset 0 1px 0 rgba(255,255,255,0.4);
-    }
-
-    .wallet-bill h3,
-    .wallet-bill p,
-    .stack-total p,
-    .stack-total strong,
-    .section-intro p,
-    .repo-card p,
-    .story-card p,
-    .step p,
-    .stack-note p,
-    .tray-card p,
-    .footer-copy p {
-      margin: 0;
-    }
-
-    .wallet-bill h3 {
-      font-size: 1rem;
-      margin-bottom: 0.15rem;
-    }
-
-    .wallet-bill p,
-    .repo-card p,
-    .story-card p,
-    .step p,
-    .stack-note p,
-    .tray-card p,
-    .footer-copy p {
-      color: var(--muted);
-      line-height: 1.55;
-    }
-
-    .chip {
-      padding: 0.35rem 0.65rem;
-      border-radius: 999px;
-      background: rgba(109, 138, 57, 0.1);
-      color: var(--leaf);
-      font-family: "DM Mono", monospace;
-      font-size: 0.76rem;
-      text-transform: uppercase;
-    }
-
-    .stack-total {
-      margin: 1.4rem;
-      padding: 1.15rem 1.2rem;
-      border-radius: 24px;
-      background: #25180f;
-      color: #fef7eb;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-      box-shadow: 0 22px 44px rgba(34, 22, 13, 0.24);
-    }
-
-    .stack-total p {
-      color: rgba(255, 248, 236, 0.72);
-      font-family: "DM Mono", monospace;
-      font-size: 0.76rem;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-    }
-
-    .stack-total strong {
-      font-family: "DM Serif Display", serif;
-      font-size: 2rem;
-    }
-
-    .orbit {
-      position: absolute;
-      border-radius: 999px;
-      border: 1px dashed rgba(34, 22, 13, 0.1);
-      animation: spin 16s linear infinite;
-    }
-
-    .orbit.one {
-      width: 34rem;
-      height: 34rem;
-    }
-
-    .orbit.two {
-      width: 26rem;
-      height: 26rem;
-      animation-direction: reverse;
-      animation-duration: 12s;
-    }
-
-    .orbit-tag {
-      position: absolute;
-      top: 8%;
-      left: 50%;
-      transform: translateX(-50%);
-      padding: 0.55rem 0.8rem;
-      border-radius: 999px;
-      background: rgba(255,255,255,0.8);
-      border: 1px solid var(--line);
-      font-family: "DM Mono", monospace;
-      font-size: 0.75rem;
-      color: var(--muted);
-    }
-
-    .section {
-      padding: 0 0 var(--section-pad);
-    }
-
-    .section-intro {
-      display: flex;
-      justify-content: space-between;
-      align-items: end;
-      gap: 2rem;
-      margin-bottom: 2rem;
-    }
-
-    .section-intro h2 {
-      margin: 0.9rem 0 0;
-      font-family: "DM Serif Display", serif;
-      font-size: clamp(2.2rem, 4.5vw, 4.4rem);
-      line-height: 0.98;
-      letter-spacing: -0.03em;
-      max-width: 10ch;
-    }
-
-    .section-intro p {
-      max-width: 38rem;
-      font-size: 1rem;
-      line-height: 1.75;
-    }
-
-    .repo-grid,
-    .story-grid,
-    .steps-grid,
-    .stack-grid,
-    .tray-grid {
-      display: grid;
-      gap: 1.25rem;
-    }
-
-    .repo-grid {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
-    .repo-card,
-    .story-card,
-    .step,
-    .stack-note,
-    .tray-card {
-      position: relative;
-      padding: 1.5rem;
-      border-radius: 28px;
-      border: 1px solid var(--line);
-      background: rgba(255,255,255,0.56);
-      box-shadow: 0 12px 30px rgba(80, 46, 18, 0.05);
-      overflow: hidden;
-    }
-
-    .repo-card::after,
-    .story-card::after,
-    .step::after,
-    .stack-note::after,
-    .tray-card::after {
-      content: "";
-      position: absolute;
-      inset: auto auto 0 0;
-      width: 100%;
-      height: 4px;
-      background: linear-gradient(90deg, rgba(239, 122, 47, 0.6), transparent 70%);
-      transform: scaleX(0.2);
-      transform-origin: left;
-      transition: transform 240ms ease;
-    }
-
-    .repo-card:hover::after,
-    .story-card:hover::after,
-    .step:hover::after,
-    .stack-note:hover::after,
-    .tray-card:hover::after {
-      transform: scaleX(1);
-    }
-
-    .repo-card:hover,
-    .story-card:hover,
-    .step:hover,
-    .stack-note:hover,
-    .tray-card:hover {
-      transform: translateY(-4px);
-    }
-
-    .repo-card h3,
-    .story-card h3,
-    .step h3,
-    .stack-note h3,
-    .tray-card h3 {
-      margin: 1rem 0 0.7rem;
-      font-size: 1.15rem;
-    }
-
-    .story-grid {
-      grid-template-columns: 1.1fr 0.9fr;
-      align-items: stretch;
-    }
-
-    .story-card.large {
-      min-height: 26rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      background:
-        linear-gradient(180deg, rgba(255, 251, 245, 0.92), rgba(254, 243, 227, 0.86)),
-        radial-gradient(circle at top right, rgba(239, 122, 47, 0.14), transparent 30%);
-    }
-
-    .timeline {
-      display: grid;
-      gap: 0.9rem;
-      margin-top: 1.5rem;
-    }
-
-    .timeline-row {
-      display: grid;
-      grid-template-columns: 6.4rem 1fr;
-      gap: 1rem;
-      align-items: start;
-      padding-top: 0.9rem;
-      border-top: 1px solid rgba(34, 22, 13, 0.08);
-    }
-
-    .timeline-row strong,
-    .step-count,
-    .tray-value,
-    .footer-note,
-    .small-meta {
-      font-family: "DM Mono", monospace;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-    }
-
-    .timeline-row strong,
-    .step-count,
-    .tray-value {
-      color: var(--accent-deep);
-      font-size: 0.8rem;
-    }
-
-    .steps-grid {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      margin-bottom: 1.25rem;
-    }
-
-    .step {
-      min-height: 19rem;
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-
-    .step-count {
-      display: inline-flex;
-      align-self: flex-start;
-      padding: 0.45rem 0.65rem;
-      border-radius: 999px;
-      background: rgba(239, 122, 47, 0.1);
-    }
-
-    .stack-grid {
-      grid-template-columns: 1.2fr 0.8fr;
-    }
-
-    .stack-panel {
-      padding: 1.6rem;
-      border-radius: 32px;
-      border: 1px solid var(--line);
-      background: linear-gradient(180deg, rgba(255,255,255,0.66), rgba(255,248,239,0.78));
-      box-shadow: var(--shadow);
-    }
-
-    .stack-panel .meta-row {
-      display: flex;
-      justify-content: space-between;
-      gap: 1rem;
-      align-items: center;
-      margin-bottom: 1.4rem;
-    }
-
-    .farm-layers {
-      display: grid;
-      gap: 0.9rem;
-    }
-
-    .farm-layer {
-      position: relative;
-      display: grid;
-      grid-template-columns: 7rem 1fr auto;
-      gap: 1rem;
-      align-items: center;
-      padding: 1rem 1.1rem;
-      border-radius: 22px;
-      background: rgba(255,255,255,0.72);
-      border: 1px solid rgba(34, 22, 13, 0.08);
-      transform: translateX(0);
-      transition: transform 240ms ease, background 240ms ease;
-    }
-
-    .farm-layer:hover {
-      transform: translateX(8px);
-      background: rgba(255,255,255,0.92);
-    }
-
-    .layer-label {
-      color: var(--accent-deep);
-      font-family: "DM Mono", monospace;
-      font-size: 0.75rem;
-      text-transform: uppercase;
-    }
-
-    .layer-pulse {
-      width: 0.9rem;
-      height: 0.9rem;
-      border-radius: 50%;
-      background: radial-gradient(circle, #ffca86 0%, #ef7a2f 65%, #c95316 100%);
-      box-shadow: 0 0 0 rgba(239, 122, 47, 0.45);
-      animation: pulse 2.4s ease-out infinite;
-    }
-
-    .tray-grid {
-      grid-template-columns: repeat(5, minmax(0, 1fr));
-    }
-
-    .tray-card {
-      min-height: 15rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      background:
-        linear-gradient(180deg, rgba(255,255,255,0.7), rgba(255,246,234,0.9)),
-        radial-gradient(circle at top right, rgba(226, 182, 95, 0.14), transparent 25%);
-    }
-
-    .tray-value {
-      font-size: 0.88rem;
-    }
-
-    .tray-coin,
-    .tray-bill {
-      position: relative;
-      align-self: flex-start;
-    }
-
-    .tray-bill {
-      width: 100%;
-      height: 4.1rem;
-      border-radius: 18px;
-      border: 1px solid rgba(34, 22, 13, 0.08);
-      background: linear-gradient(135deg, #ffddb6, #fff3e3);
-      box-shadow: inset 0 1px 0 rgba(255,255,255,0.65);
-      overflow: hidden;
-    }
-
-    .tray-bill::before,
-    .tray-bill::after {
-      content: "";
-      position: absolute;
-      border-radius: 50%;
-      background: rgba(239, 122, 47, 0.12);
-    }
-
-    .tray-bill::before {
-      width: 3rem;
-      height: 3rem;
-      top: 50%;
-      left: 0.8rem;
-      transform: translateY(-50%);
-    }
-
-    .tray-bill::after {
-      width: 2.1rem;
-      height: 2.1rem;
-      top: 0.7rem;
-      right: 0.7rem;
-    }
-
-    .tray-coin {
-      width: 5.2rem;
-      height: 5.2rem;
-      border-radius: 50%;
-      background:
-        radial-gradient(circle at 30% 30%, #fff0c8, #e2b65f 58%, #b88733 100%);
-      box-shadow: inset 0 2px 0 rgba(255,255,255,0.55), 0 18px 30px rgba(184, 135, 51, 0.18);
-    }
-
-    .footer {
-      padding: 0 0 3rem;
-    }
-
-    .footer-panel {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 2rem;
-      align-items: center;
-      padding: 1.5rem;
-      border-radius: 28px;
-      border: 1px solid var(--line);
-      background: rgba(34, 22, 13, 0.96);
-      color: #fff7ea;
-      box-shadow: 0 24px 60px rgba(34, 22, 13, 0.22);
-    }
-
-    .footer-note,
-    .small-meta {
-      color: rgba(255, 247, 234, 0.62);
-      font-size: 0.75rem;
-    }
-
-    .small-meta {
-      color: var(--muted);
-    }
-
-    @keyframes slideIn {
+    @keyframes riseIn {
       from {
         opacity: 0;
-        transform: translateX(60px);
+        transform: translateY(18px);
       }
       to {
         opacity: 1;
-        transform: translateX(0);
-      }
-    }
-
-    @keyframes spin {
-      from {
-        transform: rotate(0deg);
-      }
-      to {
-        transform: rotate(360deg);
-      }
-    }
-
-    @keyframes drift {
-      0%, 100% {
-        transform: translate3d(0, 0, 0);
-      }
-      50% {
-        transform: translate3d(2rem, 1.5rem, 0);
+        transform: translateY(0);
       }
     }
 
     @keyframes pulse {
-      0% {
-        box-shadow: 0 0 0 0 rgba(239, 122, 47, 0.32);
-      }
-      70% {
-        box-shadow: 0 0 0 16px rgba(239, 122, 47, 0);
-      }
-      100% {
-        box-shadow: 0 0 0 0 rgba(239, 122, 47, 0);
-      }
+      0% { box-shadow: 0 0 0 0 rgba(239, 122, 47, 0.35); }
+      70% { box-shadow: 0 0 0 14px rgba(239, 122, 47, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(239, 122, 47, 0); }
     }
 
     @media (prefers-reduced-motion: reduce) {
-      *,
-      *::before,
-      *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
+      *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
         scroll-behavior: auto !important;
       }
     }
 
-    @media (max-width: 1040px) {
-      .hero-grid,
-      .story-grid,
-      .stack-grid,
-      .repo-grid,
-      .steps-grid,
-      .tray-grid,
-      .footer-panel {
-        grid-template-columns: 1fr;
-      }
-
-      .hero-visual {
-        min-height: auto;
-      }
-
-      .section-intro {
-        align-items: start;
-        flex-direction: column;
-      }
-
-      .tray-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-    }
-
-    @media (max-width: 720px) {
-      .site-header .shell,
-      .nav,
-      .hero-actions,
-      .hero-stats {
-        flex-direction: column;
-        align-items: stretch;
-      }
-
-      .hero-stats {
-        display: grid;
-        grid-template-columns: 1fr;
-      }
-
-      .hero h1 {
-        max-width: none;
-      }
-
-      .wallet-bill,
-      .farm-layer,
-      .timeline-row,
-      .footer-panel {
-        grid-template-columns: 1fr;
-      }
-
-      .stack-total {
-        align-items: start;
-        flex-direction: column;
-      }
-
-      .tray-grid {
-        grid-template-columns: 1fr;
+    @media (max-width: 991.98px) {
+      .hero {
+        padding-top: 6rem;
       }
     }
   </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="shell">
-      <a class="brand" href="#top" aria-label="Kumquat home">
-        <span class="brand-mark">K</span>
+  <nav class="navbar navbar-expand-lg fixed-top site-nav">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-3" href="#top">
+        <span class="brand-badge">K</span>
         <span>kumquat.info</span>
       </a>
-      <nav class="nav" aria-label="Primary navigation">
-        <a href="#repo">Repository</a>
-        <a href="#model">Cash Model</a>
-        <a href="#farm">Farm Stack</a>
-        <a href="https://github.com/kumquat-ben/kumquat" target="_blank" rel="noreferrer">GitHub</a>
-        <a class="btn btn-primary" href="https://github.com/kumquat-ben/kumquat" target="_blank" rel="noreferrer">Inspect The Repo</a>
-      </nav>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+          <li class="nav-item"><a class="nav-link" href="#repo">Repository</a></li>
+          <li class="nav-item"><a class="nav-link" href="#model">Cash Model</a></li>
+          <li class="nav-item"><a class="nav-link" href="#farm">Farm Stack</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://github.com/kumquat-ben/kumquat" target="_blank" rel="noreferrer">GitHub</a></li>
+          <li class="nav-item mt-3 mt-lg-0"><a class="btn btn-kumquat" href="https://github.com/kumquat-ben/kumquat" target="_blank" rel="noreferrer">Inspect The Repo</a></li>
+        </ul>
+      </div>
     </div>
-  </header>
+  </nav>
 
   <main id="top">
     <section class="hero">
-      <div class="shell hero-grid">
-        <div class="reveal visible">
-          <span class="eyebrow">Django site + Rust chain + AWS k3s</span>
-          <h1>Digital cash with visible denominations.</h1>
-          <p>
-            Kumquat is a denomination-first money system built around the mental model of physical cash.
-            Bills behave like discrete objects you can hold and transfer, while coins below one dollar stay fungible and accountable in batches.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="https://github.com/kumquat-ben/kumquat" target="_blank" rel="noreferrer">Open Main Repository</a>
-            <a class="btn btn-secondary" href="#model">See How It Works</a>
-          </div>
-          <div class="hero-stats">
-            <div class="stat">
-              <strong>3 core layers</strong>
-              <span>Website, blockchain, and infrastructure live in one repo-native delivery flow.</span>
-            </div>
-            <div class="stat">
-              <strong>$1-$100</strong>
-              <span>Bills are treated as individually legible units instead of one generic balance.</span>
-            </div>
-            <div class="stat">
-              <strong>1 Kumquat Farm</strong>
-              <span>A full running stack combines chain, mint, liquidity, workloads, and data services.</span>
+      <div class="container">
+        <div class="row align-items-center g-4 g-lg-5">
+          <div class="col-lg-6">
+            <div class="reveal visible">
+              <span class="eyebrow">Django site + Rust chain + AWS k3s</span>
+              <h1 class="hero-title">Inteligence in action</h1>
+              <p class="hero-copy mb-4">We design and deploy intelligent systems that automate operations and scale organizations.</p>
+              <p class="hero-copy mb-4">Kumquat is a denomination-first money system built around the mental model of physical cash. Bills behave like discrete objects you can hold and transfer, while coins below one dollar stay fungible and accountable in batches.</p>
+              <div class="d-flex flex-column flex-sm-row gap-3">
+                <a class="btn btn-kumquat" href="https://github.com/kumquat-ben/kumquat" target="_blank" rel="noreferrer">Open Main Repository</a>
+                <a class="btn btn-outline-kumquat" href="#model">See How It Works</a>
+              </div>
             </div>
           </div>
-        </div>
-
-        <div class="hero-visual reveal visible">
-          <div class="orbit one"><span class="orbit-tag">hybrid cash protocol</span></div>
-          <div class="orbit two"><span class="orbit-tag">denomination-first UX</span></div>
-          <div class="hero-card">
-            <div class="panel-top">
-              <span class="meta-label">Wallet Preview</span>
-              <span class="small-meta">kumquat.info</span>
-            </div>
-            <div class="wallet-stack">
-              <article class="wallet-bill">
-                <div class="denom">$100</div>
-                <div>
-                  <h3>Owned high-value bill</h3>
-                  <p>Discrete unit with visible identity and transferable ownership.</p>
-                </div>
-                <span class="chip">chain object</span>
-              </article>
-              <article class="wallet-bill">
-                <div class="denom">$20</div>
-                <div>
-                  <h3>Readable wallet row</h3>
-                  <p>Each denomination lands as an individual row instead of disappearing into an abstract total.</p>
-                </div>
-                <span class="chip">wallet UI</span>
-              </article>
-              <article class="wallet-bill">
-                <div class="denom">$5</div>
-                <div>
-                  <h3>Human cash mental model</h3>
-                  <p>Money behaves more like counted bills than a silent spreadsheet balance.</p>
-                </div>
-                <span class="chip">product story</span>
-              </article>
-              <article class="wallet-bill">
-                <div class="denom">¢</div>
-                <div>
-                  <h3>Sub-dollar coin batches</h3>
-                  <p>Coins stay fungible inventory below one dollar while remaining accountable in issuance flows.</p>
-                </div>
-                <span class="chip">mint layer</span>
-              </article>
-            </div>
-            <div class="stack-total">
-              <div>
-                <p>Visible Wallet State</p>
+          <div class="col-lg-6">
+            <div class="hero-panel reveal visible">
+              <div class="panel-header">
+                <span class="eyebrow">Wallet Preview</span>
+                <span class="mono">kumquat.info</span>
+              </div>
+              <div class="wallet-list">
+                <article class="wallet-row">
+                  <div class="denom-badge">$100</div>
+                  <div class="flex-grow-1">
+                    <h3 class="h5 mb-2">Owned high-value bill</h3>
+                    <p class="mb-0">Discrete unit with visible identity and transferable ownership.</p>
+                  </div>
+                  <span class="status-pill">chain object</span>
+                </article>
+                <article class="wallet-row">
+                  <div class="denom-badge">$20</div>
+                  <div class="flex-grow-1">
+                    <h3 class="h5 mb-2">Readable wallet row</h3>
+                    <p class="mb-0">Each denomination lands as an individual row instead of disappearing into an abstract total.</p>
+                  </div>
+                  <span class="status-pill">wallet UI</span>
+                </article>
+                <article class="wallet-row">
+                  <div class="denom-badge">$5</div>
+                  <div class="flex-grow-1">
+                    <h3 class="h5 mb-2">Human cash mental model</h3>
+                    <p class="mb-0">Money behaves more like counted bills than a silent spreadsheet balance.</p>
+                  </div>
+                  <span class="status-pill">product story</span>
+                </article>
+                <article class="wallet-row">
+                  <div class="denom-badge">¢</div>
+                  <div class="flex-grow-1">
+                    <h3 class="h5 mb-2">Sub-dollar coin batches</h3>
+                    <p class="mb-0">Coins stay fungible inventory below one dollar while remaining accountable in issuance flows.</p>
+                  </div>
+                  <span class="status-pill">mint layer</span>
+                </article>
+              </div>
+              <div class="wallet-total">
+                <span class="mono d-block mb-2">Visible Wallet State</span>
                 <strong>$125.80</strong>
+                <span class="status-pill mt-3">settled by the farm</span>
               </div>
-              <span class="chip">settled by the farm</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4 mt-2">
+          <div class="col-md-4">
+            <div class="metric-card reveal">
+              <div class="metric-number">3</div>
+              <h2 class="h4">Core layers</h2>
+              <p class="mb-0">Website, blockchain, and infrastructure live in one repo-native delivery flow.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="metric-card reveal">
+              <div class="metric-number">$1-$100</div>
+              <h2 class="h4">Bills stay visible</h2>
+              <p class="mb-0">High denominations remain individually legible instead of collapsing into one generic balance.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="metric-card reveal">
+              <div class="metric-number">1</div>
+              <h2 class="h4">Kumquat Farm</h2>
+              <p class="mb-0">A full running stack combines chain, mint, liquidity, workloads, and data services.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="repo">
-      <div class="shell">
-        <div class="section-intro reveal">
-          <div>
+    <section class="section-space" id="repo">
+      <div class="container">
+        <div class="row g-4 align-items-end section-heading">
+          <div class="col-lg-6">
             <span class="eyebrow">Repository Overview</span>
-            <h2>One repository, three production surfaces.</h2>
+            <h2 class="display-font mt-3 mb-0">One repository, three production surfaces.</h2>
           </div>
-          <p>
-            The Kumquat repo combines the public website, the protocol implementation, and the AWS-hosted platform needed to run the system.
-            The site for `kumquat.info` should explain the whole machine, not just present a generic crypto homepage.
-          </p>
+          <div class="col-lg-6">
+            <p class="mb-0">The Kumquat repo combines the public website, the protocol implementation, and the AWS-hosted platform needed to run the system. The site for <code>kumquat.info</code> should explain the whole machine, not just present a generic crypto homepage.</p>
+          </div>
         </div>
-        <div class="repo-grid">
-          <article class="repo-card reveal">
-            <span class="meta-label">Website</span>
-            <h3>Django application</h3>
-            <p>Public pages, auth flow, admin surfaces, crawler operations, and backend endpoints are served from one application and hostname.</p>
-          </article>
-          <article class="repo-card reveal">
-            <span class="meta-label">Blockchain</span>
-            <h3>Rust chain runtime</h3>
-            <p>Node runtime, storage, consensus, networking, and genesis tooling back the denomination-based money system.</p>
-          </article>
-          <article class="repo-card reveal">
-            <span class="meta-label">Infrastructure</span>
-            <h3>AWS + k3s + Terraform</h3>
-            <p>Private platform infrastructure covers VPC, VPN, ECR, MySQL, persistent storage, and deployment orchestration.</p>
-          </article>
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="content-card reveal">
+              <span class="eyebrow">Website</span>
+              <h3 class="mt-3">Django application</h3>
+              <p class="mb-0">Public pages, auth flow, admin surfaces, crawler operations, and backend endpoints are served from one application and hostname.</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="content-card reveal">
+              <span class="eyebrow">Blockchain</span>
+              <h3 class="mt-3">Rust chain runtime</h3>
+              <p class="mb-0">Node runtime, storage, consensus, networking, and genesis tooling back the denomination-based money system.</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="content-card reveal">
+              <span class="eyebrow">Infrastructure</span>
+              <h3 class="mt-3">AWS + k3s + Terraform</h3>
+              <p class="mb-0">Private platform infrastructure covers VPC, VPN, ECR, MySQL, persistent storage, and deployment orchestration.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="model">
-      <div class="shell">
-        <div class="section-intro reveal">
-          <div>
+    <section class="section-space" id="model">
+      <div class="container">
+        <div class="row g-4 align-items-end section-heading">
+          <div class="col-lg-6">
             <span class="eyebrow">Cash Model</span>
-            <h2>Money that reads like money.</h2>
+            <h2 class="display-font mt-3 mb-0">Money that reads like money.</h2>
           </div>
-          <p>
-            Kumquat’s core claim is not “more finance features.” It is a different object model for value:
-            large denominations remain discrete, small change stays batch-like, and the interface keeps those units visible.
-          </p>
+          <div class="col-lg-6">
+            <p class="mb-0">Kumquat’s core claim is not more finance widgets. It is a different object model for value: large denominations remain discrete, small change stays batch-like, and the interface keeps those units visible.</p>
+          </div>
         </div>
-
-        <div class="story-grid">
-          <article class="story-card large reveal">
-            <div>
-              <span class="meta-label">Hybrid Protocol Direction</span>
-              <h3>Bills behave like owned objects. Coins behave like accountable inventory.</h3>
-              <p>
-                The product is designed around the tactile logic of cash. High denominations are meant to feel countable, movable, and inspectable.
-                Lower-value coins remain fungible below the dollar to keep the system efficient where object-level granularity adds little value.
-              </p>
-            </div>
-            <div class="timeline">
+        <div class="row g-4">
+          <div class="col-lg-7">
+            <div class="content-card reveal">
+              <span class="eyebrow">Hybrid Protocol Direction</span>
+              <h3 class="mt-3">Bills behave like owned objects. Coins behave like accountable inventory.</h3>
+              <p>The product is designed around the tactile logic of cash. High denominations are meant to feel countable, movable, and inspectable. Lower-value coins remain fungible below the dollar to keep the system efficient where object-level granularity adds little value.</p>
               <div class="timeline-row">
-                <strong>Step 01</strong>
-                <p>Issue visible units with clear denomination semantics so wallet state stays legible.</p>
+                <span class="mono">Step 01</span>
+                <p class="mb-0 mt-2">Issue visible units with clear denomination semantics so wallet state stays legible.</p>
               </div>
               <div class="timeline-row">
-                <strong>Step 02</strong>
-                <p>Settle transfers on the chain layer while preserving the denomination hierarchy users can read.</p>
+                <span class="mono">Step 02</span>
+                <p class="mb-0 mt-2">Settle transfers on the chain layer while preserving the denomination hierarchy users can read.</p>
               </div>
               <div class="timeline-row">
-                <strong>Step 03</strong>
-                <p>Run the full farm stack so settlement, minting, workloads, and marketplace activity share one coherent operating surface.</p>
+                <span class="mono">Step 03</span>
+                <p class="mb-0 mt-2">Run the full farm stack so settlement, minting, workloads, and marketplace activity share one coherent operating surface.</p>
               </div>
             </div>
-          </article>
-
-          <article class="story-card reveal">
-            <span class="meta-label">Genesis Seed</span>
-            <h3>Anchored origin</h3>
-            <p>`X3Fjvip33ETuahoPbOO0Z2yZSveX6eT57I1DbD83F0s=` records the derivative work of art used as the genesis seed for the project’s initial block anchor.</p>
-          </article>
-          <article class="story-card reveal">
-            <span class="meta-label">Live Target</span>
-            <h3>Built for `kumquat.info`</h3>
-            <p>This landing page is shaped as a public front door for the repo: product story first, architecture second, links and operator detail third.</p>
-          </article>
+          </div>
+          <div class="col-lg-5">
+            <div class="content-card reveal mb-4">
+              <span class="eyebrow">Genesis Seed</span>
+              <h3 class="mt-3">Anchored origin</h3>
+              <p class="mb-0"><code>X3Fjvip33ETuahoPbOO0Z2yZSveX6eT57I1DbD83F0s=</code> records the derivative work of art used as the genesis seed for the project’s initial block anchor.</p>
+            </div>
+            <div class="content-card reveal">
+              <span class="eyebrow">Live Target</span>
+              <h3 class="mt-3">Built for <code>kumquat.info</code></h3>
+              <p class="mb-0">This landing page is shaped as a public front door for the repo: product story first, architecture second, links and operator detail third.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="shell">
-        <div class="section-intro reveal">
-          <div>
+    <section class="section-space">
+      <div class="container">
+        <div class="row g-4 align-items-end section-heading">
+          <div class="col-lg-6">
             <span class="eyebrow">How It Works</span>
-            <h2>Animation should teach the hierarchy.</h2>
+            <h2 class="display-font mt-3 mb-0">Animation should teach the hierarchy.</h2>
           </div>
-          <p>
-            The interaction language here is built around arrival, stacking, transfer, and counted units. Motion is used to make the model easier to understand, not to decorate around it.
-          </p>
+          <div class="col-lg-6">
+            <p class="mb-0">The interaction language here is built around arrival, stacking, transfer, and counted units. Motion is used to make the model easier to understand, not to decorate around it.</p>
+          </div>
         </div>
-
-        <div class="steps-grid">
-          <article class="step reveal">
-            <span class="step-count">01 / Define</span>
-            <h3>Denominations are first-class</h3>
-            <p>Large bills arrive as their own units, with labels and distinct rows that imply weight, boundaries, and ownership.</p>
-          </article>
-          <article class="step reveal">
-            <span class="step-count">02 / Settle</span>
-            <h3>The chain records state</h3>
-            <p>The Rust runtime, storage, and consensus engine support the underlying settlement and shared state transitions.</p>
-          </article>
-          <article class="step reveal">
-            <span class="step-count">03 / Operate</span>
-            <h3>The farm runs the surface</h3>
-            <p>Django, infrastructure tooling, crawlers, and backend services turn the protocol into an operable product and delivery system.</p>
-          </article>
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="content-card reveal">
+              <span class="eyebrow">01 / Define</span>
+              <h3 class="mt-3">Denominations are first-class</h3>
+              <p class="mb-0">Large bills arrive as their own units, with labels and distinct rows that imply weight, boundaries, and ownership.</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="content-card reveal">
+              <span class="eyebrow">02 / Settle</span>
+              <h3 class="mt-3">The chain records state</h3>
+              <p class="mb-0">The Rust runtime, storage, and consensus engine support the underlying settlement and shared state transitions.</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="content-card reveal">
+              <span class="eyebrow">03 / Operate</span>
+              <h3 class="mt-3">The farm runs the surface</h3>
+              <p class="mb-0">Django, infrastructure tooling, crawlers, and backend services turn the protocol into an operable product and delivery system.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="farm">
-      <div class="shell">
-        <div class="section-intro reveal">
-          <div>
+    <section class="section-space" id="farm">
+      <div class="container">
+        <div class="row g-4 align-items-end section-heading">
+          <div class="col-lg-6">
             <span class="eyebrow">Kumquat Farm</span>
-            <h2>One running instance is a full farm.</h2>
+            <h2 class="display-font mt-3 mb-0">One running instance is a full farm.</h2>
           </div>
-          <p>
-            A Kumquat Farm is a self-contained stack where settlement, minting, liquidity, workloads, and data services run together on shared operational infrastructure.
-          </p>
+          <div class="col-lg-6">
+            <p class="mb-0">A Kumquat Farm is a self-contained stack where settlement, minting, liquidity, workloads, and data services run together on shared operational infrastructure.</p>
+          </div>
         </div>
-
-        <div class="stack-grid">
-          <div class="stack-panel reveal">
-            <div class="meta-row">
-              <span class="meta-label">Farm Layers</span>
-              <span class="small-meta">settlement to workloads</span>
-            </div>
-            <div class="farm-layers">
-              <div class="farm-layer">
-                <span class="layer-label">Chain</span>
-                <div><strong>Settlement and shared state</strong><p class="small-meta">protocol, state, networking</p></div>
-                <span class="layer-pulse" aria-hidden="true"></span>
+        <div class="row g-4">
+          <div class="col-lg-7">
+            <div class="content-card reveal">
+              <span class="eyebrow">Farm Layers</span>
+              <h3 class="mt-3">Settlement to workloads</h3>
+              <div class="layer-row">
+                <span class="pulse"></span>
+                <div><span class="mono">Chain</span><p class="mb-0 mt-1">Settlement and shared state across protocol, storage, and networking.</p></div>
               </div>
-              <div class="farm-layer">
-                <span class="layer-label">Mint</span>
-                <div><strong>Coin creation and issuance</strong><p class="small-meta">accountable sub-dollar inventory</p></div>
-                <span class="layer-pulse" aria-hidden="true"></span>
+              <div class="layer-row">
+                <span class="pulse"></span>
+                <div><span class="mono">Mint</span><p class="mb-0 mt-1">Coin creation and issuance for accountable sub-dollar inventory.</p></div>
               </div>
-              <div class="farm-layer">
-                <span class="layer-label">Liquidity</span>
-                <div><strong>Market and provider participation</strong><p class="small-meta">economic movement across the farm</p></div>
-                <span class="layer-pulse" aria-hidden="true"></span>
+              <div class="layer-row">
+                <span class="pulse"></span>
+                <div><span class="mono">Liquidity</span><p class="mb-0 mt-1">Market and provider participation across the platform.</p></div>
               </div>
-              <div class="farm-layer">
-                <span class="layer-label">Compute</span>
-                <div><strong>Rentable node capacity</strong><p class="small-meta">resource access inside the platform</p></div>
-                <span class="layer-pulse" aria-hidden="true"></span>
+              <div class="layer-row">
+                <span class="pulse"></span>
+                <div><span class="mono">Compute</span><p class="mb-0 mt-1">Rentable node capacity and infrastructure access inside the farm.</p></div>
               </div>
-              <div class="farm-layer">
-                <span class="layer-label">Workloads</span>
-                <div><strong>Submitted job execution</strong><p class="small-meta">farm-side tasks and operations</p></div>
-                <span class="layer-pulse" aria-hidden="true"></span>
+              <div class="layer-row">
+                <span class="pulse"></span>
+                <div><span class="mono">Workloads</span><p class="mb-0 mt-1">Submitted job execution and operational processing.</p></div>
               </div>
-              <div class="farm-layer">
-                <span class="layer-label">Data</span>
-                <div><strong>Marketplace publishing and purchase</strong><p class="small-meta">shareable products and access</p></div>
-                <span class="layer-pulse" aria-hidden="true"></span>
+              <div class="layer-row">
+                <span class="pulse"></span>
+                <div><span class="mono">Data</span><p class="mb-0 mt-1">Marketplace publishing and purchase for shareable products.</p></div>
               </div>
             </div>
           </div>
-
-          <div class="stack-grid">
-            <article class="stack-note reveal">
-              <span class="meta-label">Deployment</span>
-              <h3>Repo-native rollout</h3>
-              <p>Build images, publish to ECR, deploy the website to k3s, and update platform add-ons through Terraform and Helm from the same repository.</p>
-            </article>
-            <article class="stack-note reveal">
-              <span class="meta-label">Search + Crawlers</span>
-              <h3>Operational surfaces already exist</h3>
-              <p>The repo includes jobs search, a site crawler/index, manual script orchestration, analytics tracking, and admin operations beyond the public marketing pages.</p>
-            </article>
+          <div class="col-lg-5">
+            <div class="content-card reveal mb-4">
+              <span class="eyebrow">Deployment</span>
+              <h3 class="mt-3">Repo-native rollout</h3>
+              <p class="mb-0">Build images, publish to ECR, deploy the website to k3s, and update platform add-ons through Terraform and Helm from the same repository.</p>
+            </div>
+            <div class="content-card reveal">
+              <span class="eyebrow">Search + Crawlers</span>
+              <h3 class="mt-3">Operational surfaces already exist</h3>
+              <p class="mb-0">The repo includes jobs search, a site crawler index, manual script orchestration, analytics tracking, and admin operations beyond the public marketing pages.</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="shell">
-        <div class="section-intro reveal">
-          <div>
+    <section class="section-space">
+      <div class="container">
+        <div class="row g-4 align-items-end section-heading">
+          <div class="col-lg-6">
             <span class="eyebrow">Denomination Tray</span>
-            <h2>Visible units instead of one opaque number.</h2>
+            <h2 class="display-font mt-3 mb-0">Visible units instead of one opaque number.</h2>
           </div>
-          <p>
-            This tray gives the homepage a tactile money surface: large values read as bills, sub-dollar value shifts toward coin language, and the layout stays legible on mobile.
-          </p>
+          <div class="col-lg-6">
+            <p class="mb-0">This tray gives the homepage a tactile money surface: large values read as bills, sub-dollar value shifts toward coin language, and the layout stays legible on mobile.</p>
+          </div>
         </div>
-
-        <div class="tray-grid">
-          <article class="tray-card reveal">
-            <span class="tray-value">$100 bill</span>
-            <div class="tray-bill"></div>
-            <h3>Reserve unit</h3>
-            <p>High-value ownership is explicit and countable.</p>
-          </article>
-          <article class="tray-card reveal">
-            <span class="tray-value">$20 bill</span>
-            <div class="tray-bill"></div>
-            <h3>Transfer unit</h3>
-            <p>Wallet rows stay readable across common movement sizes.</p>
-          </article>
-          <article class="tray-card reveal">
-            <span class="tray-value">$5 bill</span>
-            <div class="tray-bill"></div>
-            <h3>Everyday unit</h3>
-            <p>Denomination hierarchy remains visible rather than flattened.</p>
-          </article>
-          <article class="tray-card reveal">
-            <span class="tray-value">50¢ coin</span>
-            <div class="tray-coin"></div>
-            <h3>Batch coin</h3>
-            <p>Sub-dollar value shifts into fungible coin inventory.</p>
-          </article>
-          <article class="tray-card reveal">
-            <span class="tray-value">5¢ coin</span>
-            <div class="tray-coin"></div>
-            <h3>Precision change</h3>
-            <p>Small-value accounting stays efficient and operationally clear.</p>
-          </article>
+        <div class="row g-4">
+          <div class="col-md-6 col-xl-3">
+            <div class="denom-card reveal">
+              <span class="mono">$100 bill</span>
+              <div class="denom-art"></div>
+              <h3>Reserve unit</h3>
+              <p class="mb-0">High-value ownership is explicit and countable.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="denom-card reveal">
+              <span class="mono">$20 bill</span>
+              <div class="denom-art"></div>
+              <h3>Transfer unit</h3>
+              <p class="mb-0">Wallet rows stay readable across common movement sizes.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="denom-card reveal">
+              <span class="mono">$5 bill</span>
+              <div class="denom-art"></div>
+              <h3>Everyday unit</h3>
+              <p class="mb-0">Denomination hierarchy remains visible rather than flattened.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="denom-card reveal">
+              <span class="mono">50¢ coin</span>
+              <div class="coin-art"></div>
+              <h3>Batch coin</h3>
+              <p class="mb-0">Sub-dollar value shifts into fungible coin inventory.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="shell">
+  <footer class="pb-5">
+    <div class="container">
       <div class="footer-panel reveal">
-        <div class="footer-copy">
-          <span class="footer-note">kumquat.info</span>
-          <h3>Explore the public repo, then follow the product outward from there.</h3>
-          <p>Kumquat is a website, a blockchain, and an operating platform. This page is designed to make that architecture feel intentional before the user ever opens the code.</p>
-        </div>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="https://github.com/kumquat-ben/kumquat" target="_blank" rel="noreferrer">View Repository</a>
-          <a class="btn btn-secondary" href="https://github.com/sponsors/kumquat-ben" target="_blank" rel="noreferrer">Sponsor Project</a>
+        <div class="row align-items-center g-4">
+          <div class="col-lg-8">
+            <span class="mono">kumquat.info</span>
+            <h2 class="mt-3 mb-3">Explore the public repo, then follow the product outward from there.</h2>
+            <p class="mb-0">Kumquat is a website, a blockchain, and an operating platform. This page is designed to make that architecture feel intentional before the user ever opens the code.</p>
+          </div>
+          <div class="col-lg-4">
+            <div class="d-grid gap-3">
+              <a class="btn btn-kumquat" href="https://github.com/kumquat-ben/kumquat" target="_blank" rel="noreferrer">View Repository</a>
+              <a class="btn btn-outline-light rounded-pill" href="https://github.com/sponsors/kumquat-ben" target="_blank" rel="noreferrer">Sponsor Project</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
   <script>
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -1290,8 +803,8 @@
         }
       });
     }, {
-      threshold: 0.18,
-      rootMargin: "0px 0px -40px 0px"
+      threshold: 0.15,
+      rootMargin: "0px 0px -30px 0px"
     });
 
     document.querySelectorAll(".reveal:not(.visible)").forEach((element) => {
