@@ -291,14 +291,8 @@
     }
 
     .reveal {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 600ms ease, transform 600ms ease;
-    }
-
-    .reveal.visible {
       opacity: 1;
-      transform: translateY(0);
+      transform: none;
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -502,7 +496,7 @@
 
     <section class="section-block" id="farm">
       <div class="container">
-        <div class="row g-4 mb-4 align-items-end">
+        <div class="row g-4 mb-4">
           <div class="col-lg-6">
             <span class="eyebrow">Kumquat Farm</span>
             <h2 class="display-5 mt-3 mb-0">One running instance is a full farm.</h2>
@@ -512,7 +506,7 @@
           </div>
         </div>
         <div class="row g-4">
-          <div class="col-lg-8">
+          <div class="col-12">
             <div class="info-card reveal">
               <span class="eyebrow">Farm Layers</span>
               <h3 class="mt-3">Settlement to workloads</h3>
@@ -526,12 +520,14 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-md-6">
             <div class="info-card reveal mb-4">
               <span class="eyebrow">Deployment</span>
               <h3 class="mt-3">Repo-native rollout</h3>
               <p class="mb-0">Build images, publish to ECR, deploy the website to k3s, and update platform add-ons through Terraform and Helm from the same repository.</p>
             </div>
+          </div>
+          <div class="col-md-6">
             <div class="info-card reveal">
               <span class="eyebrow">Search + Crawlers</span>
               <h3 class="mt-3">Operational surfaces already exist</h3>
@@ -612,19 +608,5 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-  <script>
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.15 });
-
-    document.querySelectorAll(".reveal:not(.visible)").forEach((element) => {
-      observer.observe(element);
-    });
-  </script>
 </body>
 </html>
