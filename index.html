@@ -3,624 +3,201 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Kumquat.info presents a tactile, denomination-first digital money system built from a Django website, Rust blockchain, and AWS k3s infrastructure.">
-  <meta name="keywords" content="Kumquat, kumquat.info, digital cash, denomination-first money, Rust blockchain, Django website, k3s, AWS, hybrid cash protocol">
-  <meta name="author" content="kumquat">
-  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-  <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-  <meta name="theme-color" content="#f7efe2">
+  <meta name="description" content="Download curated niche B2B business lists for outreach, sales, partnerships, and market research.">
+  <meta name="keywords" content="Kumquat, B2B lists, lead lists, CSV datasets, niche business lists, prospect lists">
+  <meta name="author" content="Kumquat">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#f47b20">
   <link rel="canonical" href="https://kumquat.info/">
-  <link rel="alternate" href="https://kumquat.info/" hreflang="en">
-  <title>Kumquat Farm | kumquat.info</title>
-  <meta property="og:locale" content="en_US">
+  <title>Kumquat — Fresh Niche Business Lists</title>
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Kumquat">
-  <meta property="og:title" content="Kumquat Farm | kumquat.info">
-  <meta property="og:description" content="A tactile, denomination-first digital money system spanning the public website, Rust blockchain, and AWS-hosted Kumquat Farm stack.">
+  <meta property="og:title" content="Kumquat | Fresh leads. Picked by niche.">
+  <meta property="og:description" content="Curated niche B2B datasets delivered as clean CSV files.">
   <meta property="og:url" content="https://kumquat.info/">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Kumquat Farm | kumquat.info">
-  <meta name="twitter:description" content="Digital cash with visible denominations, built from a Django site, Rust chain, and AWS k3s infrastructure.">
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9CSN4VQC4H"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag("js", new Date());
-    gtag("config", "G-9CSN4VQC4H");
-  </script>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Kumquat",
-      "url": "https://kumquat.info/",
-      "description": "Kumquat is a denomination-first digital money system built around a physical cash mental model, with a Django website, Rust blockchain, and AWS-hosted k3s infrastructure.",
-      "publisher": {
-        "@type": "Organization",
-        "name": "Kumquat",
-        "url": "https://kumquat.info/"
-      },
-      "mainEntity": {
-        "@type": "SoftwareSourceCode",
-        "name": "kumquat",
-        "codeRepository": "https://github.com/kumquat-ben/kumquat",
-        "programmingLanguage": ["Python", "Rust", "Terraform"],
-        "description": "The Kumquat repository contains the public Django website, the Rust blockchain, and AWS-hosted infrastructure for the product."
-      }
-    }
-  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=DM+Sans:wght@400;500;700&amp;family=DM+Serif+Display:ital@0;1&amp;display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-  <style>
-    :root {
-      --cream: #f7efe2;
-      --paper: #fffaf2;
-      --ink: #24170f;
-      --muted: #6b5848;
-      --line: rgba(36, 23, 15, 0.1);
-      --orange: #ef7a2f;
-      --orange-deep: #c95316;
-      --gold: #e2b65f;
-      --shadow: 0 18px 48px rgba(81, 48, 21, 0.1);
-      --radius: 24px;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: "DM Sans", sans-serif;
-      color: var(--ink);
-      background:
-        radial-gradient(circle at top left, rgba(239, 122, 47, 0.12), transparent 25%),
-        linear-gradient(180deg, #fbf4e8 0%, #f6ede0 100%);
-    }
-
-    h1, h2, h3 {
-      font-family: "DM Serif Display", serif;
-      letter-spacing: -0.03em;
-    }
-
-    p {
-      color: var(--muted);
-      line-height: 1.75;
-    }
-
-    .navbar-shell {
-      background: rgba(247, 239, 226, 0.88);
-      backdrop-filter: blur(14px);
-      border-bottom: 1px solid rgba(36, 23, 15, 0.06);
-    }
-
-    .brand-mark {
-      width: 2.5rem;
-      height: 2.5rem;
-      border-radius: 14px;
-      display: inline-grid;
-      place-items: center;
-      background: linear-gradient(135deg, #ffbf72, var(--orange));
-      color: #fff8ec;
-      font-family: "DM Serif Display", serif;
-      box-shadow: 0 10px 24px rgba(201, 83, 22, 0.2);
-    }
-
-    .brand-text,
-    .eyebrow,
-    .mono {
-      font-family: "DM Mono", monospace;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-    }
-
-    .brand-text {
-      color: var(--ink);
-      font-size: 0.9rem;
-    }
-
-    .eyebrow {
-      display: inline-block;
-      padding: 0.45rem 0.75rem;
-      border-radius: 999px;
-      background: rgba(255, 255, 255, 0.55);
-      border: 1px solid var(--line);
-      color: var(--muted);
-      font-size: 0.76rem;
-    }
-
-    .section-block {
-      padding: 6.5rem 0;
-    }
-
-    .hero-block {
-      padding-top: 8rem;
-      padding-bottom: 4rem;
-    }
-
-    .section-intro {
-      margin-bottom: 2.5rem;
-    }
-
-    .section-copy {
-      padding-top: 0.5rem;
-    }
-
-    .hero-title {
-      font-size: clamp(3rem, 7vw, 5.8rem);
-      line-height: 0.95;
-      margin: 1rem 0;
-    }
-
-    .hero-subtitle {
-      font-size: 1.1rem;
-      max-width: 42rem;
-    }
-
-    .surface,
-    .info-card,
-    .money-card,
-    .footer-surface {
-      background: rgba(255, 250, 242, 0.9);
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-    }
-
-    .surface,
-    .info-card,
-    .money-card {
-      padding: 1.5rem;
-      height: 100%;
-    }
-
-    .stack-gap > * + * {
-      margin-top: 1.5rem;
-    }
-
-    .wallet-row {
-      display: flex;
-      align-items: flex-start;
-      gap: 1rem;
-      padding: 1rem;
-      border-radius: 20px;
-      border: 1px solid rgba(36, 23, 15, 0.08);
-      background: linear-gradient(135deg, #ffedd8, #fff8ef);
-    }
-
-    .wallet-row + .wallet-row {
-      margin-top: 1rem;
-    }
-
-    .value-badge {
-      min-width: 4rem;
-      height: 4rem;
-      border-radius: 18px;
-      display: inline-grid;
-      place-items: center;
-      background: linear-gradient(135deg, #f29a4a, #d9621d);
-      color: #fff7ea;
-      font-family: "DM Serif Display", serif;
-      font-size: 1.15rem;
-      flex: 0 0 auto;
-    }
-
-    .pill {
-      display: inline-block;
-      padding: 0.35rem 0.65rem;
-      border-radius: 999px;
-      background: rgba(109, 138, 57, 0.12);
-      color: #607a2f;
-      font-family: "DM Mono", monospace;
-      font-size: 0.72rem;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-    }
-
-    .wallet-total {
-      margin-top: 1rem;
-      padding: 1.25rem;
-      border-radius: 20px;
-      background: #25180f;
-      color: #fff8ec;
-    }
-
-    .wallet-total p,
-    .wallet-total .mono {
-      color: rgba(255, 248, 236, 0.74);
-      margin-bottom: 0.5rem;
-    }
-
-    .wallet-total strong {
-      display: block;
-      font-family: "DM Serif Display", serif;
-      font-size: 2rem;
-      line-height: 1.1;
-    }
-
-    .btn-kumquat {
-      background: linear-gradient(135deg, var(--orange), var(--orange-deep));
-      color: #fff9ef;
-      border: 0;
-      border-radius: 999px;
-      padding: 0.9rem 1.35rem;
-      font-weight: 700;
-    }
-
-    .btn-kumquat:hover {
-      color: #fff9ef;
-      background: linear-gradient(135deg, var(--orange-deep), var(--orange));
-    }
-
-    .btn-ghost {
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      padding: 0.9rem 1.35rem;
-      background: rgba(255, 255, 255, 0.55);
-      color: var(--ink);
-      font-weight: 700;
-    }
-
-    .metric {
-      font-family: "DM Serif Display", serif;
-      font-size: 2rem;
-      color: var(--orange-deep);
-      line-height: 1;
-      margin-bottom: 0.75rem;
-    }
-
-    .bill-art,
-    .coin-art {
-      margin: 1rem 0 1.25rem;
-    }
-
-    .bill-art {
-      width: 100%;
-      height: 4.5rem;
-      border-radius: 18px;
-      border: 1px solid rgba(36, 23, 15, 0.08);
-      background: linear-gradient(135deg, #ffddb6, #fff4e3);
-    }
-
-    .coin-art {
-      width: 5rem;
-      height: 5rem;
-      border-radius: 50%;
-      background: radial-gradient(circle at 30% 30%, #fff0c8, var(--gold) 58%, #b88733 100%);
-      box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.5), 0 14px 28px rgba(184, 135, 51, 0.15);
-    }
-
-    .footer-surface {
-      padding: 2rem;
-      background: rgba(36, 23, 15, 0.96);
-      color: #fff8ee;
-    }
-
-    .footer-surface p,
-    .footer-surface .mono {
-      color: rgba(255, 248, 238, 0.72);
-    }
-
-    .reveal {
-      opacity: 1;
-      transform: none;
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after {
-        animation: none !important;
-        transition: none !important;
-        scroll-behavior: auto !important;
-      }
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg fixed-top navbar-shell">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center gap-3" href="#top">
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="Kumquat home">
         <span class="brand-mark">K</span>
-        <span class="brand-text">kumquat.info</span>
+        <span>Kumquat</span>
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#siteNav" aria-controls="siteNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="siteNav">
-        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
-          <li class="nav-item"><a class="nav-link" href="#repo">Repository</a></li>
-          <li class="nav-item"><a class="nav-link" href="#model">Cash Model</a></li>
-          <li class="nav-item"><a class="nav-link" href="#farm">Farm Stack</a></li>
-          <li class="nav-item"><a class="nav-link" href="https://github.com/kumquat-ben/kumquat" target="_blank" rel="noreferrer">GitHub</a></li>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+      <div class="nav-menu" id="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="lists.html">Lists</a>
+        <a href="custom-list.html">Custom List</a>
+        <a href="compliance.html">Compliance</a>
+        <a href="contact.html">Contact</a>
+        <a class="button button-small" href="lists.html">Browse Lists</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Fresh leads. Picked by niche.</p>
+          <h1>Fresh niche business lists, ready to download.</h1>
+          <p class="hero-copy">Kumquat sells curated B2B datasets for founders, agencies, consultants, sales teams, and operators who need clean prospect lists without spending days researching.</p>
+          <div class="hero-actions">
+            <a class="button" href="lists.html">Browse Lists</a>
+            <a class="button button-secondary" href="custom-list.html">Request Custom List</a>
+          </div>
+          <p class="trust-line">Source-linked. Niche-specific. Delivered as CSV.</p>
+        </div>
+        <div class="hero-panel" aria-label="CSV preview">
+          <div class="panel-top">
+            <span>CSV preview</span>
+            <span class="status-dot">Ready</span>
+          </div>
+          <div class="table-card">
+            <div class="row row-head"><span>Business</span><span>City</span><span>Source</span></div>
+            <div class="row"><span>Harbor Venue</span><span>San Diego</span><span>website</span></div>
+            <div class="row"><span>Northstar Law</span><span>Sacramento</span><span>contact page</span></div>
+            <div class="row"><span>Violet Studio</span><span>Pasadena</span><span>social</span></div>
+          </div>
+          <div class="hero-stats">
+            <div><strong>CSV</strong><span>Download</span></div>
+            <div><strong>Public</strong><span>Sources</span></div>
+            <div><strong>Niche</strong><span>Focus</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container narrow">
+        <p class="eyebrow">The problem</p>
+        <h2>Stop building prospect lists by hand.</h2>
+        <p>Finding the right businesses takes time. You search Google, open websites, check contact pages, copy emails, clean spreadsheets, and still wonder if the data is useful. Kumquat gives you ready-made niche lists so you can move straight to outreach, sales, partnerships, or research.</p>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Products</p>
+          <h2>Featured niche lists</h2>
+        </div>
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="product-meta"><span>500 records</span><span>$79</span></div>
+            <h3>Southern California Wedding Venues</h3>
+            <p>500 active wedding venues with websites, contact pages, public emails where available, phone numbers, cities, and source links.</p>
+            <p class="best-for"><strong>Best for:</strong> Photographers, DJs, florists, caterers, planners, linen companies, and wedding software vendors.</p>
+            <a class="button button-full" href="https://buy.stripe.com/YOUR_PAYMENT_LINK_HERE" target="_blank" rel="noreferrer">Buy CSV</a>
+          </article>
+          <article class="product-card">
+            <div class="product-meta"><span>1,000 records</span><span>$99</span></div>
+            <h3>Independent Artist Booking Contacts</h3>
+            <p>1,000 independent artist websites with booking pages, contact links, emails where public, genres, cities, tour pages, and social links.</p>
+            <p class="best-for"><strong>Best for:</strong> Promoters, venues, booking agents, festival organizers, music SaaS, and brand partnership teams.</p>
+            <a class="button button-full" href="https://buy.stripe.com/YOUR_PAYMENT_LINK_HERE" target="_blank" rel="noreferrer">Buy CSV</a>
+          </article>
+          <article class="product-card">
+            <div class="product-meta"><span>California</span><span>$149</span></div>
+            <h3>California Personal Injury Law Firms</h3>
+            <p>Verified law firm websites, phone numbers, cities, practice areas, contact pages, and public business emails where available.</p>
+            <p class="best-for"><strong>Best for:</strong> Legal marketing agencies, SEO consultants, call centers, intake software, and B2B SaaS.</p>
+            <a class="button button-full" href="https://buy.stripe.com/YOUR_PAYMENT_LINK_HERE" target="_blank" rel="noreferrer">Buy CSV</a>
+          </article>
+          <article class="product-card">
+            <div class="product-meta"><span>Local services</span><span>$49</span></div>
+            <h3>Local Businesses With Outdated Websites</h3>
+            <p>A curated list of businesses with weak websites, old designs, poor mobile UX, missing conversion pages, or outdated branding.</p>
+            <p class="best-for"><strong>Best for:</strong> Web designers, SEO agencies, branding studios, and local marketing consultants.</p>
+            <a class="button button-full" href="https://buy.stripe.com/YOUR_PAYMENT_LINK_HERE" target="_blank" rel="noreferrer">Buy CSV</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Process</p>
+          <h2>How Kumquat works</h2>
+        </div>
+        <div class="steps">
+          <article><span>1</span><h3>Pick a niche list.</h3><p>Browse datasets by industry, geography, buyer type, and list size.</p></article>
+          <article><span>2</span><h3>Preview the fields.</h3><p>Each list shows the included columns before you buy.</p></article>
+          <article><span>3</span><h3>Buy and download.</h3><p>Pay through a secure checkout link and receive the CSV.</p></article>
+          <article><span>4</span><h3>Start selling.</h3><p>Use the data for lawful business research, outreach, partnerships, and market discovery.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-cta">
+      <div class="container cta-grid">
+        <div>
+          <p class="eyebrow">Custom data</p>
+          <h2>Need a list we do not have yet?</h2>
+          <p>Request a custom dataset. Tell us the niche, geography, number of records, and fields you need. We can build a clean CSV for your specific use case.</p>
+          <a class="button" href="custom-list.html">Request Custom List</a>
+        </div>
+        <ul class="example-list">
+          <li>500 churches in Texas with outdated websites</li>
+          <li>1,000 dentists in Arizona with websites and contact pages</li>
+          <li>300 boutique hotels in California</li>
+          <li>2,000 local contractors with no online booking</li>
+          <li>500 event promoters in Los Angeles</li>
+          <li>1,000 restaurants with catering pages</li>
         </ul>
       </div>
-    </div>
-  </nav>
+    </section>
 
-  <main id="top">
-    <section class="hero-block">
-      <div class="container">
-        <div class="row g-4 align-items-center">
-          <div class="col-lg-6">
-            <div class="reveal visible">
-              <span class="eyebrow">Django site + Rust chain + AWS k3s</span>
-              <h1 class="hero-title">Inteligence in action</h1>
-              <p class="hero-subtitle mb-3">We design and deploy intelligent systems that automate operations and scale organizations.</p>
-              <p class="hero-subtitle mb-4">Kumquat is a denomination-first money system built around the mental model of physical cash. Bills behave like discrete objects you can hold and transfer, while coins below one dollar stay fungible and accountable in batches.</p>
-              <div class="d-flex flex-column flex-sm-row gap-3">
-                <a class="btn btn-kumquat" href="https://github.com/kumquat-ben/kumquat" target="_blank" rel="noreferrer">Open Main Repository</a>
-                <a class="btn btn-ghost" href="#model">See How It Works</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="surface reveal visible">
-              <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-4">
-                <span class="eyebrow">Wallet Preview</span>
-                <span class="mono">kumquat.info</span>
-              </div>
-              <div class="wallet-row">
-                <span class="value-badge">$100</span>
-                <div class="flex-grow-1">
-                  <h3 class="h5 mb-2">Owned high-value bill</h3>
-                  <p class="mb-2">Discrete unit with visible identity and transferable ownership.</p>
-                  <span class="pill">chain object</span>
-                </div>
-              </div>
-              <div class="wallet-row">
-                <span class="value-badge">$20</span>
-                <div class="flex-grow-1">
-                  <h3 class="h5 mb-2">Readable wallet row</h3>
-                  <p class="mb-2">Each denomination lands as an individual row instead of disappearing into an abstract total.</p>
-                  <span class="pill">wallet UI</span>
-                </div>
-              </div>
-              <div class="wallet-row">
-                <span class="value-badge">$5</span>
-                <div class="flex-grow-1">
-                  <h3 class="h5 mb-2">Human cash mental model</h3>
-                  <p class="mb-2">Money behaves more like counted bills than a silent spreadsheet balance.</p>
-                  <span class="pill">product story</span>
-                </div>
-              </div>
-              <div class="wallet-row">
-                <span class="value-badge">¢</span>
-                <div class="flex-grow-1">
-                  <h3 class="h5 mb-2">Sub-dollar coin batches</h3>
-                  <p class="mb-2">Coins stay fungible inventory below one dollar while remaining accountable in issuance flows.</p>
-                  <span class="pill">mint layer</span>
-                </div>
-              </div>
-              <div class="wallet-total">
-                <span class="mono">Visible Wallet State</span>
-                <strong>$125.80</strong>
-                <span class="pill mt-3">settled by the farm</span>
-              </div>
-            </div>
-          </div>
+    <section class="section">
+      <div class="container split">
+        <div>
+          <p class="eyebrow">Compliance</p>
+          <h2>Built for useful business research, not spam.</h2>
         </div>
-
-        <div class="row g-4 mt-1">
-          <div class="col-md-4">
-            <div class="info-card reveal">
-              <div class="metric">3</div>
-              <h2 class="h4">Core layers</h2>
-              <p class="mb-0">Website, blockchain, and infrastructure live in one repo-native delivery flow.</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="info-card reveal">
-              <div class="metric">$1-$100</div>
-              <h2 class="h4">Bills stay visible</h2>
-              <p class="mb-0">High denominations remain individually legible instead of collapsing into one generic balance.</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="info-card reveal">
-              <div class="metric">1</div>
-              <h2 class="h4">Kumquat Farm</h2>
-              <p class="mb-0">A full running stack combines chain, mint, liquidity, workloads, and data services.</p>
-            </div>
-          </div>
+        <div>
+          <p>Kumquat focuses on public business information, websites, contact pages, source links, and professional-use datasets. Buyers are responsible for using data lawfully, respecting opt-outs, and following applicable outreach rules.</p>
+          <a class="button button-secondary" href="compliance.html">Read Compliance Policy</a>
         </div>
       </div>
     </section>
 
-    <section class="section-block" id="repo">
+    <section class="section section-soft">
       <div class="container">
-        <div class="row g-4 section-intro align-items-start">
-          <div class="col-lg-6">
-            <span class="eyebrow">Repository Overview</span>
-            <h2 class="display-5 mt-3 mb-0">One repository, three production surfaces.</h2>
-          </div>
-          <div class="col-lg-6 section-copy">
-            <p class="mb-0">The Kumquat repo combines the public website, the protocol implementation, and the AWS-hosted platform needed to run the system. The site for <code>kumquat.info</code> should explain the whole machine, not just present a generic crypto homepage.</p>
-          </div>
+        <div class="section-heading">
+          <p class="eyebrow">FAQ</p>
+          <h2>Questions before you buy</h2>
         </div>
-        <div class="row g-4">
-          <div class="col-lg-4">
-            <div class="info-card reveal">
-              <span class="eyebrow">Website</span>
-              <h3 class="mt-3">Django application</h3>
-              <p class="mb-0">Public pages, auth flow, admin surfaces, crawler operations, and backend endpoints are served from one application and hostname.</p>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="info-card reveal">
-              <span class="eyebrow">Blockchain</span>
-              <h3 class="mt-3">Rust chain runtime</h3>
-              <p class="mb-0">Node runtime, storage, consensus, networking, and genesis tooling back the denomination-based money system.</p>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="info-card reveal">
-              <span class="eyebrow">Infrastructure</span>
-              <h3 class="mt-3">AWS + k3s + Terraform</h3>
-              <p class="mb-0">Private platform infrastructure covers VPC, VPN, ECR, MySQL, persistent storage, and deployment orchestration.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-block" id="model">
-      <div class="container">
-        <div class="row g-4 section-intro align-items-start">
-          <div class="col-lg-6">
-            <span class="eyebrow">Cash Model</span>
-            <h2 class="display-5 mt-3 mb-0">Money that reads like money.</h2>
-          </div>
-          <div class="col-lg-6 section-copy">
-            <p class="mb-0">Kumquat’s core claim is not more finance widgets. It is a different object model for value: large denominations remain discrete, small change stays batch-like, and the interface keeps those units visible.</p>
-          </div>
-        </div>
-        <div class="row g-4">
-          <div class="col-lg-7">
-            <div class="info-card reveal">
-              <span class="eyebrow">Hybrid Protocol Direction</span>
-              <h3 class="mt-3">Bills behave like owned objects. Coins behave like accountable inventory.</h3>
-              <p>The product is designed around the tactile logic of cash. High denominations are meant to feel countable, movable, and inspectable. Lower-value coins remain fungible below the dollar to keep the system efficient where object-level granularity adds little value.</p>
-              <div class="mt-4">
-                <p class="mb-2"><span class="mono">Step 01</span></p>
-                <p class="mb-3">Issue visible units with clear denomination semantics so wallet state stays legible.</p>
-                <p class="mb-2"><span class="mono">Step 02</span></p>
-                <p class="mb-3">Settle transfers on the chain layer while preserving the denomination hierarchy users can read.</p>
-                <p class="mb-2"><span class="mono">Step 03</span></p>
-                <p class="mb-0">Run the full farm stack so settlement, minting, workloads, and marketplace activity share one coherent operating surface.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-5">
-            <div class="stack-gap">
-              <div class="info-card reveal">
-              <span class="eyebrow">Genesis Seed</span>
-              <h3 class="mt-3">Anchored origin</h3>
-              <p class="mb-0"><code>X3Fjvip33ETuahoPbOO0Z2yZSveX6eT57I1DbD83F0s=</code> records the derivative work of art used as the genesis seed for the project’s initial block anchor.</p>
-              </div>
-              <div class="info-card reveal">
-                <span class="eyebrow">Live Target</span>
-                <h3 class="mt-3">Built for <code>kumquat.info</code></h3>
-                <p class="mb-0">This landing page is shaped as a public front door for the repo: product story first, architecture second, links and operator detail third.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-block" id="farm">
-      <div class="container">
-        <div class="row g-4 section-intro align-items-start">
-          <div class="col-lg-6">
-            <span class="eyebrow">Kumquat Farm</span>
-            <h2 class="display-5 mt-3 mb-0">One running instance is a full farm.</h2>
-          </div>
-          <div class="col-lg-6 section-copy">
-            <p class="mb-0">A Kumquat Farm is a self-contained stack where settlement, minting, liquidity, workloads, and data services run together on shared operational infrastructure.</p>
-          </div>
-        </div>
-        <div class="row g-4">
-          <div class="col-12">
-            <div class="info-card reveal">
-              <span class="eyebrow">Farm Layers</span>
-              <h3 class="mt-3">Settlement to workloads</h3>
-              <div class="row row-cols-1 row-cols-md-2 g-3 mt-1">
-                <div class="col"><div class="border rounded-4 p-3 h-100 bg-white bg-opacity-50"><span class="mono">Chain</span><p class="mb-0 mt-2">Settlement and shared state across protocol, storage, and networking.</p></div></div>
-                <div class="col"><div class="border rounded-4 p-3 h-100 bg-white bg-opacity-50"><span class="mono">Mint</span><p class="mb-0 mt-2">Coin creation and issuance for accountable sub-dollar inventory.</p></div></div>
-                <div class="col"><div class="border rounded-4 p-3 h-100 bg-white bg-opacity-50"><span class="mono">Liquidity</span><p class="mb-0 mt-2">Market and provider participation across the platform.</p></div></div>
-                <div class="col"><div class="border rounded-4 p-3 h-100 bg-white bg-opacity-50"><span class="mono">Compute</span><p class="mb-0 mt-2">Rentable node capacity and infrastructure access inside the farm.</p></div></div>
-                <div class="col"><div class="border rounded-4 p-3 h-100 bg-white bg-opacity-50"><span class="mono">Workloads</span><p class="mb-0 mt-2">Submitted job execution and operational processing.</p></div></div>
-                <div class="col"><div class="border rounded-4 p-3 h-100 bg-white bg-opacity-50"><span class="mono">Data</span><p class="mb-0 mt-2">Marketplace publishing and purchase for shareable products.</p></div></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="info-card reveal">
-              <span class="eyebrow">Deployment</span>
-              <h3 class="mt-3">Repo-native rollout</h3>
-              <p class="mb-0">Build images, publish to ECR, deploy the website to k3s, and update platform add-ons through Terraform and Helm from the same repository.</p>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="info-card reveal">
-              <span class="eyebrow">Search + Crawlers</span>
-              <h3 class="mt-3">Operational surfaces already exist</h3>
-              <p class="mb-0">The repo includes jobs search, a site crawler index, manual script orchestration, analytics tracking, and admin operations beyond the public marketing pages.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-block">
-      <div class="container">
-        <div class="row g-4 section-intro align-items-start">
-          <div class="col-lg-6">
-            <span class="eyebrow">Denomination Tray</span>
-            <h2 class="display-5 mt-3 mb-0">Visible units instead of one opaque number.</h2>
-          </div>
-          <div class="col-lg-6 section-copy">
-            <p class="mb-0">This tray gives the homepage a tactile money surface: large values read as bills, sub-dollar value shifts toward coin language, and the layout stays legible on mobile.</p>
-          </div>
-        </div>
-        <div class="row g-4">
-          <div class="col-sm-6 col-xl-3">
-            <div class="money-card reveal">
-              <span class="mono">$100 bill</span>
-              <div class="bill-art"></div>
-              <h3>Reserve unit</h3>
-              <p class="mb-0">High-value ownership is explicit and countable.</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-xl-3">
-            <div class="money-card reveal">
-              <span class="mono">$20 bill</span>
-              <div class="bill-art"></div>
-              <h3>Transfer unit</h3>
-              <p class="mb-0">Wallet rows stay readable across common movement sizes.</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-xl-3">
-            <div class="money-card reveal">
-              <span class="mono">$5 bill</span>
-              <div class="bill-art"></div>
-              <h3>Everyday unit</h3>
-              <p class="mb-0">Denomination hierarchy remains visible rather than flattened.</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-xl-3">
-            <div class="money-card reveal">
-              <span class="mono">50¢ coin</span>
-              <div class="coin-art"></div>
-              <h3>Batch coin</h3>
-              <p class="mb-0">Sub-dollar value shifts into fungible coin inventory.</p>
-            </div>
-          </div>
+        <div class="faq-list">
+          <details open><summary>What do I get after buying?</summary><p>You receive a downloadable CSV file with the fields listed on the product card or product page.</p></details>
+          <details><summary>Are the lists verified?</summary><p>Each Kumquat list includes a last-verified date and source links when available.</p></details>
+          <details><summary>Do you sell personal data?</summary><p>Kumquat focuses on business data, public websites, company contact pages, and professional-use datasets.</p></details>
+          <details><summary>Can I request a custom list?</summary><p>Yes. Use the custom list page to request a niche, location, record count, and required fields.</p></details>
+          <details><summary>How do I receive the file?</summary><p>After payment, the file is delivered through the checkout provider or by email.</p></details>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="pb-5">
-    <div class="container">
-      <div class="footer-surface reveal">
-        <div class="row g-4 align-items-center">
-          <div class="col-lg-8">
-            <span class="mono">kumquat.info</span>
-            <h2 class="mt-3 mb-3">Explore the public repo, then follow the product outward from there.</h2>
-            <p class="mb-0">Kumquat is a website, a blockchain, and an operating platform. This page is designed to make that architecture feel intentional before the user ever opens the code.</p>
-          </div>
-          <div class="col-lg-4">
-            <div class="d-grid gap-3">
-              <a class="btn btn-kumquat" href="https://github.com/kumquat-ben/kumquat" target="_blank" rel="noreferrer">View Repository</a>
-              <a class="btn btn-outline-light rounded-pill" href="https://github.com/sponsors/kumquat-ben" target="_blank" rel="noreferrer">Sponsor Project</a>
-            </div>
-          </div>
-        </div>
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="index.html"><span class="brand-mark">K</span><span>Kumquat</span></a>
+        <p>Fresh leads. Picked by niche.</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="lists.html">Lists</a>
+        <a href="custom-list.html">Custom List</a>
+        <a href="compliance.html">Compliance</a>
+        <a href="contact.html">Contact</a>
       </div>
     </div>
   </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  <script src="assets/main.js"></script>
 </body>
 </html>
