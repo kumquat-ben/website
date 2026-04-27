@@ -459,6 +459,28 @@ h3 {
   margin-top: 28px;
 }
 
+.search-panel {
+  max-width: 760px;
+  margin-top: 30px;
+}
+
+.search-panel label {
+  display: block;
+  margin-bottom: 9px;
+  color: var(--ink);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.search-panel input {
+  min-height: 58px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--white);
+  box-shadow: var(--shadow);
+  font-size: 1rem;
+}
+
 .filter-row button {
   border: 1px solid var(--border, var(--line));
   border-radius: 999px;
@@ -496,6 +518,21 @@ h3 {
 .catalog-note a {
   color: var(--accent-dark);
   font-weight: 800;
+}
+
+.empty-state {
+  grid-column: 1 / -1;
+  padding: 34px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--white);
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+.empty-state p {
+  max-width: 560px;
+  margin: 12px auto 22px;
 }
 
 .category-pill {

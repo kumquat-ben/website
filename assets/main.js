@@ -446,6 +446,9 @@ const productGroups = [
 const productGrid = document.querySelector("[data-product-grid]");
 const productCount = document.querySelector("[data-product-count]");
 const filterWrap = document.querySelector("[data-catalog-filters]");
+const productSearch = document.querySelector("[data-product-search]");
+let activeFilter = "All";
+let activeSearch = "";
 
 const products = productGroups.flatMap((group) =>
   group.products.map((title) => ({
@@ -469,14 +472,31 @@ function escapeHtml(value) {
   })[char]);
 }
 
-function renderProducts(filter = "All") {
+function productMatchesSearch(product, query) {
+  if (!query) return true;
+
+  const searchable = [
+    product.title,
+    product.category,
+    product.records,
+    product.price,
+    product.description,
+    product.fields
+  ].join(" ").toLowerCase();
+
+  return query.split(/\s+/).every((term) => searchable.includes(term));
+}
+
+function renderProducts() {
   if (!productGrid) return;
 
-  const visibleProducts = filter === "All"
-    ? products
-    : products.filter((product) => product.category === filter);
+  const query = activeSearch.trim().toLowerCase();
+  const visibleProducts = products.filter((product) => {
+    const matchesFilter = activeFilter === "All" || product.category === activeFilter;
+    return matchesFilter && productMatchesSearch(product, query);
+  });
 
-  productGrid.innerHTML = visibleProducts.map((product) => `
+  productGrid.innerHTML = visibleProducts.length ? visibleProducts.map((product) => `
     <article class="product-card">
       <div class="product-meta"><span>${escapeHtml(product.records)}</span><span>${escapeHtml(product.price)}</span></div>
       <span class="category-pill">${escapeHtml(product.category)}</span>
@@ -485,7 +505,13 @@ function renderProducts(filter = "All") {
       <p class="best-for"><strong>Fields:</strong> ${escapeHtml(product.fields)}</p>
       <a class="button button-full" href="${product.paymentLink}" target="_blank" rel="noreferrer">Buy CSV</a>
     </article>
-  `).join("");
+  `).join("") : `
+    <div class="empty-state">
+      <h3>No matching lists found.</h3>
+      <p>Try a broader search or request a custom list for the exact niche you need.</p>
+      <a class="button" href="custom-list.html">Request Custom List</a>
+    </div>
+  `;
 
   if (productCount) {
     productCount.textContent = String(visibleProducts.length);
@@ -499,7 +525,15 @@ if (filterWrap) {
 
     filterWrap.querySelectorAll("button").forEach((item) => item.classList.remove("is-active"));
     button.classList.add("is-active");
-    renderProducts(button.dataset.filter);
+    activeFilter = button.dataset.filter;
+    renderProducts();
+  });
+}
+
+if (productSearch) {
+  productSearch.addEventListener("input", () => {
+    activeSearch = productSearch.value;
+    renderProducts();
   });
 }
 
