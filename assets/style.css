@@ -102,6 +102,11 @@ h3 {
   box-shadow: 0 10px 24px rgba(244, 123, 32, 0.24);
 }
 
+.brand-mark i {
+  font-size: 1.05rem;
+  transform: rotate(-18deg);
+}
+
 .nav-menu {
   display: flex;
   align-items: center;
