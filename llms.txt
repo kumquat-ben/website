@@ -1,0 +1,35 @@
+# Kumquat
+
+Kumquat sells curated niche B2B business lists delivered as CSV datasets for sales outreach, market research, partnerships, agency prospecting, and business discovery.
+
+## Core Pages
+
+- Home: https://kumquat.info/
+- Browse lists: https://kumquat.info/lists.html
+- Custom list request: https://kumquat.info/custom-list.html
+- Compliance: https://kumquat.info/compliance.html
+- Contact: https://kumquat.info/contact.html
+
+## What Kumquat Sells
+
+Kumquat sells downloadable CSV business lists organized by niche, geography, industry, buyer type, and use case. Example categories include local businesses, events, professional services, website-opportunity lists, high-intent sales signals, niche industries, creator and internet businesses, government and public data, and real estate or property lists.
+
+## Common Dataset Fields
+
+Fields vary by product and may include business name, website, city, state, phone number, public email, contact page, social link, source URL, category, issue spotted, last-verified date, and notes.
+
+## Delivery
+
+After payment, Kumquat sends a download link by email once the dataset is available. Delivery can take a few seconds, up to 24 hours, or longer if manual review or processing is required.
+
+## Custom Lists
+
+Kumquat accepts custom list requests through a paid deposit checkout. A useful request includes the niche or industry, city or region, target record count, required fields, budget, timeline, and examples of ideal businesses.
+
+## Compliance
+
+Kumquat focuses on public business websites, business contact pages, public company information, source URLs, and professional-use datasets. Buyers are responsible for following applicable email, privacy, advertising, and data laws, respecting opt-out requests, verifying data before use, and avoiding deceptive or abusive campaigns.
+
+## Contact
+
+For list questions, custom datasets, partnerships, bulk orders, delivery questions, or compliance questions, email info@athena.live.
