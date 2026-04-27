@@ -635,16 +635,6 @@ form {
   gap: 16px;
 }
 
-.form-row {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 14px;
-}
-
-.hidden-field {
-  display: none;
-}
-
 label {
   display: grid;
   gap: 7px;
@@ -856,7 +846,6 @@ textarea {
   .catalog-grid,
   .steps,
   .policy-grid,
-  .form-row,
   .request-grid {
     grid-template-columns: 1fr;
   }
