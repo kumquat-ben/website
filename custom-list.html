@@ -56,9 +56,31 @@
         </div>
         <div class="form-card request-card">
           <p class="eyebrow">Specific request</p>
-          <h2>Email your custom list brief.</h2>
-          <p>For a specific request, email Athena with the niche, location, desired number of records, required fields, budget, and examples of ideal businesses.</p>
-          <a class="button request-email-button" href="mailto:info@athena.live?subject=Custom%20Kumquat%20List%20Request">Email info@athena.live</a>
+          <h2>Send your custom list brief.</h2>
+          <p>Tell us the niche, location, desired number of records, required fields, budget, and examples of ideal businesses. The request is forwarded by FormSubmit to Athena.</p>
+          <form action="https://formsubmit.co/info@athena.live" method="POST">
+            <input type="hidden" name="_subject" value="Custom Kumquat List Request">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="text" name="_honey" class="hidden-field" tabindex="-1" autocomplete="off">
+            <div class="form-row">
+              <label>Name<input name="name" autocomplete="name" required></label>
+              <label>Email<input type="email" name="email" autocomplete="email" required></label>
+            </div>
+            <label>Niche or industry<input name="niche" placeholder="Example: wedding venues, plumbers, med spas" required></label>
+            <div class="form-row">
+              <label>Location<input name="location" placeholder="City, state, region, or country" required></label>
+              <label>Record count<input name="record_count" placeholder="Example: 500+" required></label>
+            </div>
+            <label>Required fields<textarea name="required_fields" placeholder="Website, phone, public email, contact page, Instagram, source URL, notes..." required></textarea></label>
+            <div class="form-row">
+              <label>Budget<input name="budget" placeholder="Example: $250"></label>
+              <label>Timeline<input name="timeline" placeholder="Example: this week"></label>
+            </div>
+            <label>Examples or extra notes<textarea name="examples" placeholder="Paste sample businesses, exclusions, quality requirements, or how you plan to use the list."></textarea></label>
+            <button class="button" type="submit">Send Request</button>
+            <p class="form-note">Prefer email? Send the same brief to <a href="mailto:info@athena.live?subject=Custom%20Kumquat%20List%20Request"><strong>info@athena.live</strong></a>.</p>
+          </form>
           <div class="request-brief">
             <h3>Include these details</h3>
             <ul class="check-list">
