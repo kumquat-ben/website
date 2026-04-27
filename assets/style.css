@@ -606,6 +606,30 @@ tr:last-child td {
   padding: 24px;
 }
 
+.request-card {
+  display: grid;
+  gap: 20px;
+}
+
+.request-card h2 {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+}
+
+.request-email-button {
+  width: fit-content;
+}
+
+.request-brief {
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--soft);
+}
+
+.request-brief h3 {
+  margin-bottom: 14px;
+}
+
 form {
   display: grid;
   gap: 16px;
@@ -811,6 +835,10 @@ textarea {
   }
 
   .button {
+    width: 100%;
+  }
+
+  .request-email-button {
     width: 100%;
   }
 
