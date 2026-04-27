@@ -469,10 +469,18 @@ h3 {
   font-weight: 800;
 }
 
-.filter-row button:first-child {
+.filter-row button.is-active {
   background: var(--accent);
   border-color: var(--accent);
   color: white;
+}
+
+.catalog-summary {
+  margin-bottom: 18px;
+}
+
+.catalog-summary strong {
+  color: var(--accent-dark);
 }
 
 .catalog-note {
@@ -487,6 +495,32 @@ h3 {
 
 .catalog-note a {
   color: var(--accent-dark);
+  font-weight: 800;
+}
+
+.category-pill {
+  display: inline-flex;
+  width: fit-content;
+  border-radius: 999px;
+  background: #fff2e5;
+  color: var(--accent-dark);
+  padding: 7px 10px;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.request-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.request-grid div {
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--white);
+  box-shadow: 0 14px 34px rgba(30, 48, 28, 0.06);
   font-weight: 800;
 }
 
@@ -653,7 +687,8 @@ textarea {
   .product-grid,
   .catalog-grid,
   .steps,
-  .policy-grid {
+  .policy-grid,
+  .request-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -713,7 +748,8 @@ textarea {
   .product-grid,
   .catalog-grid,
   .steps,
-  .policy-grid {
+  .policy-grid,
+  .request-grid {
     grid-template-columns: 1fr;
   }
 
