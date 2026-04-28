@@ -2011,6 +2011,89 @@ const products = [
   }
 ];
 
+const opportunityProductContent = {
+  "Website Opportunity": {
+    description: (title) => "A website-opportunity CSV focused on businesses with missing, outdated, or underpowered web conversion paths. This product focuses on " + title.toLowerCase() + " and is delivered as a CSV download link by email once available.",
+    fields: "Business name, website if present, city, state, category, issue spotted, contact page, phone, public email where available, source URL, notes.",
+    bestFor: "Web design agencies, SEO consultants, ordering platforms, booking tools, review software, and local marketing teams buy this list to find businesses with visible website gaps they can fix."
+  },
+  "AI Automation Opportunity": {
+    description: (title) => "An AI automation opportunity CSV focused on businesses still using manual, form-heavy, or under-automated customer intake and lead capture workflows. This product focuses on " + title.toLowerCase() + " and is delivered as a CSV download link by email once available.",
+    fields: "Business name, website, city, state, automation gap, intake or lead-capture signal, contact page, phone, public email where available, source URL, notes.",
+    bestFor: "AI automation agencies, workflow consultants, CRM vendors, chatbot builders, form automation tools, and SaaS teams buy this list to find businesses with clear manual-process gaps."
+  },
+  "Creator Intelligence Lists": {
+    description: (title) => "A Creator Intelligence CSV focused on reachable sponsorship, PR, affiliate, and partnership opportunities. This product focuses on " + title.toLowerCase() + " and is delivered as a CSV download link by email once available.",
+    fields: "Creator or publisher name, platform, profile or website URL, niche, location where public, follower or traffic signal, recent activity signal, public email or contact page, sponsor or PR signal, source URL, notes.",
+    bestFor: "Brands, PR agencies, affiliate managers, creator partnership teams, local marketers, and sponsorship teams buy this list to find creators and publishers with reachable contact paths."
+  },
+  "Events and Venues": {
+    description: (title) => "An event and venue CSV focused on organizations and contacts connected to live events, bookings, venue rentals, and event production. This product focuses on " + title.toLowerCase() + " and is delivered as a CSV download link by email once available.",
+    fields: "Organization or venue name, website, city, state, event type, booking page, public email where available, phone, social link, source URL, notes.",
+    bestFor: "Photographers, DJs, caterers, ticketing tools, sponsors, venues, promoters, rental companies, and event software teams buy this list to reach people involved in booking or producing events."
+  },
+  "Professional Services": {
+    description: (title) => "A high-ticket professional-services CSV focused on firms, schools, clinics, property operators, and specialized service providers with clear commercial value. This product focuses on " + title.toLowerCase() + " and is delivered as a CSV download link by email once available.",
+    fields: "Company name, website, city, state, service type, phone, public email where available, contact page, source URL, notes.",
+    bestFor: "B2B SaaS teams, lead generation agencies, legal marketers, financial service vendors, recruiters, consultants, and sales teams buy this list to reach higher-value professional buyers."
+  }
+};
+
+[
+  ["500 Restaurants With No Online Ordering", "Website Opportunity", "$49", "500 records", "https://buy.athena.live/b/00w00cbmScxlc0M3xegA92B"],
+  ["500 Med Spas With Weak Booking Pages", "Website Opportunity", "$49", "500 records", "https://buy.athena.live/b/4gM00c1Mi2WL7KwaZGgA92C"],
+  ["500 Contractors Without Quote Forms", "Website Opportunity", "$49", "500 records", "https://buy.athena.live/b/dRmdR2cqWcxl9SE1p6gA92D"],
+  ["500 Lawyers With Slow/Outdated Websites", "Website Opportunity", "$49", "500 records", "https://buy.athena.live/b/aFacMYbmSgNB0i43xegA92E"],
+  ["500 Churches With Outdated Websites", "Website Opportunity", "$49", "500 records", "https://buy.athena.live/b/00w4gsaiO9l96GsffWgA92F"],
+  ["500 Dentists Without Online Scheduling", "Website Opportunity", "$49", "500 records", "https://buy.athena.live/b/28E6oA62y54T5Co3xegA92G"],
+  ["500 Local Businesses With Broken Contact Forms", "Website Opportunity", "$49", "500 records", "https://buy.athena.live/b/00w7sEfD82WL6Gs6JqgA92H"],
+  ["500 Businesses With No SSL / Bad Mobile UX", "Website Opportunity", "$49", "500 records", "https://buy.athena.live/b/3cI28k4Yubth0i42tagA92I"],
+  ["500 Businesses With No Google Reviews Widget/Testimonials", "Website Opportunity", "$49", "500 records", "https://buy.athena.live/b/8x29AM4Yu8h5fcY8RygA92J"],
+  ["500 Businesses Still Using PDF Intake Forms", "AI Automation Opportunity", "$79", "500 records", "https://buy.athena.live/b/bJe14g9eK2WL7Kw3xegA92K"],
+  ["500 Clinics Without Online Intake", "AI Automation Opportunity", "$79", "500 records", "https://buy.athena.live/b/28EdR20IeeFtaWI6JqgA92L"],
+  ["500 Law Firms Without Chatbot/Intake Automation", "AI Automation Opportunity", "$79", "500 records", "https://buy.athena.live/b/8x25kw1MifJx8OA6JqgA92M"],
+  ["500 Real Estate Agents Without Lead Capture", "AI Automation Opportunity", "$79", "500 records", "https://buy.athena.live/b/28E7sE1MieFtgh22tagA92N"],
+  ["500 Service Businesses Without Quote Automation", "AI Automation Opportunity", "$79", "500 records", "https://buy.athena.live/b/fZu5kwgHc7d12qcffWgA92O"],
+  ["500 Businesses Using Generic Gmail/Yahoo Emails", "AI Automation Opportunity", "$79", "500 records", "https://buy.athena.live/b/14AbIUfD854T7Kw5FmgA92P"],
+  ["500 LA Food Influencers With Public Emails", "Creator Intelligence Lists", "$299", "500 records", "https://buy.athena.live/b/5kQ6oAbmSapdd4QffWgA92Q"],
+  ["500 Local Micro-Influencers Under 50k Followers", "Creator Intelligence Lists", "$199", "500 records", "https://buy.athena.live/b/3cI14gfD8cxl3ugffWgA92R"],
+  ["500 Twitch Streamers With Recent Stream Dates", "Creator Intelligence Lists", "$299", "500 records", "https://buy.athena.live/b/eVqeV62Qm9l9d4Q8RygA92S"],
+  ["500 YouTube Channels With Sponsor Emails", "Creator Intelligence Lists", "$199", "500 records", "https://buy.athena.live/b/cNi7sE76C9l94yk6JqgA92T"],
+  ["500 Product Review Bloggers Accepting PR", "Creator Intelligence Lists", "$199", "500 records", "https://buy.athena.live/b/14A14gdv0fJx4yk0l2gA92U"],
+  ["500 Wedding Bloggers With SEO Traffic Signals", "Creator Intelligence Lists", "$199", "500 records", "https://buy.athena.live/b/4gM5kwgHcapd6Gs1p6gA92V"],
+  ["500 Mom Bloggers With Sponsor/Contact Pages", "Creator Intelligence Lists", "$199", "500 records", "https://buy.athena.live/b/28E5kwfD8gNBe8UaZGgA92W"],
+  ["500 AI Newsletter Creators", "Creator Intelligence Lists", "$299", "500 records", "https://buy.athena.live/b/eVqeV6bmSbth7Kw3xegA92X"],
+  ["500 Finance TikTok/YouTube Creators With Business Emails", "Creator Intelligence Lists", "$299", "500 records", "https://buy.athena.live/b/7sY3cocqWapd4ykd7OgA92Y"],
+  ["1,000 Independent Artist Websites With Booking Contacts", "Events and Venues", "$99", "1,000 records", "https://buy.athena.live/b/aFa9AMbmSapd8OAc3KgA92Z"],
+  ["500 Event Promoters in LA", "Events and Venues", "$99", "500 records", "https://buy.athena.live/b/eVq3co9eKfJxe8U3xegA930"],
+  ["500 Wedding Venues in Southern California", "Events and Venues", "$99", "500 records", "https://buy.athena.live/b/aFa00c76C2WLd4Q8RygA931"],
+  ["500 Comedy Clubs/Open Mic Venues", "Events and Venues", "$99", "500 records", "https://buy.athena.live/b/5kQ9AM1MigNB7Kwd7OgA932"],
+  ["500 Churches With Rentable Event Halls", "Events and Venues", "$99", "500 records", "https://buy.athena.live/b/dRm7sE4YufJx0i44BigA933"],
+  ["500 Small Music Venues With Booking Emails", "Events and Venues", "$99", "500 records", "https://buy.athena.live/b/cNi14ggHc7d1c0M5FmgA934"],
+  ["500 Festival Organizers by State", "Events and Venues", "$99", "500 records", "https://buy.athena.live/b/3cI3co3Uq2WL0i43xegA935"],
+  ["500 DJs/Wedding Entertainers With Websites", "Events and Venues", "$99", "500 records", "https://buy.athena.live/b/cNieV62QmgNB8OAffWgA936"],
+  ["500 Personal Injury Law Firms in California", "Professional Services", "$149", "500 records", "https://buy.athena.live/b/6oU5kwez4bth0i44BigA937"],
+  ["500 Immigration Lawyers in California", "Professional Services", "$149", "500 records", "https://buy.athena.live/b/5kQbIU8aG0ODc0M5FmgA938"],
+  ["500 Med Spas in Southern California", "Professional Services", "$149", "500 records", "https://buy.athena.live/b/7sY4gsaiOfJx2qcffWgA939"],
+  ["500 Boutique Hotels in California", "Professional Services", "$149", "500 records", "https://buy.athena.live/b/6oUcMYez4cxlfcY6JqgA93a"],
+  ["500 Private Schools With Admissions Contacts", "Professional Services", "$149", "500 records", "https://buy.athena.live/b/bJe4gsfD8cxl1m89VCgA93b"],
+  ["500 Property Managers in California", "Professional Services", "$149", "500 records", "https://buy.athena.live/b/5kQ7sEcqWapdfcYgk0gA93c"],
+  ["500 Accounting Firms Serving Small Businesses", "Professional Services", "$149", "500 records", "https://buy.athena.live/b/5kQ28kdv0eFt1m88RygA93d"],
+  ["500 Dental Practices With Outdated Websites", "Professional Services", "$149", "500 records", "https://buy.athena.live/b/7sY9AMbmSfJx5CoebSgA93e"]
+].forEach(([title, category, price, records, paymentLink]) => {
+  const content = opportunityProductContent[category];
+  products.push({
+    title,
+    category,
+    price,
+    records,
+    description: content.description(title),
+    fields: content.fields,
+    bestFor: content.bestFor,
+    paymentLink
+  });
+});
+
 const creatorIntelligenceFields = {
   influencer: "creator_name, platform, profile_url, niche, city_or_region, follower_range, engagement_signal, public_email_or_contact_link, website, other_socials, content_style, brand_fit, last_post_date, source_url, brand_fit_score, local_relevance_score, contactability_score, activity_score, notes.",
   blogger: "Blog name, website URL, blog niche, location or market, estimated traffic range, SEO strength indicator, contact email, contact page, sponsor page URL, affiliate links detected, Amazon affiliate signal, recent post date, active/inactive status, social links, best sponsorship fit, activity_score, contactability_score, monetization_score, kumquat_score, source URL, last_verified.",

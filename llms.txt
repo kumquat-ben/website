@@ -1,6 +1,6 @@
 # Kumquat
 
-Kumquat sells 237 curated niche B2B business and creator intelligence lists delivered as CSV datasets for sales outreach, market research, partnerships, sponsorship, software sales, agency prospecting, and business discovery.
+Kumquat sells 277 curated niche B2B business and creator intelligence lists delivered as CSV datasets for sales outreach, market research, partnerships, sponsorship, software sales, agency prospecting, and business discovery.
 
 ## Core Pages
 
