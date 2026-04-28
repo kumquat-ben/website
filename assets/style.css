@@ -328,6 +328,10 @@ h3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.featured-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .product-card {
   display: flex;
   flex-direction: column;
@@ -805,6 +809,7 @@ textarea {
 
   .product-grid,
   .catalog-grid,
+  .featured-grid,
   .steps,
   .policy-grid,
   .request-grid {
@@ -875,6 +880,7 @@ textarea {
 
   .product-grid,
   .catalog-grid,
+  .featured-grid,
   .steps,
   .policy-grid,
   .qa-grid,

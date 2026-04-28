@@ -1,6 +1,6 @@
 # Kumquat
 
-Kumquat sells curated niche B2B business lists delivered as CSV datasets for sales outreach, market research, partnerships, agency prospecting, and business discovery.
+Kumquat sells 200 curated niche B2B business lists delivered as CSV datasets for sales outreach, market research, partnerships, sponsorship, software sales, agency prospecting, and business discovery.
 
 ## Core Pages
 
@@ -12,11 +12,11 @@ Kumquat sells curated niche B2B business lists delivered as CSV datasets for sal
 
 ## What Kumquat Sells
 
-Kumquat sells downloadable CSV business lists organized by niche, geography, industry, buyer type, and use case. Example categories include local businesses, events, professional services, website-opportunity lists, high-intent sales signals, niche industries, creator and internet businesses, government and public data, and real estate or property lists.
+Kumquat sells downloadable CSV business lists organized by niche, geography, industry, buyer type, and use case. Categories include website opportunity, software gap, ad spend signal, events and venues, professional services, real estate and property, creator and internet business, government and public organization, local sponsorship, and high-signal opportunity lists.
 
 ## Common Dataset Fields
 
-Fields vary by product and may include business name, website, city, state, phone number, public email, contact page, social link, source URL, category, issue spotted, last-verified date, and notes.
+Fields vary by product and may include business name, website, city, state, category, opportunity signal, phone number, public email, contact page, social link, landing page, source URL, last-verified date, and notes.
 
 ## Delivery
 
