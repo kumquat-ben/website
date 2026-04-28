@@ -2012,13 +2012,13 @@ const products = [
 ];
 
 const creatorIntelligenceFields = {
-  influencer: "Creator name, brand/account name, platform, profile URL, niche, location, language, follower range, average views or likes where available, engagement signal, public email, contact page, sponsor page, link-in-bio URL, recent activity, audience type, sponsor signals, activity_score, contactability_score, brand_fit_score, monetization_score, kumquat_score, source URL, last_verified.",
+  influencer: "creator_name, platform, profile_url, niche, city_or_region, follower_range, engagement_signal, public_email_or_contact_link, website, other_socials, content_style, brand_fit, last_post_date, source_url, brand_fit_score, local_relevance_score, contactability_score, activity_score, notes.",
   blogger: "Blog name, website URL, blog niche, location or market, estimated traffic range, SEO strength indicator, contact email, contact page, sponsor page URL, affiliate links detected, Amazon affiliate signal, recent post date, active/inactive status, social links, best sponsorship fit, activity_score, contactability_score, monetization_score, kumquat_score, source URL, last_verified.",
   streamer: "Creator name, platform, channel URL, category or game, location where public, audience language, follower count, average viewers, stream frequency, recent stream date, Discord/community link, business email, sponsor/contact page, brand-safe score, engagement signal, activity_score, contactability_score, brand_fit_score, monetization_score, kumquat_score, source URL, last_verified."
 };
 
 const creatorIntelligenceBestFor = {
-  influencer: "Restaurants, CPG brands, beauty brands, med spas, ecommerce teams, event promoters, real estate marketers, PR agencies, affiliate managers, and local businesses buy this to find micro-creators they can realistically sponsor.",
+  influencer: "Restaurants, CPG brands, beauty brands, med spas, gyms, wedding venues, real estate marketers, SaaS teams, PR agencies, affiliate managers, event promoters, and local businesses buy this to know which creators to contact first.",
   blogger: "Affiliate managers, SEO teams, PR agencies, ecommerce brands, SaaS marketers, hotels, restaurants, lenders, real estate vendors, and product launch teams buy this to find publishers with contact paths, sponsor pages, and search traffic.",
   streamer: "Gaming brands, apps, SaaS tools, creator partnerships teams, Discord/community products, agencies, esports vendors, fintech and crypto marketers, music brands, and affiliate managers buy this to find streamers with reachable niche audiences."
 };
@@ -2029,6 +2029,13 @@ function creatorDescription(title, type) {
 }
 
 [
+  ["500 LA Food Micro-Influencers with Contact Links", "influencer", "$299", "500 records", "https://buy.athena.live/b/3cI14gez468X9SEebSgA92u"],
+  ["1,000 Beauty Creators in California for Skincare & Med Spa Outreach", "influencer", "$499", "1,000 records", "https://buy.athena.live/b/28E8wIcqW68XaWId7OgA92v"],
+  ["300 Wedding & Bridal Creators for Venue Promotion", "influencer", "$199", "300 records", "https://buy.athena.live/b/fZu00ccqWdBp2qc5FmgA92w"],
+  ["500 AI Tool Reviewers on YouTube, TikTok, and X", "influencer", "$299", "500 records", "https://buy.athena.live/b/6oU3co2Qm8h56Gsd7OgA92x"],
+  ["250 Armenian-American Creators in Los Angeles", "influencer", "$199", "250 records", "https://buy.athena.live/b/7sYbIU4YudBp2qcffWgA92y"],
+  ["500 Real Estate Creators in California", "influencer", "$199", "500 records", "https://buy.athena.live/b/9B628k76C7d16Gs2tagA92z"],
+  ["1,000 Fitness Micro-Influencers with Public Emails", "influencer", "$499", "1,000 records", "https://buy.athena.live/b/6oU14gez4dBp6Gs5FmgA92A"],
   ["500 LA Food Influencers With Emails + Engagement Signals", "influencer", "$299", "500 records", "https://buy.athena.live/b/14A7sE4Yuapd4yk1p6gA920"],
   ["1,000 Beauty & Skincare Influencers Accepting Brand Deals", "influencer", "$499", "1,000 records", "https://buy.athena.live/b/3cI8wIaiOeFt2qc7NugA921"],
   ["500 Fitness Micro-Influencers in California", "influencer", "$199", "500 records", "https://buy.athena.live/b/28E8wI62y68X6Gsd7OgA922"],

@@ -496,6 +496,23 @@ h3 {
   margin-top: 8px;
 }
 
+.topic-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.topic-cloud span {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--white);
+  color: #405040;
+  padding: 7px 10px;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
 .catalog-note {
   margin-top: 28px;
   padding: 22px;
