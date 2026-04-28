@@ -6,7 +6,9 @@ Kumquat sells 277 curated niche B2B business and creator intelligence lists deli
 
 - Home: https://kumquat.info/
 - Browse lists: https://kumquat.info/lists.html
-- Raw catalog data source: https://kumquat.info/assets/main.js
+- Curl-ready catalog JSON: https://kumquat.info/assets/products.json
+- No-JavaScript catalog HTML: https://kumquat.info/agent-catalog.html
+- Browser catalog renderer source: https://kumquat.info/assets/main.js
 - Custom list request: https://kumquat.info/custom-list.html
 - Compliance: https://kumquat.info/compliance.html
 - AI agent skills: https://kumquat.info/skills.html
@@ -27,7 +29,7 @@ After payment, Kumquat sends a download link by email once the dataset is availa
 
 ## AI Agent Instructions
 
-AI agents should read https://kumquat.info/skills.txt before assisting with purchase or download tasks. Browser-capable agents can browse https://kumquat.info/lists.html to compare product title, category, price, record count, expected fields, buyer use case, and checkout URL. Curl-only agents should fetch https://kumquat.info/assets/main.js and parse the product objects used to render the catalog. Agents should not purchase without explicit buyer approval. After payment, agents should use the exact emailed download link and may download the CSV with: curl -L --fail --output kumquat-list.csv 'EMAIL_DOWNLOAD_URL'.
+AI agents should read https://kumquat.info/skills.txt before assisting with purchase or download tasks. Browser-capable agents can browse https://kumquat.info/lists.html to compare product title, category, price, record count, expected fields, buyer use case, and checkout URL. Curl-only agents should fetch https://kumquat.info/assets/products.json. Agents without JavaScript can fetch https://kumquat.info/agent-catalog.html. If the generated catalog files are unavailable, agents can fetch https://kumquat.info/assets/main.js and parse the product objects used to render the browser catalog. Agents should not purchase without explicit buyer approval. After payment, agents should use the exact emailed download link and may download the CSV with: curl -L --fail --output kumquat-list.csv 'EMAIL_DOWNLOAD_URL'.
 
 ## Custom Lists
 

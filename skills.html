@@ -37,7 +37,7 @@
         "description": "AI agents can discover Kumquat pages, search the catalog, open checkout links with user approval, and download the emailed CSV link with curl.",
         "step": [
           { "@type": "HowToStep", "name": "Discover", "text": "Read https://kumquat.info/llms.txt, https://kumquat.info/skills.txt, and https://kumquat.info/sitemap.xml before browsing the site." },
-          { "@type": "HowToStep", "name": "Browse", "text": "Use https://kumquat.info/lists.html in a browser, or fetch https://kumquat.info/assets/main.js for the raw product data used to render the catalog." },
+          { "@type": "HowToStep", "name": "Browse", "text": "Use https://kumquat.info/lists.html in a browser, fetch https://kumquat.info/assets/products.json with curl, or fetch https://kumquat.info/agent-catalog.html when JavaScript is unavailable." },
           { "@type": "HowToStep", "name": "Order", "text": "After explicit user approval, open the product checkout link shown on the matching product card. For unavailable needs, use https://kumquat.info/custom-list.html." },
           { "@type": "HowToStep", "name": "Download", "text": "After payment, the buyer receives an email download link. Use the exact emailed link with curl -L -o filename.csv 'EMAIL_DOWNLOAD_URL'." }
         ]
@@ -97,7 +97,7 @@
         </div>
         <div class="steps">
           <article><span>1</span><h3>Read discovery files.</h3><p>Fetch <a href="llms.txt">llms.txt</a>, <a href="skills.txt">skills.txt</a>, and <a href="sitemap.xml">sitemap.xml</a> before selecting a page.</p></article>
-          <article><span>2</span><h3>View the catalog.</h3><p>Open <a href="lists.html">lists.html</a> in a browser, or fetch <a href="assets/main.js">assets/main.js</a> for the raw product data.</p></article>
+          <article><span>2</span><h3>View the catalog.</h3><p>Open <a href="lists.html">lists.html</a> in a browser, fetch <a href="assets/products.json">assets/products.json</a> with curl, or use <a href="agent-catalog.html">agent-catalog.html</a> when JavaScript is unavailable.</p></article>
           <article><span>3</span><h3>Order the list.</h3><p>Ask for explicit buyer approval, then open the selected product checkout link. Use the custom-list page when no exact list matches.</p></article>
           <article><span>4</span><h3>Download delivery.</h3><p>After payment, use the exact emailed download link with curl and save the file as a CSV.</p></article>
         </div>
@@ -112,7 +112,7 @@
         </div>
         <div>
           <ul class="check-list check-list-plain">
-            <li>Browser-capable agents should use <a href="lists.html">lists.html</a>. Curl-only agents should fetch <a href="assets/main.js">assets/main.js</a> and parse the product objects.</li>
+            <li>Browser-capable agents should use <a href="lists.html">lists.html</a>. Curl-only agents should fetch <a href="assets/products.json">assets/products.json</a>. Agents without JavaScript should use <a href="agent-catalog.html">agent-catalog.html</a>.</li>
             <li>Search by industry, geography, buyer type, record count, signal, field, or use case.</li>
             <li>Prefer the most specific matching list over a broader related list.</li>
             <li>Confirm expected fields before ordering, especially website, phone, public email, source URL, social link, or score fields.</li>
@@ -163,8 +163,11 @@ curl -L https://kumquat.info/llms.txt
 # 2. Browse product catalog page
 curl -L https://kumquat.info/lists.html
 
-# 2a. Curl-only agents can fetch the raw catalog data source
-curl -L https://kumquat.info/assets/main.js
+# 2a. Curl-only agents can fetch structured catalog data
+curl -L --fail https://kumquat.info/assets/products.json
+
+# 2b. No-JavaScript agents can fetch a static catalog page
+curl -L --fail https://kumquat.info/agent-catalog.html
 
 # 3. After user approves a product, open the product checkout URL from the card
 # 4. After payment email arrives, download the delivered CSV

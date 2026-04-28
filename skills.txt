@@ -7,7 +7,9 @@ Plain text guide: https://kumquat.info/skills.txt
 LLM discovery file: https://kumquat.info/llms.txt
 Sitemap: https://kumquat.info/sitemap.xml
 Catalog: https://kumquat.info/lists.html
-Raw catalog data source: https://kumquat.info/assets/main.js
+Curl-ready catalog JSON: https://kumquat.info/assets/products.json
+No-JavaScript catalog HTML: https://kumquat.info/agent-catalog.html
+Browser catalog renderer source: https://kumquat.info/assets/main.js
 Custom request: https://kumquat.info/custom-list.html
 Compliance: https://kumquat.info/compliance.html
 Contact: https://kumquat.info/contact.html
@@ -19,10 +21,12 @@ Discovery:
 
 Viewing lists:
 1. Browser-capable agents should open https://kumquat.info/lists.html.
-2. Curl-only agents should fetch https://kumquat.info/assets/main.js and parse the product objects used to render the catalog.
-3. Search or parse product data by title, category, price, record count, description, expected fields, buyer use case, and checkout URL.
-4. Prefer the most specific matching list.
-5. Confirm the title, price, record count, expected fields, and checkout URL with the buyer before purchase.
+2. Curl-only agents should fetch https://kumquat.info/assets/products.json for structured product data.
+3. Agents without JavaScript should fetch https://kumquat.info/agent-catalog.html for a static HTML catalog.
+4. If those generated files are unavailable, fetch https://kumquat.info/assets/main.js and parse the product objects used to render the browser catalog.
+5. Search or parse product data by title, category, price, record count, description, expected fields, buyer use case, and checkout URL.
+6. Prefer the most specific matching list.
+7. Confirm the title, price, record count, expected fields, and checkout URL with the buyer before purchase.
 
 Ordering:
 1. Do not purchase or open payment checkout without explicit buyer approval.
