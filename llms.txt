@@ -6,8 +6,11 @@ Kumquat sells 237 curated niche B2B business and creator intelligence lists deli
 
 - Home: https://kumquat.info/
 - Browse lists: https://kumquat.info/lists.html
+- Raw catalog data source: https://kumquat.info/assets/main.js
 - Custom list request: https://kumquat.info/custom-list.html
 - Compliance: https://kumquat.info/compliance.html
+- AI agent skills: https://kumquat.info/skills.html
+- Plain-text AI agent instructions: https://kumquat.info/skills.txt
 - Contact: https://kumquat.info/contact.html
 
 ## What Kumquat Sells
@@ -21,6 +24,10 @@ Fields vary by product and may include business name, website, city, state, cate
 ## Delivery
 
 After payment, Kumquat sends a download link by email once the dataset is available. Delivery can take a few seconds, up to 24 hours, or longer if manual review or processing is required.
+
+## AI Agent Instructions
+
+AI agents should read https://kumquat.info/skills.txt before assisting with purchase or download tasks. Browser-capable agents can browse https://kumquat.info/lists.html to compare product title, category, price, record count, expected fields, buyer use case, and checkout URL. Curl-only agents should fetch https://kumquat.info/assets/main.js and parse the product objects used to render the catalog. Agents should not purchase without explicit buyer approval. After payment, agents should use the exact emailed download link and may download the CSV with: curl -L --fail --output kumquat-list.csv 'EMAIL_DOWNLOAD_URL'.
 
 ## Custom Lists
 

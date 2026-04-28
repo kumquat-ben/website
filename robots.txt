@@ -13,4 +13,10 @@ Allow: /
 User-agent: PerplexityBot
 Allow: /
 
+User-agent: Claude-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
 Sitemap: https://kumquat.info/sitemap.xml

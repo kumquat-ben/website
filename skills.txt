@@ -1,0 +1,47 @@
+# Kumquat AI Agent Skills
+
+Purpose: instructions for AI agents that need to help a buyer find, compare, order, and download Kumquat CSV business lists.
+
+Canonical agent guide: https://kumquat.info/skills.html
+Plain text guide: https://kumquat.info/skills.txt
+LLM discovery file: https://kumquat.info/llms.txt
+Sitemap: https://kumquat.info/sitemap.xml
+Catalog: https://kumquat.info/lists.html
+Raw catalog data source: https://kumquat.info/assets/main.js
+Custom request: https://kumquat.info/custom-list.html
+Compliance: https://kumquat.info/compliance.html
+Contact: https://kumquat.info/contact.html
+
+Discovery:
+1. Fetch https://kumquat.info/llms.txt and https://kumquat.info/skills.txt before navigating.
+2. Use https://kumquat.info/sitemap.xml for canonical page URLs.
+3. The site allows AI agents in robots.txt.
+
+Viewing lists:
+1. Browser-capable agents should open https://kumquat.info/lists.html.
+2. Curl-only agents should fetch https://kumquat.info/assets/main.js and parse the product objects used to render the catalog.
+3. Search or parse product data by title, category, price, record count, description, expected fields, buyer use case, and checkout URL.
+4. Prefer the most specific matching list.
+5. Confirm the title, price, record count, expected fields, and checkout URL with the buyer before purchase.
+
+Ordering:
+1. Do not purchase or open payment checkout without explicit buyer approval.
+2. Use the selected product card checkout link when a listed product matches.
+3. Use https://kumquat.info/custom-list.html when the buyer needs a niche, geography, record count, or field set not listed.
+4. For custom requests, collect niche or industry, city/state/region/country, target record count, required fields, budget, timeline, and examples of ideal records.
+
+Delivery:
+1. After payment, Kumquat emails a download link once the dataset is available.
+2. Delivery can take a few seconds, up to 24 hours, or longer if manual review or processing is required.
+3. Do not invent or guess delivery URLs.
+4. Use only the exact emailed download link provided by the buyer or authorized mailbox access.
+
+Curl download:
+curl -L --fail --output kumquat-list.csv 'EMAIL_DOWNLOAD_URL'
+
+If a signed download link expires:
+1. Ask the buyer for a fresh email download link.
+2. Or contact info@athena.live with the order details.
+
+Compliance:
+Read https://kumquat.info/compliance.html before helping with outreach. Buyers are responsible for applicable email, privacy, advertising, opt-out, and data-use rules.

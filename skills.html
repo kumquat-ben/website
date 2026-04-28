@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Instructions for AI agents using Kumquat to find, evaluate, order, and download CSV business lists.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#f47b20">
+  <link rel="canonical" href="https://kumquat.info/skills.html">
+  <link rel="alternate" type="text/plain" href="https://kumquat.info/skills.txt">
+  <title>AI Agent Skills — Kumquat</title>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Kumquat">
+  <meta property="og:title" content="AI Agent Skills — Kumquat">
+  <meta property="og:description" content="Machine-readable buying and download instructions for AI agents working with Kumquat CSV lists.">
+  <meta property="og:url" content="https://kumquat.info/skills.html">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="AI Agent Skills — Kumquat">
+  <meta name="twitter:description" content="Instructions for agents to browse, compare, order, and download Kumquat CSV datasets.">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://kumquat.info/skills.html#webpage",
+        "url": "https://kumquat.info/skills.html",
+        "name": "AI Agent Skills — Kumquat",
+        "description": "Instructions for AI agents using Kumquat to find, evaluate, order, and download CSV business lists.",
+        "isPartOf": { "@id": "https://kumquat.info/#website" },
+        "about": { "@id": "https://kumquat.info/#organization" }
+      },
+      {
+        "@type": "HowTo",
+        "@id": "https://kumquat.info/skills.html#howto",
+        "name": "How AI agents should use Kumquat lists",
+        "description": "AI agents can discover Kumquat pages, search the catalog, open checkout links with user approval, and download the emailed CSV link with curl.",
+        "step": [
+          { "@type": "HowToStep", "name": "Discover", "text": "Read https://kumquat.info/llms.txt, https://kumquat.info/skills.txt, and https://kumquat.info/sitemap.xml before browsing the site." },
+          { "@type": "HowToStep", "name": "Browse", "text": "Use https://kumquat.info/lists.html in a browser, or fetch https://kumquat.info/assets/main.js for the raw product data used to render the catalog." },
+          { "@type": "HowToStep", "name": "Order", "text": "After explicit user approval, open the product checkout link shown on the matching product card. For unavailable needs, use https://kumquat.info/custom-list.html." },
+          { "@type": "HowToStep", "name": "Download", "text": "After payment, the buyer receives an email download link. Use the exact emailed link with curl -L -o filename.csv 'EMAIL_DOWNLOAD_URL'." }
+        ]
+      }
+    ]
+  }
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9CSN4VQC4H"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag("js", new Date());
+    gtag("config", "G-9CSN4VQC4H");
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><i class="fa-solid fa-lemon"></i></span><span>Kumquat</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+      <div class="nav-menu" id="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="lists.html">Lists</a>
+        <a href="custom-list.html">Custom List</a>
+        <a href="compliance.html">Compliance</a>
+        <a href="skills.html">AI Skills</a>
+        <a href="contact.html">Contact</a>
+        <a class="button button-small" href="lists.html">Browse Lists</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">AI agent skills</p>
+        <h1>Use Kumquat lists correctly.</h1>
+        <p>This page gives AI agents the operating instructions needed to discover Kumquat, compare available CSV business lists, order with user approval, and download the emailed delivery link with curl.</p>
+        <div class="hero-actions">
+          <a class="button" href="lists.html">Browse Lists</a>
+          <a class="button button-secondary" href="skills.txt">Plain Text Instructions</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Agent workflow</p>
+          <h2>Follow these steps in order.</h2>
+        </div>
+        <div class="steps">
+          <article><span>1</span><h3>Read discovery files.</h3><p>Fetch <a href="llms.txt">llms.txt</a>, <a href="skills.txt">skills.txt</a>, and <a href="sitemap.xml">sitemap.xml</a> before selecting a page.</p></article>
+          <article><span>2</span><h3>View the catalog.</h3><p>Open <a href="lists.html">lists.html</a> in a browser, or fetch <a href="assets/main.js">assets/main.js</a> for the raw product data.</p></article>
+          <article><span>3</span><h3>Order the list.</h3><p>Ask for explicit buyer approval, then open the selected product checkout link. Use the custom-list page when no exact list matches.</p></article>
+          <article><span>4</span><h3>Download delivery.</h3><p>After payment, use the exact emailed download link with curl and save the file as a CSV.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <div>
+          <p class="eyebrow">View and compare</p>
+          <h2>How agents should evaluate lists.</h2>
+        </div>
+        <div>
+          <ul class="check-list check-list-plain">
+            <li>Browser-capable agents should use <a href="lists.html">lists.html</a>. Curl-only agents should fetch <a href="assets/main.js">assets/main.js</a> and parse the product objects.</li>
+            <li>Search by industry, geography, buyer type, record count, signal, field, or use case.</li>
+            <li>Prefer the most specific matching list over a broader related list.</li>
+            <li>Confirm expected fields before ordering, especially website, phone, public email, source URL, social link, or score fields.</li>
+            <li>Tell the user the product title, price, record count, expected fields, and checkout URL before purchase.</li>
+            <li>Use <a href="custom-list.html">custom-list.html</a> when the user needs a niche, location, record count, or field set not listed.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Curl download</p>
+          <h2>Use the emailed link exactly.</h2>
+          <p>Payment checkouts do not expose the final CSV publicly. After the buyer pays, Kumquat emails a download link once the dataset is available. Agents should wait for the buyer to provide that emailed link or authorized mailbox access, then download it directly.</p>
+        </div>
+        <div class="code-card">
+          <p><strong>Recommended command</strong></p>
+          <pre><code>curl -L --fail --output kumquat-list.csv 'EMAIL_DOWNLOAD_URL'</code></pre>
+          <p><strong>Authenticated or signed links</strong></p>
+          <pre><code>curl -L --fail --output kumquat-list.csv 'PASTE_THE_FULL_EMAIL_LINK_HERE'</code></pre>
+        </div>
+        <div class="qa-grid qa-grid-single agent-notes">
+          <article>
+            <h3>Do not invent delivery URLs.</h3>
+            <p>Use only the checkout URLs on Kumquat product cards and the exact post-payment email download link. If a signed link expires, ask the buyer to request a fresh link through <a href="contact.html">contact.html</a> or info@athena.live.</p>
+          </article>
+          <article>
+            <h3>Respect lawful-use boundaries.</h3>
+            <p>Before using downloaded records for outreach, read <a href="compliance.html">compliance.html</a>. Buyers are responsible for applicable privacy, advertising, email, and opt-out rules.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Machine-readable summary</p>
+          <h2>Agent command sequence.</h2>
+        </div>
+        <div class="code-card">
+          <pre><code># 1. Read agent instructions
+curl -L https://kumquat.info/skills.txt
+curl -L https://kumquat.info/llms.txt
+
+# 2. Browse product catalog page
+curl -L https://kumquat.info/lists.html
+
+# 2a. Curl-only agents can fetch the raw catalog data source
+curl -L https://kumquat.info/assets/main.js
+
+# 3. After user approves a product, open the product checkout URL from the card
+# 4. After payment email arrives, download the delivered CSV
+curl -L --fail --output selected-kumquat-list.csv 'EMAIL_DOWNLOAD_URL'</code></pre>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><i class="fa-solid fa-lemon"></i></span><span>Kumquat</span></a><p>Fresh leads. Picked by niche.</p></div>
+      <div class="footer-links"><a href="index.html">Home</a><a href="lists.html">Lists</a><a href="custom-list.html">Custom List</a><a href="compliance.html">Compliance</a><a href="skills.html">AI Skills</a><a href="contact.html">Contact</a></div>
+    </div>
+    <div class="container footer-bottom">
+      <p>Powered by Athena Live LLC, USA.</p>
+      <p>&copy; 2026 Kumquat. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="assets/main.js"></script>
+</body>
+</html>
