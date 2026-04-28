@@ -2376,6 +2376,171 @@ const followupProductContent = {
   });
 });
 
+
+const april2026ProductContent = {
+  "AI Automation Opportunity": {
+    description: (title) => "An AI automation opportunity CSV focused on businesses with visible lead-response, chat, booking, intake, receptionist, or AI SDR gaps. This product focuses on " + titleFocus(title) + " and is delivered as a CSV download link by email once available.",
+    fields: "Business name, website, city, state, category, lead response or intake signal, chat or booking status, AI tool gap, contact page, phone, public email where available, source URL, suggested outreach angle, notes.",
+    bestFor: "AI automation agencies, AI sales-agent builders, chatbot vendors, CRM consultants, booking platforms, appointment-setting teams, and outbound operators buy this list to find prospects with obvious automation gaps."
+  },
+  "AI Outbound Prospect": {
+    description: (title) => "An AI outbound prospect CSV built for teams selling into agencies, SaaS companies, consultants, and operators already using outbound or automation workflows. This product focuses on " + titleFocus(title) + " and is delivered as a CSV download link by email once available.",
+    fields: "Company name, website, niche, city or market where available, founder or public contact path, public email where available, outbound-relevance signal, tool or service signal, source URL, notes.",
+    bestFor: "Cold email agencies, Clay and Smartlead operators, AI SDR teams, GoHighLevel agencies, automation consultants, SaaS founders, and growth teams buy this list for immediate outbound campaigns."
+  },
+  "Agent Stats": {
+    description: (title) => "A premium Agent Stats CSV combining basic lead fields with lead score, contactability score, urgency score, tech gap, ad signal, suggested outreach angle, and a cold email prompt. This product focuses on " + titleFocus(title) + " and is delivered as a CSV download link by email once available.",
+    fields: "Name, website, city, phone, public email, contact page, lead score, contactability score, urgency score, tech gap, ad signal, suggested outreach angle, cold email prompt, source URLs, notes.",
+    bestFor: "AI sales-agent teams, outbound agencies, SDR teams, automation consultants, SaaS sellers, local marketing agencies, and RevOps teams buy this premium edition when they want both prospect records and ready-to-use outreach context."
+  },
+  "Creator Intelligence": {
+    description: (title) => "A Creator Intelligence CSV focused on reachable sponsorship, affiliate, UGC, consulting, PR, and partnership opportunities. This product focuses on " + titleFocus(title) + " and is delivered as a CSV download link by email once available.",
+    fields: "Creator or publisher name, platform, profile or website URL, niche, location where public, audience or follower signal, sponsor or affiliate signal, public email or contact page, source URL, notes.",
+    bestFor: "Brands, PR agencies, sponsorship teams, affiliate managers, creator partnership teams, ecommerce operators, local marketers, and SaaS companies buy this list to find reachable creators."
+  },
+  "Ecommerce / Shopify Buyer": {
+    description: (title) => "An ecommerce buyer CSV focused on Shopify, DTC, affiliate, SMS, live chat, page speed, ads, and lifecycle marketing signals. This product focuses on " + titleFocus(title) + " and is delivered as a CSV download link by email once available.",
+    fields: "Brand name, website, ecommerce platform signal, category, country or market where available, marketing tech signal, conversion gap, affiliate or influencer page where available, contact page, public email where available, source URL, notes.",
+    bestFor: "Email agencies, SMS platforms, CRO consultants, influencer agencies, affiliate managers, 3PLs, packaging vendors, AI support vendors, and ecommerce SaaS teams buy this list to reach active DTC buyers."
+  },
+  "Events and Venues": {
+    description: (title) => "An event-economy CSV focused on venues, organizers, promoters, planners, event vendors, booking contacts, sponsorship paths, and meeting-space opportunities. This product focuses on " + titleFocus(title) + " and is delivered as a CSV download link by email once available.",
+    fields: "Organization or venue name, website, city, state or market, event category, booking or sponsor signal, contact page, public email where available, phone, source URL, notes.",
+    bestFor: "Event tech teams, sponsorship sellers, promoters, production vendors, AV companies, booking platforms, hospitality sellers, and partnership teams buy this list to reach event-economy buyers."
+  },
+  "Hiring Signal": {
+    description: (title) => "A hiring-signal CSV focused on companies showing timely buyer intent through public roles, staffing needs, and operational expansion. This product focuses on " + titleFocus(title) + " and is delivered as a CSV download link by email once available.",
+    fields: "Company name, website, city, state or market, role being hired, hiring signal URL, department or function, likely buying need, contact page, public email where available, phone where available, source URL, notes.",
+    bestFor: "Recruiters, HR software teams, payroll vendors, training providers, agency sellers, AI automation consultants, scheduling tools, and sales teams buy this list to sell against active hiring intent."
+  },
+  "Local Service": {
+    description: (title) => "A local-service CSV focused on reachable local operators with commercial buying intent, service demand, or visible website and conversion gaps. This product focuses on " + titleFocus(title) + " and is delivered as a CSV download link by email once available.",
+    fields: "Business name, website, city, state, service category, local demand signal, website or conversion gap where visible, phone, public email where available, contact page, source URL, notes.",
+    bestFor: "Local marketing agencies, SEO consultants, web designers, AI receptionist vendors, booking platforms, call tracking tools, and B2B sales teams buy this list to reach local operators."
+  },
+  "Professional Services": {
+    description: (title) => "A high-ticket professional-services CSV focused on clinics, firms, facilities, consultants, and specialized providers with clear commercial value. This product focuses on " + titleFocus(title) + " and is delivered as a CSV download link by email once available.",
+    fields: "Company name, website, city, state, service type, lead value signal, booking or conversion gap where visible, phone, public email where available, contact page, source URL, notes.",
+    bestFor: "B2B SaaS teams, agencies, healthcare marketers, legal marketers, recruiters, consultants, AI automation sellers, and sales teams buy this list to reach higher-value professional buyers."
+  },
+  "Reputation Signal": {
+    description: (title) => "A reputation-signal CSV focused on businesses with review problems, response gaps, sentiment issues, or review-to-website conversion opportunities. This product focuses on " + titleFocus(title) + " and is delivered as a CSV download link by email once available.",
+    fields: "Business name, website or source profile, city, state, category, rating signal, review count, review issue, recent review or response signal, contact page, phone, public email where available, source URL, notes.",
+    bestFor: "Reputation management agencies, review software vendors, SEO agencies, local marketing consultants, CX platforms, and sales teams buy this list to find businesses with visible reputation urgency."
+  }
+};
+
+[
+  ["500 Businesses With Slow Lead Response Signals","AI Automation Opportunity","$149","500 records","https://buy.athena.live/b/00w6oAcqWfJx0i48RygAa0t"],
+  ["500 Service Businesses Missing Live Chat","AI Automation Opportunity","$99","500 records","https://buy.athena.live/b/6oU9AM1MidBp7Kw0l2gAa0u"],
+  ["500 Businesses With Contact Forms But No Booking Link","AI Automation Opportunity","$99","500 records","https://buy.athena.live/b/00wfZa3Uqapd1m8aZGgAa0v"],
+  ["500 Companies Hiring Sales Reps But No AI SDR Tool Signal","AI Automation Opportunity","$199","500 records","https://buy.athena.live/b/bJe4gs76C8h59SE7NugAa0w"],
+  ["500 Local Businesses With \"Request Quote\" Forms","AI Automation Opportunity","$99","500 records","https://buy.athena.live/b/9B6fZa2QmfJx8OAd7OgAa0x"],
+  ["500 Businesses Using Calendly/HubSpot/Formstack Signals","AI Automation Opportunity","$149","500 records","https://buy.athena.live/b/fZu8wIcqWfJxc0M7NugAa0y"],
+  ["500 SMBs With Many Reviews But Weak Website Conversion","AI Automation Opportunity","$149","500 records","https://buy.athena.live/b/00waEQ4Yu0ODd4Q4BigAa0z"],
+  ["500 Home Service Businesses Needing AI Phone Receptionists","AI Automation Opportunity","$149","500 records","https://buy.athena.live/b/4gM7sEaiOeFt3ugd7OgAa0A"],
+  ["500 Clinics/Medspas With Missed-Call Risk Signals","AI Automation Opportunity","$149","500 records","https://buy.athena.live/b/7sY9AMgHcgNB3ugd7OgAa0B"],
+  ["500 Law Firms With Intake Form But No AI Chat/Intake Bot","AI Automation Opportunity","$199","500 records","https://buy.athena.live/b/7sYeV64Yu54T0i4gk0gAa0C"],
+  ["1,000 B2B SaaS Companies With Public Founder Emails","AI Outbound Prospect","$299","1,000 records","https://buy.athena.live/b/7sY8wI2QmeFtc0MebSgAa0D"],
+  ["1,000 Agencies Selling AI Automation Services","AI Outbound Prospect","$199","1,000 records","https://buy.athena.live/b/9B628k8aG2WLe8UebSgAa0E"],
+  ["500 Cold Email Agencies by Niche","AI Outbound Prospect","$149","500 records","https://buy.athena.live/b/7sY5kwaiO9l93ug3xegAa0F"],
+  ["500 Appointment-Setting Agencies","AI Outbound Prospect","$149","500 records","https://buy.athena.live/b/6oUdR2dv054TaWId7OgAa0G"],
+  ["500 Local SEO Agencies Selling to Contractors","AI Outbound Prospect","$149","500 records","https://buy.athena.live/b/fZu4gs3Uqcxl3ug0l2gAa0H"],
+  ["500 Web Design Agencies Targeting Restaurants","AI Outbound Prospect","$149","500 records","https://buy.athena.live/b/3cIeV69eKdBpe8U3xegAa0I"],
+  ["500 Fractional CMOs / Growth Consultants","AI Outbound Prospect","$149","500 records","https://buy.athena.live/b/8x2cMY2Qmcxl7Kw0l2gAa0J"],
+  ["500 GoHighLevel Agencies by Niche","AI Outbound Prospect","$199","500 records","https://buy.athena.live/b/28E5kwdv02WL0i4gk0gAa0K"],
+  ["500 AI Consultant Websites With Contact Info","AI Outbound Prospect","$199","500 records","https://buy.athena.live/b/5kQ14g2Qm54TfcYc3KgAa0L"],
+  ["1,000 \"AI Automation Agency\" Websites","AI Outbound Prospect","$299","1,000 records","https://buy.athena.live/b/eVqbIUcqW0ODd4Q5FmgAa0M"],
+  ["500 Urgent Care Clinics","Professional Services","$149","500 records","https://buy.athena.live/b/fZu4gs76Ccxl6Gs2tagAa0N"],
+  ["500 Physical Therapy Clinics","Professional Services","$149","500 records","https://buy.athena.live/b/fZu14g8aGgNB1m8c3KgAa0O"],
+  ["500 Chiropractors Without Online Booking","Professional Services","$99","500 records","https://buy.athena.live/b/6oUaEQ3Uq7d1aWIffWgAa0P"],
+  ["500 Veterinary Clinics Without Online Booking","Professional Services","$99","500 records","https://buy.athena.live/b/8x25kwgHcbth0i4ffWgAa0Q"],
+  ["500 Assisted Living Facilities","Professional Services","$199","500 records","https://buy.athena.live/b/00wfZa8aG7d1c0M8RygAa0R"],
+  ["500 Addiction Treatment Centers","Professional Services","$249","500 records","https://buy.athena.live/b/6oU9AM9eK2WL8OA5FmgAa0S"],
+  ["500 Cosmetic Dentists","Professional Services","$149","500 records","https://buy.athena.live/b/5kQ9AMez4apdfcYffWgAa0T"],
+  ["500 Orthodontists","Professional Services","$149","500 records","https://buy.athena.live/b/00wfZagHc1SH9SE8RygAa0U"],
+  ["500 Plastic Surgery Clinics","Professional Services","$199","500 records","https://buy.athena.live/b/9B63codv068Xe8UffWgAa0V"],
+  ["500 Fertility Clinics","Professional Services","$249","500 records","https://buy.athena.live/b/28EeV6cqW9l9e8UaZGgAa0W"],
+  ["500 Funeral Homes With Outdated Websites","Local Service","$99","500 records","https://buy.athena.live/b/28EdR2aiObthd4Q5FmgAa0X"],
+  ["500 Bail Bonds Companies","Professional Services","$149","500 records","https://buy.athena.live/b/fZufZaez48h59SEffWgAa0Y"],
+  ["500 Security Guard Companies","Local Service","$149","500 records","https://buy.athena.live/b/aFa6oA9eK40P4yk0l2gAa0Z"],
+  ["500 Private Investigation Firms","Professional Services","$149","500 records","https://buy.athena.live/b/dRmdR2fD89l9e8Ud7OgAa10"],
+  ["500 Commercial Cleaning Companies","Local Service","$99","500 records","https://buy.athena.live/b/dRm8wIez4gNBc0MaZGgAa11"],
+  ["500 Pest Control Companies","Local Service","$99","500 records","https://buy.athena.live/b/9B6bIUdv02WL8OA7NugAa12"],
+  ["500 Garage Door Companies","Local Service","$99","500 records","https://buy.athena.live/b/cNi6oAdv0gNBfcY0l2gAa13"],
+  ["500 Pool Cleaning Companies","Local Service","$99","500 records","https://buy.athena.live/b/6oU4gsfD89l9c0M3xegAa14"],
+  ["500 Solar Installers","Local Service","$149","500 records","https://buy.athena.live/b/dRmaEQ76C9l98OAd7OgAa15"],
+  ["500 Roofing Companies Running Ads","Local Service","$149","500 records","https://buy.athena.live/b/dRmfZabmSdBp3ug2tagAa16"],
+  ["1,000 Shopify Stores With Klaviyo Signal","Ecommerce / Shopify Buyer","$299","1,000 records","https://buy.athena.live/b/00w14g4Yu1SH0i4ebSgAa17"],
+  ["1,000 Shopify Stores Without SMS Marketing Signal","Ecommerce / Shopify Buyer","$299","1,000 records","https://buy.athena.live/b/9B64gsfD854Td4Qgk0gAa18"],
+  ["1,000 DTC Brands With Affiliate Program Pages","Ecommerce / Shopify Buyer","$299","1,000 records","https://buy.athena.live/b/4gM00c0Ie9l99SEgk0gAa19"],
+  ["500 Shopify Stores With Poor Page Speed","Ecommerce / Shopify Buyer","$149","500 records","https://buy.athena.live/b/3cI9AM8aG7d19SE7NugAa1a"],
+  ["500 Beauty Shopify Brands","Ecommerce / Shopify Buyer","$199","500 records","https://buy.athena.live/b/00w9AM8aGgNBgh2aZGgAa1b"],
+  ["500 Pet Product Shopify Brands","Ecommerce / Shopify Buyer","$199","500 records","https://buy.athena.live/b/8x2aEQ8aG68X8OA5FmgAa1c"],
+  ["500 Supplements Brands With Public Contact Info","Ecommerce / Shopify Buyer","$199","500 records","https://buy.athena.live/b/dRm14gdv07d1fcY7NugAa1d"],
+  ["500 Apparel Brands With Influencer/Affiliate Pages","Ecommerce / Shopify Buyer","$199","500 records","https://buy.athena.live/b/eVqdR2aiOfJxc0M8RygAa1e"],
+  ["500 Shopify Stores Without Live Chat","Ecommerce / Shopify Buyer","$199","500 records","https://buy.athena.live/b/7sY3co9eK1SH8OAaZGgAa1f"],
+  ["500 Shopify Stores Running Meta Ads","Ecommerce / Shopify Buyer","$299","500 records","https://buy.athena.live/b/00w4gsbmScxl6Gsc3KgAa1g"],
+  ["500 YouTube Channels With Sponsor Email In Bio","Creator Intelligence","$299","500 records","https://buy.athena.live/b/8x27sEaiOgNB6GsebSgAa1h"],
+  ["500 Podcasts Accepting Sponsors","Creator Intelligence","$299","500 records","https://buy.athena.live/b/3cIdR22QmfJx3ug4BigAa1i"],
+  ["500 Newsletter Operators Accepting Sponsors","Creator Intelligence","$249","500 records","https://buy.athena.live/b/9B66oAez4dBp2qcc3KgAa1j"],
+  ["500 Local Event Creators With Sponsor Pages","Creator Intelligence","$199","500 records","https://buy.athena.live/b/dRm4gscqW8h53ug5FmgAa1k"],
+  ["500 TikTok Shop Affiliates by Niche","Creator Intelligence","$299","500 records","https://buy.athena.live/b/eVq5kwfD8apd5CoaZGgAa1l"],
+  ["500 UGC Creators With Public Email","Creator Intelligence","$199","500 records","https://buy.athena.live/b/5kQeV63UqeFt2qc9VCgAa1m"],
+  ["500 Amazon Influencers by Category","Creator Intelligence","$299","500 records","https://buy.athena.live/b/aFa28k8aGcxl9SEc3KgAa1n"],
+  ["500 LinkedIn Creators Selling Consulting","Creator Intelligence","$199","500 records","https://buy.athena.live/b/eVq5kw9eK8h5aWIffWgAa1o"],
+  ["500 Real Estate YouTubers With Public Contact Info","Creator Intelligence","$199","500 records","https://buy.athena.live/b/5kQ9AM4Yu1SH0i47NugAa1p"],
+  ["500 Finance Creators With Sponsor Signals","Creator Intelligence","$299","500 records","https://buy.athena.live/b/eVq3co62y54T4yk4BigAa1q"],
+  ["500 Companies Hiring SDRs","Hiring Signal","$199","500 records","https://buy.athena.live/b/5kQ3co1Mi9l9aWI4BigAa1r"],
+  ["500 Companies Hiring Appointment Setters","Hiring Signal","$199","500 records","https://buy.athena.live/b/3cIeV6aiOeFtfcY5FmgAa1s"],
+  ["500 Local Businesses Hiring Receptionists","Hiring Signal","$149","500 records","https://buy.athena.live/b/9B614g9eK40P3ugc3KgAa1t"],
+  ["500 Clinics Hiring Front Desk Staff","Hiring Signal","$149","500 records","https://buy.athena.live/b/28E7sEcqW2WL6Gs7NugAa1u"],
+  ["500 Restaurants Hiring Managers","Hiring Signal","$99","500 records","https://buy.athena.live/b/00waEQ76CeFt6Gs3xegAa1v"],
+  ["500 Contractors Hiring Estimators","Hiring Signal","$149","500 records","https://buy.athena.live/b/28E6oAdv01SH8OA4BigAa1w"],
+  ["500 Companies Hiring Customer Support Reps","Hiring Signal","$199","500 records","https://buy.athena.live/b/aFa5kw1Miapd8OAffWgAa1x"],
+  ["500 Businesses Hiring Social Media Managers","Hiring Signal","$149","500 records","https://buy.athena.live/b/9B6cMYaiO8h5e8U3xegAa1y"],
+  ["500 Small Businesses Hiring Bookkeepers","Hiring Signal","$149","500 records","https://buy.athena.live/b/6oUaEQfD81SH2qc5FmgAa1z"],
+  ["500 Companies Hiring AI/Automation Roles","Hiring Signal","$249","500 records","https://buy.athena.live/b/dRmbIUaiObth1m81p6gAa1A"],
+  ["500 Businesses With 3.5-Star Rating But High Review Count","Reputation Signal","$149","500 records","https://buy.athena.live/b/3cI00c8aG54T7KwffWgAa1B"],
+  ["500 Restaurants With Bad Recent Reviews","Reputation Signal","$149","500 records","https://buy.athena.live/b/9B6cMY76C8h50i4ebSgAa1C"],
+  ["500 Medspas With Bad Recent Reviews","Reputation Signal","$199","500 records","https://buy.athena.live/b/7sY5kwez47d15Co3xegAa1D"],
+  ["500 Contractors With Poor Review Response Rate","Reputation Signal","$149","500 records","https://buy.athena.live/b/aFafZadv0gNB1m82tagAa1E"],
+  ["500 Dentists With Bad Review Signals","Reputation Signal","$199","500 records","https://buy.athena.live/b/9B67sEaiOgNBgh20l2gAa1F"],
+  ["500 Local Businesses With No Review Replies","Reputation Signal","$149","500 records","https://buy.athena.live/b/28E8wIgHc0ODe8U7NugAa1G"],
+  ["500 Businesses With Great Reviews But Weak Website","Reputation Signal","$149","500 records","https://buy.athena.live/b/eVqfZaez4gNB5Co0l2gAa1H"],
+  ["500 Businesses With Many Reviews But No Booking Link","Reputation Signal","$149","500 records","https://buy.athena.live/b/4gM00cbmS0ODgh2ebSgAa1I"],
+  ["500 Businesses With Bad Yelp But Good Google Reviews","Reputation Signal","$199","500 records","https://buy.athena.live/b/28E00c62y0ODe8Ugk0gAa1J"],
+  ["500 Reputation Management Prospects by City","Reputation Signal","$149","500 records","https://buy.athena.live/b/28E28kbmSdBpc0M8RygAa1K"],
+  ["1,000 Music Venues With Booking Emails","Events and Venues","$299","1,000 records","https://buy.athena.live/b/4gM9AM3Uq7d10i4ebSgAa1L"],
+  ["500 Comedy Clubs With Booking Contacts","Events and Venues","$199","500 records","https://buy.athena.live/b/8x2dR2aiOdBp5Co1p6gAa1M"],
+  ["500 Nightclubs With Promoter Contacts","Events and Venues","$199","500 records","https://buy.athena.live/b/eVq00c76C54TaWId7OgAa1N"],
+  ["500 Festival Organizer Contacts","Events and Venues","$299","500 records","https://buy.athena.live/b/9B6cMY8aG7d1e8U2tagAa1O"],
+  ["500 Event Production Companies","Events and Venues","$149","500 records","https://buy.athena.live/b/8x2aEQez468XaWI4BigAa1P"],
+  ["500 Audio/Visual Rental Companies","Events and Venues","$149","500 records","https://buy.athena.live/b/aFa9AM76CgNBaWIc3KgAa1Q"],
+  ["500 Wedding Planners With Vendor Pages","Events and Venues","$149","500 records","https://buy.athena.live/b/6oU4gsez440PfcYebSgAa1R"],
+  ["500 Corporate Event Planners","Events and Venues","$199","500 records","https://buy.athena.live/b/7sYdR2bmS8h58OAffWgAa1S"],
+  ["500 Churches With Event Rental Pages","Events and Venues","$149","500 records","https://buy.athena.live/b/fZu4gsgHc54TaWI5FmgAa1T"],
+  ["500 Hotels With Event/Meeting Space Contacts","Events and Venues","$199","500 records","https://buy.athena.live/b/9B628kcqW2WL7Kw9VCgAa1U"],
+  ["500 Restaurants Without Online Ordering - Agent Stats Edition","Agent Stats","$149","500 records","https://buy.athena.live/b/9B6aEQdv0gNB0i4c3KgAa1V"],
+  ["500 Contractors Without Booking - Agent Stats Edition","Agent Stats","$199","500 records","https://buy.athena.live/b/6oU6oA1Mi2WL6Gs3xegAa1W"],
+  ["500 Law Firms With Slow Websites - Agent Stats Edition","Agent Stats","$249","500 records","https://buy.athena.live/b/cNibIU8aG1SHfcYc3KgAa1X"],
+  ["500 Medspas With Weak Booking Pages - Agent Stats Edition","Agent Stats","$199","500 records","https://buy.athena.live/b/aFa9AM4Yu8h51m82tagAa1Y"],
+  ["500 Shopify Stores Without Live Chat - Agent Stats Edition","Agent Stats","$299","500 records","https://buy.athena.live/b/eVq00caiOdBp5Co5FmgAa1Z"],
+  ["500 Creators With Sponsor Signals - Agent Stats Edition","Agent Stats","$299","500 records","https://buy.athena.live/b/4gMdR2bmSbth5Co9VCgAa20"]
+].forEach(([title, category, price, records, paymentLink]) => {
+  const content = april2026ProductContent[category];
+  products.push({
+    title,
+    category,
+    price,
+    records,
+    description: content.description(title),
+    fields: content.fields,
+    bestFor: content.bestFor,
+    paymentLink
+  });
+});
+
 const productGrid = document.querySelector("[data-product-grid]");
 const productCount = document.querySelector("[data-product-count]");
 const productSearch = document.querySelector("[data-product-search]");

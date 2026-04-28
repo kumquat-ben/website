@@ -1,6 +1,6 @@
 # Kumquat
 
-Kumquat sells 362 curated niche B2B business lists and Creator Intelligence datasets delivered as CSV files for sales outreach, market research, partnerships, sponsorship, software sales, agency prospecting, and business discovery.
+Kumquat sells 458 curated niche B2B business lists and Creator Intelligence datasets delivered as CSV files for sales outreach, market research, partnerships, sponsorship, software sales, agency prospecting, and business discovery.
 
 ## Core Pages
 
@@ -9,6 +9,11 @@ Kumquat sells 362 curated niche B2B business lists and Creator Intelligence data
 - Website opportunity lists: https://kumquat.info/website-opportunity-lists/
 - Ad spend signal lists: https://kumquat.info/ad-spend-signal-lists/
 - Creator lists: https://kumquat.info/creator-lists/
+- AI outbound prospect lists: https://kumquat.info/ai-outbound-prospect-lists/
+- E-commerce / Shopify buyer lists: https://kumquat.info/ecommerce-shopify-buyer-lists/
+- Hiring signal lists: https://kumquat.info/hiring-signal-lists/
+- Review / reputation signal lists: https://kumquat.info/reputation-signal-lists/
+- Event economy lists: https://kumquat.info/event-economy-lists/
 - Professional services lists: https://kumquat.info/professional-services-lists/
 - Local service lists: https://kumquat.info/local-service-lists/
 - Agent Stats lists: https://kumquat.info/agent-stats-lists/
@@ -23,7 +28,7 @@ Kumquat sells 362 curated niche B2B business lists and Creator Intelligence data
 
 ## What Kumquat Sells
 
-Kumquat sells downloadable CSV business lists and Creator Intelligence datasets organized by niche, geography, industry, buyer type, and use case. Categories include Agent Stats, recently active, high-review website gap, AI automation opportunity, platform migration, website opportunity, software gap, ad spend signal, reputation signal, events and venues, professional services, real estate and property, Creator Intelligence, government and public organization, local sponsorship, and high-signal opportunity lists.
+Kumquat sells downloadable CSV business lists and Creator Intelligence datasets organized by niche, geography, industry, buyer type, and use case. Categories include Agent Stats, recently active, high-review website gap, AI automation opportunity, AI outbound prospect, ecommerce / Shopify buyer, hiring signal, platform migration, website opportunity, software gap, ad spend signal, reputation signal, events and venues, professional services, real estate and property, Creator Intelligence, government and public organization, local sponsorship, and high-signal opportunity lists.
 
 ## Common Dataset Fields
 

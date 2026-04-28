@@ -32,12 +32,52 @@ const pages = [
     include: /(creator|creators|youtube|youtuber|youtubers|blogger|bloggers|streamer|streamers|podcast|newsletter|influencer|influencers|business emails|sponsor|affiliate|media kit)/i
   },
   {
+    slug: "ai-outbound-prospect-lists",
+    title: "AI Outbound Prospect Lists",
+    eyebrow: "AI outbound",
+    description: "Prospect lists for AI sales agents, outbound operators, AI automation agencies, AI SDR sellers, appointment setters, and agencies already using outbound workflows.",
+    categories: ["AI Outbound Prospect", "AI Automation Opportunity"],
+    include: /(ai|outbound|sdr|automation|lead response|live chat|booking|request quote|sales reps|calendly|hubspot|formstack|receptionist|intake|cold email|appointment|gohighlevel|consultant)/i
+  },
+  {
+    slug: "ecommerce-shopify-buyer-lists",
+    title: "E-commerce / Shopify Buyer Lists",
+    eyebrow: "Ecommerce signals",
+    description: "Shopify, DTC, Klaviyo, SMS, affiliate, influencer, live chat, page speed, and Meta Ads prospect lists for ecommerce sellers and agencies.",
+    categories: ["Ecommerce / Shopify Buyer"],
+    include: /(shopify|dtc|klaviyo|sms|affiliate|influencer|page speed|beauty|pet product|supplements|apparel|live chat|meta ads|ecommerce)/i
+  },
+  {
+    slug: "hiring-signal-lists",
+    title: "Hiring Signal Lists",
+    eyebrow: "Hiring intent",
+    description: "Companies and local businesses hiring SDRs, appointment setters, receptionists, front desk staff, managers, estimators, support reps, bookkeepers, and AI automation roles.",
+    categories: ["Hiring Signal"],
+    include: /(hiring|sdr|appointment setter|receptionist|front desk|manager|estimator|customer support|social media manager|bookkeeper|automation roles)/i
+  },
+  {
+    slug: "reputation-signal-lists",
+    title: "Review / Reputation Signal Lists",
+    eyebrow: "Review urgency",
+    description: "Businesses with bad reviews, no review replies, weak review response rates, rating gaps, and review-to-website conversion opportunities.",
+    categories: ["Reputation Signal"],
+    include: /(review|reviews|rating|yelp|reputation|reply|replies|response rate|bad recent reviews|great reviews|weak website)/i
+  },
+  {
+    slug: "event-economy-lists",
+    title: "Event Economy Lists",
+    eyebrow: "Events and venues",
+    description: "Music venues, comedy clubs, nightclubs, festival organizers, event production companies, AV rental firms, planners, churches, hotels, and event-space contacts.",
+    categories: ["Events and Venues", "Local Sponsorship"],
+    include: /(event|events|venue|venues|booking|sponsor|music|comedy|nightclub|promoter|festival|production|audio|visual|wedding|corporate|hotel|meeting space|rental)/i
+  },
+  {
     slug: "professional-services-lists",
     title: "Professional Services Lists",
     eyebrow: "High-ticket services",
     description: "Lawyers, CPAs, accountants, insurance agencies, mortgage brokers, consultants, clinics, and other professional buyers with high lead value.",
     categories: ["Professional Services"],
-    include: /(law|lawyer|lawyers|law firm|law firms|cpa|cpas|accountant|accounting|insurance|mortgage|consultant|consultants|clinic|dentist|orthodontist|plastic surgeon|fertility|tax)/i
+    include: /(law|lawyer|lawyers|law firm|law firms|cpa|cpas|accountant|accounting|insurance|mortgage|consultant|consultants|clinic|clinics|dentist|dentists|orthodontist|orthodontists|plastic surgeon|plastic surgery|fertility|urgent care|physical therapy|chiropractor|veterinary|assisted living|addiction|bail bonds|private investigation|tax)/i
   },
   {
     slug: "local-service-lists",
@@ -45,7 +85,7 @@ const pages = [
     eyebrow: "Local operators",
     description: "Dentists, vets, salons, gyms, auto repair shops, tattoo shops, HVAC companies, roofers, plumbers, contractors, and other local service businesses.",
     categories: ["Website Opportunity", "Software Gap", "Ad Spend Signal", "AI Automation Opportunity", "High-Review Website Gap", "Platform Migration", "Agent Stats", "Local Service"],
-    include: /(dentist|dentists|vet|vets|salon|salons|gym|gyms|fitness|auto repair|auto shop|auto shops|tattoo|hvac|roofer|roofers|plumber|plumbers|contractor|contractors|home service|med spa|med spas|barber|barbers|chiropractor|repair)/i
+    include: /(dentist|dentists|vet|vets|salon|salons|gym|gyms|fitness|auto repair|auto shop|auto shops|tattoo|hvac|roofer|roofers|roofing|plumber|plumbers|contractor|contractors|home service|med spa|med spas|barber|barbers|chiropractor|repair|funeral|security guard|commercial cleaning|pest control|garage door|pool cleaning|solar installer)/i
   },
   {
     slug: "agent-stats-lists",
@@ -251,7 +291,7 @@ ${related.map((item) => `          <div><a href="${prefix}${item.slug}/">${escap
     </section>
   </main>
 ${footer(prefix)}
-  <script src="${prefix}assets/main.js?v=20260428-products-362"></script>
+  <script src="${prefix}assets/main.js?v=20260428-products-458"></script>
 </body>
 </html>
 `;
