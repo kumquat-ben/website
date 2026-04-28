@@ -1211,7 +1211,7 @@ const products = [
   },
   {
     "title": "YouTubers with business emails",
-    "category": "Creator and Internet Business",
+    "category": "Creator Intelligence",
     "price": "$99",
     "records": "1,000 records",
     "description": "A creator and internet-business CSV focused on public creator, ecommerce, startup, and publisher contact opportunities. This product focuses on youtubers with business emails and is delivered as a CSV download link by email once available.",
@@ -1221,7 +1221,7 @@ const products = [
   },
   {
     "title": "Podcasters with sponsor contacts",
-    "category": "Creator and Internet Business",
+    "category": "Creator Intelligence",
     "price": "$99",
     "records": "1,000 records",
     "description": "A creator and internet-business CSV focused on public creator, ecommerce, startup, and publisher contact opportunities. This product focuses on podcasters with sponsor contacts and is delivered as a CSV download link by email once available.",
@@ -1231,7 +1231,7 @@ const products = [
   },
   {
     "title": "Newsletter creators by niche",
-    "category": "Creator and Internet Business",
+    "category": "Creator Intelligence",
     "price": "$99",
     "records": "1,000 records",
     "description": "A creator and internet-business CSV focused on public creator, ecommerce, startup, and publisher contact opportunities. This product focuses on newsletter creators by niche and is delivered as a CSV download link by email once available.",
@@ -1241,7 +1241,7 @@ const products = [
   },
   {
     "title": "Substack writers by category",
-    "category": "Creator and Internet Business",
+    "category": "Creator Intelligence",
     "price": "$99",
     "records": "1,000 records",
     "description": "A creator and internet-business CSV focused on public creator, ecommerce, startup, and publisher contact opportunities. This product focuses on substack writers by category and is delivered as a CSV download link by email once available.",
@@ -1251,7 +1251,7 @@ const products = [
   },
   {
     "title": "TikTok creators with public emails",
-    "category": "Creator and Internet Business",
+    "category": "Creator Intelligence",
     "price": "$99",
     "records": "1,000 records",
     "description": "A creator and internet-business CSV focused on public creator, ecommerce, startup, and publisher contact opportunities. This product focuses on tiktok creators with public emails and is delivered as a CSV download link by email once available.",
@@ -1261,7 +1261,7 @@ const products = [
   },
   {
     "title": "Instagram creators with public emails",
-    "category": "Creator and Internet Business",
+    "category": "Creator Intelligence",
     "price": "$99",
     "records": "1,000 records",
     "description": "A creator and internet-business CSV focused on public creator, ecommerce, startup, and publisher contact opportunities. This product focuses on instagram creators with public emails and is delivered as a CSV download link by email once available.",
@@ -1271,7 +1271,7 @@ const products = [
   },
   {
     "title": "Course creators",
-    "category": "Creator and Internet Business",
+    "category": "Creator Intelligence",
     "price": "$99",
     "records": "1,000 records",
     "description": "A creator and internet-business CSV focused on public creator, ecommerce, startup, and publisher contact opportunities. This product focuses on course creators and is delivered as a CSV download link by email once available.",
@@ -1281,7 +1281,7 @@ const products = [
   },
   {
     "title": "Coaches with booking pages",
-    "category": "Creator and Internet Business",
+    "category": "Creator Intelligence",
     "price": "$99",
     "records": "1,000 records",
     "description": "A creator and internet-business CSV focused on public creator, ecommerce, startup, and publisher contact opportunities. This product focuses on coaches with booking pages and is delivered as a CSV download link by email once available.",
@@ -1291,7 +1291,7 @@ const products = [
   },
   {
     "title": "Consultants with public contact forms",
-    "category": "Creator and Internet Business",
+    "category": "Creator Intelligence",
     "price": "$99",
     "records": "1,000 records",
     "description": "A creator and internet-business CSV focused on public creator, ecommerce, startup, and publisher contact opportunities. This product focuses on consultants with public contact forms and is delivered as a CSV download link by email once available.",
@@ -1301,7 +1301,7 @@ const products = [
   },
   {
     "title": "Shopify stores by niche",
-    "category": "Creator and Internet Business",
+    "category": "Creator Intelligence",
     "price": "$99",
     "records": "1,000 records",
     "description": "A creator and internet-business CSV focused on public creator, ecommerce, startup, and publisher contact opportunities. This product focuses on shopify stores by niche and is delivered as a CSV download link by email once available.",
@@ -1311,7 +1311,7 @@ const products = [
   },
   {
     "title": "Etsy sellers with websites",
-    "category": "Creator and Internet Business",
+    "category": "Creator Intelligence",
     "price": "$99",
     "records": "1,000 records",
     "description": "A creator and internet-business CSV focused on public creator, ecommerce, startup, and publisher contact opportunities. This product focuses on etsy sellers with websites and is delivered as a CSV download link by email once available.",
@@ -1321,7 +1321,7 @@ const products = [
   },
   {
     "title": "Indie software founders",
-    "category": "Creator and Internet Business",
+    "category": "Creator Intelligence",
     "price": "$99",
     "records": "1,000 records",
     "description": "A creator and internet-business CSV focused on public creator, ecommerce, startup, and publisher contact opportunities. This product focuses on indie software founders and is delivered as a CSV download link by email once available.",
@@ -1331,7 +1331,7 @@ const products = [
   },
   {
     "title": "SaaS startups by niche",
-    "category": "Creator and Internet Business",
+    "category": "Creator Intelligence",
     "price": "$99",
     "records": "1,000 records",
     "description": "A creator and internet-business CSV focused on public creator, ecommerce, startup, and publisher contact opportunities. This product focuses on saas startups by niche and is delivered as a CSV download link by email once available.",
@@ -1341,7 +1341,7 @@ const products = [
   },
   {
     "title": "AI tool directories",
-    "category": "Creator and Internet Business",
+    "category": "Creator Intelligence",
     "price": "$99",
     "records": "1,000 records",
     "description": "A creator and internet-business CSV focused on public creator, ecommerce, startup, and publisher contact opportunities. This product focuses on ai tool directories and is delivered as a CSV download link by email once available.",
@@ -1351,7 +1351,7 @@ const products = [
   },
   {
     "title": "Affiliate marketers by niche",
-    "category": "Creator and Internet Business",
+    "category": "Creator Intelligence",
     "price": "$99",
     "records": "1,000 records",
     "description": "A creator and internet-business CSV focused on public creator, ecommerce, startup, and publisher contact opportunities. This product focuses on affiliate marketers by niche and is delivered as a CSV download link by email once available.",
@@ -1361,7 +1361,7 @@ const products = [
   },
   {
     "title": "Bloggers with contact pages",
-    "category": "Creator and Internet Business",
+    "category": "Creator Intelligence",
     "price": "$99",
     "records": "1,000 records",
     "description": "A creator and internet-business CSV focused on public creator, ecommerce, startup, and publisher contact opportunities. This product focuses on bloggers with contact pages and is delivered as a CSV download link by email once available.",
@@ -1371,7 +1371,7 @@ const products = [
   },
   {
     "title": "Local influencers by city",
-    "category": "Creator and Internet Business",
+    "category": "Creator Intelligence",
     "price": "$99",
     "records": "1,000 records",
     "description": "A creator and internet-business CSV focused on public creator, ecommerce, startup, and publisher contact opportunities. This product focuses on local influencers by city and is delivered as a CSV download link by email once available.",
@@ -1381,7 +1381,7 @@ const products = [
   },
   {
     "title": "Food bloggers by city",
-    "category": "Creator and Internet Business",
+    "category": "Creator Intelligence",
     "price": "$99",
     "records": "1,000 records",
     "description": "A creator and internet-business CSV focused on public creator, ecommerce, startup, and publisher contact opportunities. This product focuses on food bloggers by city and is delivered as a CSV download link by email once available.",
@@ -1391,7 +1391,7 @@ const products = [
   },
   {
     "title": "Real estate YouTubers",
-    "category": "Creator and Internet Business",
+    "category": "Creator Intelligence",
     "price": "$99",
     "records": "1,000 records",
     "description": "A creator and internet-business CSV focused on public creator, ecommerce, startup, and publisher contact opportunities. This product focuses on real estate youtubers and is delivered as a CSV download link by email once available.",
@@ -1401,7 +1401,7 @@ const products = [
   },
   {
     "title": "Finance creators with sponsor pages",
-    "category": "Creator and Internet Business",
+    "category": "Creator Intelligence",
     "price": "$99",
     "records": "1,000 records",
     "description": "A creator and internet-business CSV focused on public creator, ecommerce, startup, and publisher contact opportunities. This product focuses on finance creators with sponsor pages and is delivered as a CSV download link by email once available.",
@@ -2022,7 +2022,7 @@ const opportunityProductContent = {
     fields: "Business name, website, city, state, automation gap, intake or lead-capture signal, contact page, phone, public email where available, source URL, notes.",
     bestFor: "AI automation agencies, workflow consultants, CRM vendors, chatbot builders, form automation tools, and SaaS teams buy this list to find businesses with clear manual-process gaps."
   },
-  "Creator Intelligence Lists": {
+  "Creator Intelligence": {
     description: (title) => "A Creator Intelligence CSV focused on reachable sponsorship, PR, affiliate, and partnership opportunities. This product focuses on " + title.toLowerCase() + " and is delivered as a CSV download link by email once available.",
     fields: "Creator or publisher name, platform, profile or website URL, niche, location where public, follower or traffic signal, recent activity signal, public email or contact page, sponsor or PR signal, source URL, notes.",
     bestFor: "Brands, PR agencies, affiliate managers, creator partnership teams, local marketers, and sponsorship teams buy this list to find creators and publishers with reachable contact paths."
@@ -2055,15 +2055,15 @@ const opportunityProductContent = {
   ["500 Real Estate Agents Without Lead Capture", "AI Automation Opportunity", "$79", "500 records", "https://buy.athena.live/b/28E7sE1MieFtgh22tagA92N"],
   ["500 Service Businesses Without Quote Automation", "AI Automation Opportunity", "$79", "500 records", "https://buy.athena.live/b/fZu5kwgHc7d12qcffWgA92O"],
   ["500 Businesses Using Generic Gmail/Yahoo Emails", "AI Automation Opportunity", "$79", "500 records", "https://buy.athena.live/b/14AbIUfD854T7Kw5FmgA92P"],
-  ["500 LA Food Influencers With Public Emails", "Creator Intelligence Lists", "$299", "500 records", "https://buy.athena.live/b/5kQ6oAbmSapdd4QffWgA92Q"],
-  ["500 Local Micro-Influencers Under 50k Followers", "Creator Intelligence Lists", "$199", "500 records", "https://buy.athena.live/b/3cI14gfD8cxl3ugffWgA92R"],
-  ["500 Twitch Streamers With Recent Stream Dates", "Creator Intelligence Lists", "$299", "500 records", "https://buy.athena.live/b/eVqeV62Qm9l9d4Q8RygA92S"],
-  ["500 YouTube Channels With Sponsor Emails", "Creator Intelligence Lists", "$199", "500 records", "https://buy.athena.live/b/cNi7sE76C9l94yk6JqgA92T"],
-  ["500 Product Review Bloggers Accepting PR", "Creator Intelligence Lists", "$199", "500 records", "https://buy.athena.live/b/14A14gdv0fJx4yk0l2gA92U"],
-  ["500 Wedding Bloggers With SEO Traffic Signals", "Creator Intelligence Lists", "$199", "500 records", "https://buy.athena.live/b/4gM5kwgHcapd6Gs1p6gA92V"],
-  ["500 Mom Bloggers With Sponsor/Contact Pages", "Creator Intelligence Lists", "$199", "500 records", "https://buy.athena.live/b/28E5kwfD8gNBe8UaZGgA92W"],
-  ["500 AI Newsletter Creators", "Creator Intelligence Lists", "$299", "500 records", "https://buy.athena.live/b/eVqeV6bmSbth7Kw3xegA92X"],
-  ["500 Finance TikTok/YouTube Creators With Business Emails", "Creator Intelligence Lists", "$299", "500 records", "https://buy.athena.live/b/7sY3cocqWapd4ykd7OgA92Y"],
+  ["500 LA Food Influencers With Public Emails", "Creator Intelligence", "$299", "500 records", "https://buy.athena.live/b/5kQ6oAbmSapdd4QffWgA92Q"],
+  ["500 Local Micro-Influencers Under 50k Followers", "Creator Intelligence", "$199", "500 records", "https://buy.athena.live/b/3cI14gfD8cxl3ugffWgA92R"],
+  ["500 Twitch Streamers With Recent Stream Dates", "Creator Intelligence", "$299", "500 records", "https://buy.athena.live/b/eVqeV62Qm9l9d4Q8RygA92S"],
+  ["500 YouTube Channels With Sponsor Emails", "Creator Intelligence", "$199", "500 records", "https://buy.athena.live/b/cNi7sE76C9l94yk6JqgA92T"],
+  ["500 Product Review Bloggers Accepting PR", "Creator Intelligence", "$199", "500 records", "https://buy.athena.live/b/14A14gdv0fJx4yk0l2gA92U"],
+  ["500 Wedding Bloggers With SEO Traffic Signals", "Creator Intelligence", "$199", "500 records", "https://buy.athena.live/b/4gM5kwgHcapd6Gs1p6gA92V"],
+  ["500 Mom Bloggers With Sponsor/Contact Pages", "Creator Intelligence", "$199", "500 records", "https://buy.athena.live/b/28E5kwfD8gNBe8UaZGgA92W"],
+  ["500 AI Newsletter Creators", "Creator Intelligence", "$299", "500 records", "https://buy.athena.live/b/eVqeV6bmSbth7Kw3xegA92X"],
+  ["500 Finance TikTok/YouTube Creators With Business Emails", "Creator Intelligence", "$299", "500 records", "https://buy.athena.live/b/7sY3cocqWapd4ykd7OgA92Y"],
   ["1,000 Independent Artist Websites With Booking Contacts", "Events and Venues", "$99", "1,000 records", "https://buy.athena.live/b/aFa9AMbmSapd8OAc3KgA92Z"],
   ["500 Event Promoters in LA", "Events and Venues", "$99", "500 records", "https://buy.athena.live/b/eVq3co9eKfJxe8U3xegA930"],
   ["500 Wedding Venues in Southern California", "Events and Venues", "$99", "500 records", "https://buy.athena.live/b/aFa00c76C2WLd4Q8RygA931"],
@@ -2152,7 +2152,7 @@ function creatorDescription(title, type) {
 ].forEach(([title, type, price, records, paymentLink]) => {
   products.push({
     title,
-    category: "Creator Intelligence Lists",
+    category: "Creator Intelligence",
     price,
     records,
     description: creatorDescription(title, type),
@@ -2160,6 +2160,149 @@ function creatorDescription(title, type) {
     bestFor: creatorIntelligenceBestFor[type],
     paymentLink
   });
+});
+
+function titleFocus(title) {
+  return title.toLowerCase().replace(/\s+-\s+/g, " ");
+}
+
+
+const buyerIntentProductContent = {
+  "AI Automation Opportunity": {
+    "description": (title) => "An AI automation opportunity CSV focused on businesses still using manual, form-heavy, or under-automated customer intake and lead capture workflows. This product focuses on " + titleFocus(title) + " and is delivered as a CSV download link by email once available.",
+    "fields": "Business name, website, city, state, automation gap, intake or lead-capture signal, contact page, phone, public email where available, source URL, notes.",
+    "bestFor": "AI automation agencies, workflow consultants, CRM vendors, chatbot builders, form automation tools, and SaaS teams buy this list to find businesses with clear manual-process gaps."
+  },
+  "Agent Stats": {
+    "description": (title) => "A premium Agent Stats CSV combining website gap, booking or intake gap, ad spend or activity signal, and contactability notes. This product focuses on " + titleFocus(title) + " and is delivered as a CSV download link by email once available.",
+    "fields": "Business or creator name, website or profile URL, city, state or market, category, website gap, booking or intake gap, ad spend or activity signal, public contact path, phone where available, source URLs, Agent Stats score, notes.",
+    "bestFor": "Agencies, SaaS teams, AI automation sellers, appointment platforms, ad teams, local service vendors, and partnership teams buy this list when they want both who to contact and why now."
+  },
+  "Creator Intelligence": {
+    "description": (title) => "A Creator Intelligence CSV focused on reachable sponsorship, PR, affiliate, and partnership opportunities. This product focuses on " + titleFocus(title) + " and is delivered as a CSV download link by email once available.",
+    "fields": "Creator or publisher name, platform, profile or website URL, niche, location where public, follower or traffic signal, engagement or audience signal, recent activity signal, public email or contact page, sponsor or affiliate signal, source URL, notes.",
+    "bestFor": "Brands, PR agencies, affiliate managers, creator partnership teams, local marketers, SaaS companies, and sponsorship teams buy this list to find creators and publishers with reachable contact paths."
+  },
+  "High-Review Website Gap": {
+    "description": (title) => "A high-review website-gap CSV focused on businesses that appear commercially healthy but underpowered online. This product focuses on " + titleFocus(title) + " and is delivered as a CSV download link by email once available.",
+    "fields": "Business name, website or source profile, city, state, category, review count, rating signal, website gap, booking or conversion gap, contact page, phone, public email where available, source URL, notes.",
+    "bestFor": "Web agencies, SEO consultants, booking tools, review platforms, restaurant tech, med spa marketers, home-service SaaS teams, and local sales teams buy this list to find good businesses with fixable digital gaps."
+  },
+  "Local Sponsorship": {
+    "description": (title) => "A local sponsorship CSV focused on organizations, events, media properties, and community groups with public sponsor, vendor, advertiser, or partnership paths. This product focuses on " + titleFocus(title) + " and is delivered as a CSV download link by email once available.",
+    "fields": "Organization name, website, city, state, sponsorship type, sponsor page or media kit, contact page, public email where available, phone, audience or event signal, source URL, notes.",
+    "bestFor": "Local businesses, banks, dentists, med spas, restaurants, CPG brands, agencies, venues, and community advertisers buy this list to find reachable local sponsorship inventory."
+  },
+  "Platform Migration": {
+    "description": (title) => "A platform-migration CSV focused on businesses using outdated, weak, or migration-ready web, booking, ecommerce, ordering, or content platforms. This product focuses on " + titleFocus(title) + " and is delivered as a CSV download link by email once available.",
+    "fields": "Business name, website, city, state, current platform signal, migration opportunity, conversion or SEO gap, contact page, phone, public email where available, source URL, notes.",
+    "bestFor": "SaaS companies, ecommerce agencies, web designers, maintenance agencies, SEO teams, booking platforms, restaurant tech vendors, and migration consultants buy this list to find accounts ready for a better system."
+  },
+  "Professional Services": {
+    "description": (title) => "A high-ticket professional-services CSV focused on firms, clinics, consultants, facilities, and specialized providers with clear commercial value. This product focuses on " + titleFocus(title) + " and is delivered as a CSV download link by email once available.",
+    "fields": "Company name, website, city, state, service type, lead value signal, conversion gap where visible, phone, public email where available, contact page, source URL, notes.",
+    "bestFor": "B2B SaaS teams, agencies, lead generation companies, legal and medical marketers, recruiters, consultants, and sales teams buy this list to reach higher-value professional buyers."
+  },
+  "Recently Active": {
+    "description": (title) => "A recently-active CSV focused on businesses and creators showing motion through recent posts, hiring, updates, campaigns, events, or public operating signals. This product focuses on " + titleFocus(title) + " and is delivered as a CSV download link by email once available.",
+    "fields": "Business or creator name, website or profile URL, city, state or market, category, recent activity signal, activity date or recency window, opportunity gap, public contact path, source URL, notes.",
+    "bestFor": "Sales teams, agencies, SaaS companies, local vendors, sponsorship teams, and outbound operators buy this list to prioritize prospects that look active right now."
+  }
+};
+
+[
+  ["500 Plumbers - Agent Stats Edition","Agent Stats","$149","500 records","https://buy.athena.live/b/4gMeV60Ie68Xd4Q9VCgA93f"],
+  ["500 Dentists - Agent Stats Edition","Agent Stats","$149","500 records","https://buy.athena.live/b/dRm6oA9eKgNBfcY4BigA93g"],
+  ["500 Med Spas - Agent Stats Edition","Agent Stats","$149","500 records","https://buy.athena.live/b/fZufZa62y40Pgh26JqgA93h"],
+  ["500 Restaurants - Agent Stats Edition","Agent Stats","$149","500 records","https://buy.athena.live/b/9B63co2QmdBp7Kw6JqgA93i"],
+  ["500 Law Firms - Agent Stats Edition","Agent Stats","$149","500 records","https://buy.athena.live/b/fZu9AM9eKcxl1m84BigA93j"],
+  ["500 Wedding Venues - Agent Stats Edition","Agent Stats","$149","500 records","https://buy.athena.live/b/6oU7sE62y8h5gh2d7OgA93k"],
+  ["500 Property Managers - Agent Stats Edition","Agent Stats","$149","500 records","https://buy.athena.live/b/28E7sE62y2WL5Coc3KgA93l"],
+  ["500 Churches - Agent Stats Edition","Agent Stats","$149","500 records","https://buy.athena.live/b/6oU5kw0IegNB4ykd7OgA93m"],
+  ["500 Gyms/Fitness Studios - Agent Stats Edition","Agent Stats","$149","500 records","https://buy.athena.live/b/28E8wI9eK1SH5CoffWgA93n"],
+  ["500 Creators - Agent Stats Edition","Agent Stats","$199","500 records","https://buy.athena.live/b/28E28k3Uq54T9SE0l2gA93o"],
+  ["500 Businesses Running Google Ads With Bad Landing Pages - Agent Stats","Agent Stats","$199","500 records","https://buy.athena.live/b/00w4gs4Yu68X6GsaZGgA93p"],
+  ["500 Law Firms With Google Ads But Weak Intake Pages - Agent Stats","Agent Stats","$199","500 records","https://buy.athena.live/b/28E4gsgHcdBp4yk6JqgA93q"],
+  ["500 Businesses That Posted on Instagram in the Last 30 Days","Recently Active","$99","500 records","https://buy.athena.live/b/6oU28kcqWbth4yk4BigA93r"],
+  ["500 Businesses Hiring Right Now","Recently Active","$99","500 records","https://buy.athena.live/b/6oU8wI76CdBp6Gs0l2gA93s"],
+  ["500 Businesses Running Google Ads But With Weak Landing Pages","Recently Active","$99","500 records","https://buy.athena.live/b/00waEQ0Iebth1m87NugA93t"],
+  ["500 Restaurants With Recent Menu Updates But No Online Ordering","Recently Active","$99","500 records","https://buy.athena.live/b/3cI4gsfD82WLe8Ugk0gA93u"],
+  ["500 Contractors With Recent Project Photos But No Quote Form","Recently Active","$99","500 records","https://buy.athena.live/b/4gM00ccqW9l9e8U5FmgA93v"],
+  ["500 Churches With Recent Events But Outdated Donation Pages","Recently Active","$99","500 records","https://buy.athena.live/b/4gM4gs62y9l9c0M4BigA93w"],
+  ["500 Creators Posting Weekly With Sponsor Emails","Recently Active","$149","500 records","https://buy.athena.live/b/bJeaEQdv01SHc0Md7OgA93x"],
+  ["500 Businesses With 4.5+ Reviews But Outdated Websites","High-Review Website Gap","$99","500 records","https://buy.athena.live/b/14A28kez47d17Kw1p6gA93y"],
+  ["500 Businesses With High Reviews But No Online Booking","High-Review Website Gap","$99","500 records","https://buy.athena.live/b/cNidR2gHc54T2qc2tagA93z"],
+  ["500 Businesses With Lots of Google Reviews But No Email Capture","High-Review Website Gap","$99","500 records","https://buy.athena.live/b/dRm5kwbmS8h57Kw2tagA93A"],
+  ["500 Restaurants With Strong Reviews But No Catering Page","High-Review Website Gap","$99","500 records","https://buy.athena.live/b/4gMaEQaiOcxlc0Mc3KgA93B"],
+  ["500 Restaurants With Strong Reviews But No Online Ordering","High-Review Website Gap","$99","500 records","https://buy.athena.live/b/14AeV64Yu1SHaWIgk0gA93C"],
+  ["500 Med Spas With Instagram Activity But Weak Websites","High-Review Website Gap","$99","500 records","https://buy.athena.live/b/00w8wIfD89l92qc9VCgA93D"],
+  ["500 Contractors With Strong Reviews But No Quote Form","High-Review Website Gap","$99","500 records","https://buy.athena.live/b/aFa8wI4Yubth4yk9VCgA93E"],
+  ["500 Businesses With No Chatbot or Live Chat","AI Automation Opportunity","$79","500 records","https://buy.athena.live/b/4gM5kw62y54TaWIc3KgA93F"],
+  ["500 Clinics With No Online Intake Automation","AI Automation Opportunity","$79","500 records","https://buy.athena.live/b/7sYaEQfD8apdc0M4BigA93G"],
+  ["500 Law Firms With No AI Receptionist or Contact Flow","AI Automation Opportunity","$79","500 records","https://buy.athena.live/b/eVq6oAez454Td4Qc3KgA93H"],
+  ["500 Home Service Companies Missing Quote Automation","AI Automation Opportunity","$79","500 records","https://buy.athena.live/b/8x2fZa1MieFtd4Q2tagA93I"],
+  ["500 Real Estate Agents With No Lead Capture Form","AI Automation Opportunity","$79","500 records","https://buy.athena.live/b/dRmeV6fD8eFt2qcebSgA93J"],
+  ["500 Med Spas With No Consultation Booking Flow","AI Automation Opportunity","$79","500 records","https://buy.athena.live/b/7sY00c9eK40P1m83xegA93K"],
+  ["500 Restaurants With No SMS or Email Capture","AI Automation Opportunity","$79","500 records","https://buy.athena.live/b/8x28wI3Uq68X2qc1p6gA93L"],
+  ["500 Gyms With No Trial-Class Automation","AI Automation Opportunity","$79","500 records","https://buy.athena.live/b/5kQ7sEcqW7d19SE0l2gA93M"],
+  ["500 Youth Sports Leagues Accepting Sponsors","Local Sponsorship","$99","500 records","https://buy.athena.live/b/3cI7sE76C1SH8OA1p6gA93N"],
+  ["500 School Booster Clubs With Sponsor Pages","Local Sponsorship","$99","500 records","https://buy.athena.live/b/9B69AM0Ie8h51m83xegA93O"],
+  ["500 Local Podcasts With Sponsor Contact Pages","Local Sponsorship","$99","500 records","https://buy.athena.live/b/9B6dR22QmdBpe8U1p6gA93P"],
+  ["500 Community Newsletters Accepting Sponsors","Local Sponsorship","$99","500 records","https://buy.athena.live/b/8x24gsdv0apd9SE3xegA93Q"],
+  ["500 Event Calendars With Sponsorship Contacts","Local Sponsorship","$99","500 records","https://buy.athena.live/b/bJe4gsbmS68X4yk4BigA93R"],
+  ["500 Charity Events With Sponsor Pages","Local Sponsorship","$99","500 records","https://buy.athena.live/b/aFaeV6ez4eFt6Gs9VCgA93S"],
+  ["500 Farmers Markets With Vendor or Sponsor Pages","Local Sponsorship","$99","500 records","https://buy.athena.live/b/9B63coaiObthfcY0l2gA93T"],
+  ["500 Restaurants Using Outdated Ordering Platforms","Platform Migration","$79","500 records","https://buy.athena.live/b/dRmeV61Mi2WLgh23xegA93U"],
+  ["500 Salons Using Old Booking Links","Platform Migration","$79","500 records","https://buy.athena.live/b/3cI14g3Uq9l9c0Mgk0gA93V"],
+  ["500 Stores Using Old Shopify Themes","Platform Migration","$79","500 records","https://buy.athena.live/b/9B6aEQdv01SH7KwffWgA93W"],
+  ["500 WordPress Sites With Old Plugin or Theme Signals","Platform Migration","$79","500 records","https://buy.athena.live/b/bJe00c0Ie1SH5Cogk0gA93X"],
+  ["500 Squarespace Businesses Needing Conversion Upgrades","Platform Migration","$79","500 records","https://buy.athena.live/b/bJe7sEgHceFtd4QffWgA93Y"],
+  ["500 Wix Businesses With No SEO Metadata","Platform Migration","$79","500 records","https://buy.athena.live/b/5kQ6oA62y40P7KwebSgA93Z"],
+  ["500 Businesses Still Using PDF Menus","Platform Migration","$79","500 records","https://buy.athena.live/b/00w5kw3Uq2WLfcY8RygA940"],
+  ["500 Businesses Using Facebook as Their Only Website","Platform Migration","$79","500 records","https://buy.athena.live/b/aFa7sE3Uqcxl6Gsgk0gA941"],
+  ["500 Plastic Surgeons With Weak Landing Pages","Professional Services","$149","500 records","https://buy.athena.live/b/3cI8wIdv0eFt0i4d7OgA942"],
+  ["500 Orthodontists Without Online Consultation Booking","Professional Services","$149","500 records","https://buy.athena.live/b/4gMdR262y8h5gh2gk0gA943"],
+  ["500 Chiropractors Running Ads","Professional Services","$149","500 records","https://buy.athena.live/b/28EbIU76C8h57Kw9VCgA944"],
+  ["500 Fertility Clinics With Weak Lead Capture","Professional Services","$149","500 records","https://buy.athena.live/b/dRmaEQaiO54T3ugd7OgA945"],
+  ["500 Senior Care Facilities With Outdated Websites","Professional Services","$149","500 records","https://buy.athena.live/b/6oUbIUdv0gNB0i49VCgA946"],
+  ["500 Private Tutors and Test Prep Centers","Professional Services","$149","500 records","https://buy.athena.live/b/4gMdR2ez47d15Co6JqgA947"],
+  ["500 Immigration Consultants","Professional Services","$149","500 records","https://buy.athena.live/b/4gM4gsdv054T1m8aZGgAa00"],
+  ["500 Tax Resolution Firms","Professional Services","$149","500 records","https://buy.athena.live/b/28E8wIcqW9l9d4QebSgAa01"],
+  ["500 Business Brokers","Professional Services","$149","500 records","https://buy.athena.live/b/14AdR2bmS54T1m81p6gAa02"],
+  ["500 Franchise Consultants","Professional Services","$149","500 records","https://buy.athena.live/b/cNi8wI4Yuapdc0Mgk0gAa03"],
+  ["500 Creators With Sponsor Emails + Engagement Scores","Creator Intelligence","$299","500 records","https://buy.athena.live/b/eVqfZa2Qm9l9aWI5FmgAa04"],
+  ["500 Creators With Media Kits","Creator Intelligence","$199","500 records","https://buy.athena.live/b/8x29AM9eK40P9SE9VCgAa05"],
+  ["500 Creators With Affiliate Pages","Creator Intelligence","$199","500 records","https://buy.athena.live/b/eVq00c1MifJx0i43xegAa06"],
+  ["500 Creators With Newsletters + Sponsor Pages","Creator Intelligence","$299","500 records","https://buy.athena.live/b/fZu14g9eKdBpgh2ebSgAa07"],
+  ["500 YouTubers With Low Sponsor Saturation","Creator Intelligence","$299","500 records","https://buy.athena.live/b/3cI28kgHc8h50i48RygAa08"],
+  ["500 TikTok Creators With Email in Bio","Creator Intelligence","$199","500 records","https://buy.athena.live/b/8x25kw62y9l91m8ffWgAa09"],
+  ["500 Local Food Creators by City","Creator Intelligence","$299","500 records","https://buy.athena.live/b/14A00c8aG7d18OA1p6gAa0a"],
+  ["500 Wedding Creators by Region","Creator Intelligence","$299","500 records","https://buy.athena.live/b/bJe4gs76Ccxl9SE9VCgAa0b"],
+  ["500 Real Estate YouTubers by Market","Creator Intelligence","$299","500 records","https://buy.athena.live/b/3cIdR2aiO54T0i46JqgAa0c"],
+  ["500 AI Tool Reviewers","Creator Intelligence","$299","500 records","https://buy.athena.live/b/aFaaEQ0Ie0OD5Co0l2gAa0d"],
+  ["500 Small Business YouTubers","Creator Intelligence","$299","500 records","https://buy.athena.live/b/8x23co0IeeFt9SE4BigAa0e"],
+  ["500 Med Spas With Active Instagram But Weak Booking Flow - Agent Stats","Agent Stats","$199","500 records","https://buy.athena.live/b/eVqfZa2Qm0OD8OAgk0gAa0f"],
+  ["500 Churches With Recent Events But No Donation Automation - Agent Stats","Agent Stats","$149","500 records","https://buy.athena.live/b/fZufZa9eKdBpfcY5FmgAa0g"],
+  ["500 Wedding Venues With Inquiry Gaps - Agent Stats","Agent Stats","$149","500 records","https://buy.athena.live/b/3cIcMY9eKeFt6Gs8RygAa0h"],
+  ["500 Property Managers With No Maintenance Request Portal - Agent Stats","Agent Stats","$149","500 records","https://buy.athena.live/b/14A8wIdv07d13ug9VCgAa0i"]
+].forEach(([title, category, price, records, paymentLink]) => {
+  const content = buyerIntentProductContent[category];
+  products.push({
+    title,
+    category,
+    price,
+    records,
+    description: content.description(title),
+    fields: content.fields,
+    bestFor: content.bestFor,
+    paymentLink
+  });
+});
+
+products.forEach((product) => {
+  if (/\bno website\b|without a website|facebook as their only website/i.test(product.title)) {
+    product.fields = "Business name, claimed website or source profile, city, state, category, no-site signal, source profile, contact page or public contact path, phone, public email where available, source URL, notes.";
+  }
 });
 
 const productGrid = document.querySelector("[data-product-grid]");
