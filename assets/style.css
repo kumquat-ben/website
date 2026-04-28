@@ -656,6 +656,7 @@ tr:last-child td {
 }
 
 .request-email-button {
+  margin-top: 18px;
   width: fit-content;
 }
 
