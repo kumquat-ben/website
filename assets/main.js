@@ -2109,8 +2109,9 @@ function renderProducts() {
   if (!productGrid) return;
 
   const query = activeSearch.trim().toLowerCase();
+  const activeCategories = activeFilter === "All" ? [] : activeFilter.split("|");
   const visibleProducts = products.filter((product) => {
-    const matchesFilter = activeFilter === "All" || product.category === activeFilter;
+    const matchesFilter = activeFilter === "All" || activeCategories.includes(product.category);
     return matchesFilter && productMatchesSearch(product, query);
   });
 
