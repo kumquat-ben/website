@@ -7,6 +7,12 @@ Plain text guide: https://kumquat.info/skills.txt
 LLM discovery file: https://kumquat.info/llms.txt
 Sitemap: https://kumquat.info/sitemap.xml
 Catalog: https://kumquat.info/lists.html
+Website opportunity lists: https://kumquat.info/website-opportunity-lists/
+Ad spend signal lists: https://kumquat.info/ad-spend-signal-lists/
+Creator lists: https://kumquat.info/creator-lists/
+Professional services lists: https://kumquat.info/professional-services-lists/
+Local service lists: https://kumquat.info/local-service-lists/
+Agent Stats lists: https://kumquat.info/agent-stats-lists/
 Curl-ready catalog JSON: https://kumquat.info/assets/products.json
 No-JavaScript catalog HTML: https://kumquat.info/agent-catalog.html
 Browser catalog renderer source: https://kumquat.info/assets/main.js

@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-04-28T06:39:44.328Z",
+  "generatedAt": "2026-04-28T07:08:38.725Z",
   "source": "https://kumquat.info/assets/main.js",
-  "count": 351,
+  "count": 361,
   "products": [
     {
       "title": "500 Restaurants in LA Without Online Ordering",
@@ -3512,6 +3512,106 @@
       "fields": "Business or creator name, website or profile URL, city, state or market, category, website gap, booking or intake gap, ad spend or activity signal, public contact path, phone where available, source URLs, Agent Stats score, notes.",
       "bestFor": "Agencies, SaaS teams, AI automation sellers, appointment platforms, ad teams, local service vendors, and partnership teams buy this list when they want both who to contact and why now.",
       "paymentLink": "https://buy.athena.live/b/14A8wIdv07d13ug9VCgAa0i"
+    },
+    {
+      "title": "500 Dentists Without Online Booking",
+      "category": "Software Gap",
+      "price": "$99",
+      "records": "500 records",
+      "description": "A software-gap CSV focused on businesses missing booking, scheduling, intake, quote, estimate, ordering, or other conversion workflows. This product focuses on 500 dentists without online booking and is delivered as a CSV download link by email once available.",
+      "fields": "Business name, website, city, state, category, software gap, booking or scheduling status, contact page, phone, public email where available, source URL, notes.",
+      "bestFor": "Booking platforms, scheduling tools, CRM vendors, SaaS teams, AI automation agencies, and local marketing teams buy this list to find prospects with visible workflow gaps.",
+      "paymentLink": "https://buy.athena.live/b/00wcMY3Uq1SH2qcebSgAa0j"
+    },
+    {
+      "title": "500 HVAC Companies Running Google Ads",
+      "category": "Ad Spend Signal",
+      "price": "$149",
+      "records": "500 records",
+      "description": "An ad-spend signal CSV focused on businesses that appear to be running Google Ads or competing in paid-search markets. This product focuses on 500 hvac companies running google ads and is delivered as a CSV download link by email once available.",
+      "fields": "Business name, website, city, state, category, ad keyword or market signal, landing page URL, landing page weakness, contact page, phone, public email where available, source URL, notes.",
+      "bestFor": "PPC agencies, SEO consultants, landing page teams, call tracking tools, AI receptionist vendors, and sales teams buy this list to find buyers already spending to acquire customers.",
+      "paymentLink": "https://buy.athena.live/b/28EbIU3Uq40P4yk3xegAa0k"
+    },
+    {
+      "title": "500 Roofers Running Google Ads",
+      "category": "Ad Spend Signal",
+      "price": "$149",
+      "records": "500 records",
+      "description": "An ad-spend signal CSV focused on businesses that appear to be running Google Ads or competing in paid-search markets. This product focuses on 500 roofers running google ads and is delivered as a CSV download link by email once available.",
+      "fields": "Business name, website, city, state, category, ad keyword or market signal, landing page URL, landing page weakness, contact page, phone, public email where available, source URL, notes.",
+      "bestFor": "PPC agencies, SEO consultants, landing page teams, call tracking tools, AI receptionist vendors, and sales teams buy this list to find buyers already spending to acquire customers.",
+      "paymentLink": "https://buy.athena.live/b/fZu8wI62y7d1gh2c3KgAa0l"
+    },
+    {
+      "title": "500 CPAs Without Online Scheduling",
+      "category": "Professional Services",
+      "price": "$129",
+      "records": "500 records",
+      "description": "A high-ticket professional-services CSV focused on firms, clinics, consultants, facilities, and specialized providers with clear commercial value. This product focuses on 500 cpas without online scheduling and is delivered as a CSV download link by email once available.",
+      "fields": "Company name, website, city, state, service type, lead value signal, conversion gap where visible, phone, public email where available, contact page, source URL, notes.",
+      "bestFor": "B2B SaaS teams, agencies, lead generation companies, legal and medical marketers, recruiters, consultants, and sales teams buy this list to reach higher-value professional buyers.",
+      "paymentLink": "https://buy.athena.live/b/8x24gsaiOfJx4yk6JqgAa0m"
+    },
+    {
+      "title": "500 Auto Repair Shops With Bad Websites",
+      "category": "Website Opportunity",
+      "price": "$79",
+      "records": "500 records",
+      "description": "A website-opportunity CSV focused on businesses with missing, outdated, slow, broken, or underpowered web conversion paths. This product focuses on 500 auto repair shops with bad websites and is delivered as a CSV download link by email once available.",
+      "fields": "Business name, website or source profile, city, state, category, website issue spotted, conversion gap, contact page, phone, public email where available, source URL, notes.",
+      "bestFor": "Web design agencies, SEO consultants, maintenance agencies, booking tools, ordering platforms, and local marketing teams buy this list to find businesses with visible website gaps they can fix.",
+      "paymentLink": "https://buy.athena.live/b/eVq14g62y0OD6Gs6JqgAa0n"
+    },
+    {
+      "title": "500 Nonprofits With Outdated Donation Pages",
+      "category": "Website Opportunity",
+      "price": "$129",
+      "records": "500 records",
+      "description": "A website-opportunity CSV focused on businesses with missing, outdated, slow, broken, or underpowered web conversion paths. This product focuses on 500 nonprofits with outdated donation pages and is delivered as a CSV download link by email once available.",
+      "fields": "Business name, website or source profile, city, state, category, website issue spotted, conversion gap, contact page, phone, public email where available, source URL, notes.",
+      "bestFor": "Web design agencies, SEO consultants, maintenance agencies, booking tools, ordering platforms, and local marketing teams buy this list to find businesses with visible website gaps they can fix.",
+      "paymentLink": "https://buy.athena.live/b/3cI14g62y8h56Gs1p6gAa0o"
+    },
+    {
+      "title": "1,000 YouTubers by Niche With Business Emails",
+      "category": "Creator Intelligence",
+      "price": "$299",
+      "records": "1,000 records",
+      "description": "A Creator Intelligence CSV focused on reachable sponsorship, PR, affiliate, and partnership opportunities. This product focuses on 1,000 youtubers by niche with business emails and is delivered as a CSV download link by email once available.",
+      "fields": "Creator or publisher name, platform, profile or website URL, niche, location where public, follower or traffic signal, engagement or audience signal, recent activity signal, public email or contact page, sponsor or affiliate signal, source URL, notes.",
+      "bestFor": "Brands, PR agencies, affiliate managers, creator partnership teams, local marketers, SaaS companies, and sponsorship teams buy this list to find creators and publishers with reachable contact paths.",
+      "paymentLink": "https://buy.athena.live/b/aFa6oA1Micxld4Q9VCgAa0p"
+    },
+    {
+      "title": "1,000 Bloggers by Niche With Contact Pages",
+      "category": "Creator Intelligence",
+      "price": "$199",
+      "records": "1,000 records",
+      "description": "A Creator Intelligence CSV focused on reachable sponsorship, PR, affiliate, and partnership opportunities. This product focuses on 1,000 bloggers by niche with contact pages and is delivered as a CSV download link by email once available.",
+      "fields": "Creator or publisher name, platform, profile or website URL, niche, location where public, follower or traffic signal, engagement or audience signal, recent activity signal, public email or contact page, sponsor or affiliate signal, source URL, notes.",
+      "bestFor": "Brands, PR agencies, affiliate managers, creator partnership teams, local marketers, SaaS companies, and sponsorship teams buy this list to find creators and publishers with reachable contact paths.",
+      "paymentLink": "https://buy.athena.live/b/dRm14gbmSeFtaWIebSgAa0q"
+    },
+    {
+      "title": "500 Businesses With Bad Reviews",
+      "category": "Reputation Signal",
+      "price": "$99",
+      "records": "500 records",
+      "description": "A reputation-signal CSV focused on businesses with review problems, weak public sentiment, or visible reputation-management urgency. This product focuses on 500 businesses with bad reviews and is delivered as a CSV download link by email once available.",
+      "fields": "Business name, website or source profile, city, state, category, rating signal, review count, review issue, recent bad-review signal, contact page, phone, public email where available, source URL, notes.",
+      "bestFor": "Reputation management agencies, review software vendors, local marketing teams, CX platforms, and consultants buy this list to find businesses with clear reputation urgency.",
+      "paymentLink": "https://buy.athena.live/b/dRm00caiO2WLe8U0l2gAa0r"
+    },
+    {
+      "title": "500 Businesses Using Old WordPress / Broken SSL / Slow Website",
+      "category": "Website Opportunity",
+      "price": "$99",
+      "records": "500 records",
+      "description": "A website-opportunity CSV focused on businesses with missing, outdated, slow, broken, or underpowered web conversion paths. This product focuses on 500 businesses using old wordpress / broken ssl / slow website and is delivered as a CSV download link by email once available.",
+      "fields": "Business name, website or source profile, city, state, category, website issue spotted, conversion gap, contact page, phone, public email where available, source URL, notes.",
+      "bestFor": "Web design agencies, SEO consultants, maintenance agencies, booking tools, ordering platforms, and local marketing teams buy this list to find businesses with visible website gaps they can fix.",
+      "paymentLink": "https://buy.athena.live/b/9B67sE2Qm9l91m8ffWgAa0s"
     }
   ]
 }

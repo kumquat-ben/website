@@ -78,84 +78,40 @@ const categoryContent = {
     description: (title) => "A Creator Intelligence CSV focused on reachable sponsorship, PR, affiliate, and partnership opportunities. This product focuses on " + titleFocus(title) + " and is delivered as a CSV download link by email once available.",
     fields: "Creator or publisher name, platform, profile or website URL, niche, location where public, follower or traffic signal, engagement or audience signal, recent activity signal, public email or contact page, sponsor or affiliate signal, source URL, notes.",
     bestFor: "Brands, PR agencies, affiliate managers, creator partnership teams, local marketers, SaaS companies, and sponsorship teams buy this list to find creators and publishers with reachable contact paths."
+  },
+  "Software Gap": {
+    description: (title) => "A software-gap CSV focused on businesses missing booking, scheduling, intake, quote, estimate, ordering, or other conversion workflows. This product focuses on " + titleFocus(title) + " and is delivered as a CSV download link by email once available.",
+    fields: "Business name, website, city, state, category, software gap, booking or scheduling status, contact page, phone, public email where available, source URL, notes.",
+    bestFor: "Booking platforms, scheduling tools, CRM vendors, SaaS teams, AI automation agencies, and local marketing teams buy this list to find prospects with visible workflow gaps."
+  },
+  "Ad Spend Signal": {
+    description: (title) => "An ad-spend signal CSV focused on businesses that appear to be running Google Ads or competing in paid-search markets. This product focuses on " + titleFocus(title) + " and is delivered as a CSV download link by email once available.",
+    fields: "Business name, website, city, state, category, ad keyword or market signal, landing page URL, landing page weakness, contact page, phone, public email where available, source URL, notes.",
+    bestFor: "PPC agencies, SEO consultants, landing page teams, call tracking tools, AI receptionist vendors, and sales teams buy this list to find buyers already spending to acquire customers."
+  },
+  "Website Opportunity": {
+    description: (title) => "A website-opportunity CSV focused on businesses with missing, outdated, slow, broken, or underpowered web conversion paths. This product focuses on " + titleFocus(title) + " and is delivered as a CSV download link by email once available.",
+    fields: "Business name, website or source profile, city, state, category, website issue spotted, conversion gap, contact page, phone, public email where available, source URL, notes.",
+    bestFor: "Web design agencies, SEO consultants, maintenance agencies, booking tools, ordering platforms, and local marketing teams buy this list to find businesses with visible website gaps they can fix."
+  },
+  "Reputation Signal": {
+    description: (title) => "A reputation-signal CSV focused on businesses with review problems, weak public sentiment, or visible reputation-management urgency. This product focuses on " + titleFocus(title) + " and is delivered as a CSV download link by email once available.",
+    fields: "Business name, website or source profile, city, state, category, rating signal, review count, review issue, recent bad-review signal, contact page, phone, public email where available, source URL, notes.",
+    bestFor: "Reputation management agencies, review software vendors, local marketing teams, CX platforms, and consultants buy this list to find businesses with clear reputation urgency."
   }
 };
 
 const newProducts = [
-  ["500 Plumbers - Agent Stats Edition", "Agent Stats", "$149", "500 records"],
-  ["500 Dentists - Agent Stats Edition", "Agent Stats", "$149", "500 records"],
-  ["500 Med Spas - Agent Stats Edition", "Agent Stats", "$149", "500 records"],
-  ["500 Restaurants - Agent Stats Edition", "Agent Stats", "$149", "500 records"],
-  ["500 Law Firms - Agent Stats Edition", "Agent Stats", "$149", "500 records"],
-  ["500 Wedding Venues - Agent Stats Edition", "Agent Stats", "$149", "500 records"],
-  ["500 Property Managers - Agent Stats Edition", "Agent Stats", "$149", "500 records"],
-  ["500 Churches - Agent Stats Edition", "Agent Stats", "$149", "500 records"],
-  ["500 Gyms/Fitness Studios - Agent Stats Edition", "Agent Stats", "$149", "500 records"],
-  ["500 Creators - Agent Stats Edition", "Agent Stats", "$199", "500 records"],
-  ["500 Businesses Running Google Ads With Bad Landing Pages - Agent Stats", "Agent Stats", "$199", "500 records"],
-  ["500 Law Firms With Google Ads But Weak Intake Pages - Agent Stats", "Agent Stats", "$199", "500 records"],
-  ["500 Businesses That Posted on Instagram in the Last 30 Days", "Recently Active", "$99", "500 records"],
-  ["500 Businesses Hiring Right Now", "Recently Active", "$99", "500 records"],
-  ["500 Businesses Running Google Ads But With Weak Landing Pages", "Recently Active", "$99", "500 records"],
-  ["500 Restaurants With Recent Menu Updates But No Online Ordering", "Recently Active", "$99", "500 records"],
-  ["500 Contractors With Recent Project Photos But No Quote Form", "Recently Active", "$99", "500 records"],
-  ["500 Churches With Recent Events But Outdated Donation Pages", "Recently Active", "$99", "500 records"],
-  ["500 Creators Posting Weekly With Sponsor Emails", "Recently Active", "$149", "500 records"],
-  ["500 Businesses With 4.5+ Reviews But Outdated Websites", "High-Review Website Gap", "$99", "500 records"],
-  ["500 Businesses With High Reviews But No Online Booking", "High-Review Website Gap", "$99", "500 records"],
-  ["500 Businesses With Lots of Google Reviews But No Email Capture", "High-Review Website Gap", "$99", "500 records"],
-  ["500 Restaurants With Strong Reviews But No Catering Page", "High-Review Website Gap", "$99", "500 records"],
-  ["500 Restaurants With Strong Reviews But No Online Ordering", "High-Review Website Gap", "$99", "500 records"],
-  ["500 Med Spas With Instagram Activity But Weak Websites", "High-Review Website Gap", "$99", "500 records"],
-  ["500 Contractors With Strong Reviews But No Quote Form", "High-Review Website Gap", "$99", "500 records"],
-  ["500 Businesses With No Chatbot or Live Chat", "AI Automation Opportunity", "$79", "500 records"],
-  ["500 Clinics With No Online Intake Automation", "AI Automation Opportunity", "$79", "500 records"],
-  ["500 Law Firms With No AI Receptionist or Contact Flow", "AI Automation Opportunity", "$79", "500 records"],
-  ["500 Home Service Companies Missing Quote Automation", "AI Automation Opportunity", "$79", "500 records"],
-  ["500 Real Estate Agents With No Lead Capture Form", "AI Automation Opportunity", "$79", "500 records"],
-  ["500 Med Spas With No Consultation Booking Flow", "AI Automation Opportunity", "$79", "500 records"],
-  ["500 Restaurants With No SMS or Email Capture", "AI Automation Opportunity", "$79", "500 records"],
-  ["500 Gyms With No Trial-Class Automation", "AI Automation Opportunity", "$79", "500 records"],
-  ["500 Youth Sports Leagues Accepting Sponsors", "Local Sponsorship", "$99", "500 records"],
-  ["500 School Booster Clubs With Sponsor Pages", "Local Sponsorship", "$99", "500 records"],
-  ["500 Local Podcasts With Sponsor Contact Pages", "Local Sponsorship", "$99", "500 records"],
-  ["500 Community Newsletters Accepting Sponsors", "Local Sponsorship", "$99", "500 records"],
-  ["500 Event Calendars With Sponsorship Contacts", "Local Sponsorship", "$99", "500 records"],
-  ["500 Charity Events With Sponsor Pages", "Local Sponsorship", "$99", "500 records"],
-  ["500 Farmers Markets With Vendor or Sponsor Pages", "Local Sponsorship", "$99", "500 records"],
-  ["500 Restaurants Using Outdated Ordering Platforms", "Platform Migration", "$79", "500 records"],
-  ["500 Salons Using Old Booking Links", "Platform Migration", "$79", "500 records"],
-  ["500 Stores Using Old Shopify Themes", "Platform Migration", "$79", "500 records"],
-  ["500 WordPress Sites With Old Plugin or Theme Signals", "Platform Migration", "$79", "500 records"],
-  ["500 Squarespace Businesses Needing Conversion Upgrades", "Platform Migration", "$79", "500 records"],
-  ["500 Wix Businesses With No SEO Metadata", "Platform Migration", "$79", "500 records"],
-  ["500 Businesses Still Using PDF Menus", "Platform Migration", "$79", "500 records"],
-  ["500 Businesses Using Facebook as Their Only Website", "Platform Migration", "$79", "500 records"],
-  ["500 Plastic Surgeons With Weak Landing Pages", "Professional Services", "$149", "500 records"],
-  ["500 Orthodontists Without Online Consultation Booking", "Professional Services", "$149", "500 records"],
-  ["500 Chiropractors Running Ads", "Professional Services", "$149", "500 records"],
-  ["500 Fertility Clinics With Weak Lead Capture", "Professional Services", "$149", "500 records"],
-  ["500 Senior Care Facilities With Outdated Websites", "Professional Services", "$149", "500 records"],
-  ["500 Private Tutors and Test Prep Centers", "Professional Services", "$149", "500 records"],
-  ["500 Immigration Consultants", "Professional Services", "$149", "500 records"],
-  ["500 Tax Resolution Firms", "Professional Services", "$149", "500 records"],
-  ["500 Business Brokers", "Professional Services", "$149", "500 records"],
-  ["500 Franchise Consultants", "Professional Services", "$149", "500 records"],
-  ["500 Creators With Sponsor Emails + Engagement Scores", "Creator Intelligence", "$299", "500 records"],
-  ["500 Creators With Media Kits", "Creator Intelligence", "$199", "500 records"],
-  ["500 Creators With Affiliate Pages", "Creator Intelligence", "$199", "500 records"],
-  ["500 Creators With Newsletters + Sponsor Pages", "Creator Intelligence", "$299", "500 records"],
-  ["500 YouTubers With Low Sponsor Saturation", "Creator Intelligence", "$299", "500 records"],
-  ["500 TikTok Creators With Email in Bio", "Creator Intelligence", "$199", "500 records"],
-  ["500 Local Food Creators by City", "Creator Intelligence", "$299", "500 records"],
-  ["500 Wedding Creators by Region", "Creator Intelligence", "$299", "500 records"],
-  ["500 Real Estate YouTubers by Market", "Creator Intelligence", "$299", "500 records"],
-  ["500 AI Tool Reviewers", "Creator Intelligence", "$299", "500 records"],
-  ["500 Small Business YouTubers", "Creator Intelligence", "$299", "500 records"],
-  ["500 Med Spas With Active Instagram But Weak Booking Flow - Agent Stats", "Agent Stats", "$199", "500 records"],
-  ["500 Churches With Recent Events But No Donation Automation - Agent Stats", "Agent Stats", "$149", "500 records"],
-  ["500 Wedding Venues With Inquiry Gaps - Agent Stats", "Agent Stats", "$149", "500 records"],
-  ["500 Property Managers With No Maintenance Request Portal - Agent Stats", "Agent Stats", "$149", "500 records"]
+  ["500 Dentists Without Online Booking", "Software Gap", "$99", "500 records"],
+  ["500 HVAC Companies Running Google Ads", "Ad Spend Signal", "$149", "500 records"],
+  ["500 Roofers Running Google Ads", "Ad Spend Signal", "$149", "500 records"],
+  ["500 CPAs Without Online Scheduling", "Professional Services", "$129", "500 records"],
+  ["500 Auto Repair Shops With Bad Websites", "Website Opportunity", "$79", "500 records"],
+  ["500 Nonprofits With Outdated Donation Pages", "Website Opportunity", "$129", "500 records"],
+  ["1,000 YouTubers by Niche With Business Emails", "Creator Intelligence", "$299", "1,000 records"],
+  ["1,000 Bloggers by Niche With Contact Pages", "Creator Intelligence", "$199", "1,000 records"],
+  ["500 Businesses With Bad Reviews", "Reputation Signal", "$99", "500 records"],
+  ["500 Businesses Using Old WordPress / Broken SSL / Slow Website", "Website Opportunity", "$99", "500 records"]
 ];
 
 async function stripeRequest(pathname, form) {
@@ -201,6 +157,7 @@ async function createPaymentLink(product) {
 }
 
 function renderAppendBlock(products) {
+  const blockName = "followupProductContent";
   const categories = Array.from(new Set(products.map((product) => product.category))).sort();
   const contentEntries = categories.map((category) => {
     const content = categoryContent[category];
@@ -224,14 +181,14 @@ function renderAppendBlock(products) {
 
   return `
 
-const buyerIntentProductContent = {
+const ${blockName} = {
 ${contentEntries}
 };
 
 [
 ${entries}
 ].forEach(([title, category, price, records, paymentLink]) => {
-  const content = buyerIntentProductContent[category];
+  const content = ${blockName}[category];
   products.push({
     title,
     category,

@@ -1,11 +1,17 @@
 # Kumquat
 
-Kumquat sells 351 curated niche B2B business lists and Creator Intelligence datasets delivered as CSV files for sales outreach, market research, partnerships, sponsorship, software sales, agency prospecting, and business discovery.
+Kumquat sells 361 curated niche B2B business lists and Creator Intelligence datasets delivered as CSV files for sales outreach, market research, partnerships, sponsorship, software sales, agency prospecting, and business discovery.
 
 ## Core Pages
 
 - Home: https://kumquat.info/
 - Browse lists: https://kumquat.info/lists.html
+- Website opportunity lists: https://kumquat.info/website-opportunity-lists/
+- Ad spend signal lists: https://kumquat.info/ad-spend-signal-lists/
+- Creator lists: https://kumquat.info/creator-lists/
+- Professional services lists: https://kumquat.info/professional-services-lists/
+- Local service lists: https://kumquat.info/local-service-lists/
+- Agent Stats lists: https://kumquat.info/agent-stats-lists/
 - Curl-ready catalog JSON: https://kumquat.info/assets/products.json
 - No-JavaScript catalog HTML: https://kumquat.info/agent-catalog.html
 - Browser catalog renderer source: https://kumquat.info/assets/main.js
@@ -17,7 +23,7 @@ Kumquat sells 351 curated niche B2B business lists and Creator Intelligence data
 
 ## What Kumquat Sells
 
-Kumquat sells downloadable CSV business lists and Creator Intelligence datasets organized by niche, geography, industry, buyer type, and use case. Categories include Agent Stats, recently active, high-review website gap, AI automation opportunity, platform migration, website opportunity, software gap, ad spend signal, events and venues, professional services, real estate and property, Creator Intelligence, government and public organization, local sponsorship, and high-signal opportunity lists.
+Kumquat sells downloadable CSV business lists and Creator Intelligence datasets organized by niche, geography, industry, buyer type, and use case. Categories include Agent Stats, recently active, high-review website gap, AI automation opportunity, platform migration, website opportunity, software gap, ad spend signal, reputation signal, events and venues, professional services, real estate and property, Creator Intelligence, government and public organization, local sponsorship, and high-signal opportunity lists.
 
 ## Common Dataset Fields
 

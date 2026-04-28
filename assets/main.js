@@ -2305,6 +2305,65 @@ products.forEach((product) => {
   }
 });
 
+
+const followupProductContent = {
+  "Ad Spend Signal": {
+    description: (title) => "An ad-spend signal CSV focused on businesses that appear to be running Google Ads or competing in paid-search markets. This product focuses on " + titleFocus(title) + " and is delivered as a CSV download link by email once available.",
+    fields: "Business name, website, city, state, category, ad keyword or market signal, landing page URL, landing page weakness, contact page, phone, public email where available, source URL, notes.",
+    bestFor: "PPC agencies, SEO consultants, landing page teams, call tracking tools, AI receptionist vendors, and sales teams buy this list to find buyers already spending to acquire customers."
+  },
+  "Creator Intelligence": {
+    description: (title) => "A Creator Intelligence CSV focused on reachable sponsorship, PR, affiliate, and partnership opportunities. This product focuses on " + titleFocus(title) + " and is delivered as a CSV download link by email once available.",
+    fields: "Creator or publisher name, platform, profile or website URL, niche, location where public, follower or traffic signal, engagement or audience signal, recent activity signal, public email or contact page, sponsor or affiliate signal, source URL, notes.",
+    bestFor: "Brands, PR agencies, affiliate managers, creator partnership teams, local marketers, SaaS companies, and sponsorship teams buy this list to find creators and publishers with reachable contact paths."
+  },
+  "Professional Services": {
+    description: (title) => "A high-ticket professional-services CSV focused on firms, clinics, consultants, facilities, and specialized providers with clear commercial value. This product focuses on " + titleFocus(title) + " and is delivered as a CSV download link by email once available.",
+    fields: "Company name, website, city, state, service type, lead value signal, conversion gap where visible, phone, public email where available, contact page, source URL, notes.",
+    bestFor: "B2B SaaS teams, agencies, lead generation companies, legal and medical marketers, recruiters, consultants, and sales teams buy this list to reach higher-value professional buyers."
+  },
+  "Reputation Signal": {
+    description: (title) => "A reputation-signal CSV focused on businesses with review problems, weak public sentiment, or visible reputation-management urgency. This product focuses on " + titleFocus(title) + " and is delivered as a CSV download link by email once available.",
+    fields: "Business name, website or source profile, city, state, category, rating signal, review count, review issue, recent bad-review signal, contact page, phone, public email where available, source URL, notes.",
+    bestFor: "Reputation management agencies, review software vendors, local marketing teams, CX platforms, and consultants buy this list to find businesses with clear reputation urgency."
+  },
+  "Software Gap": {
+    description: (title) => "A software-gap CSV focused on businesses missing booking, scheduling, intake, quote, estimate, ordering, or other conversion workflows. This product focuses on " + titleFocus(title) + " and is delivered as a CSV download link by email once available.",
+    fields: "Business name, website, city, state, category, software gap, booking or scheduling status, contact page, phone, public email where available, source URL, notes.",
+    bestFor: "Booking platforms, scheduling tools, CRM vendors, SaaS teams, AI automation agencies, and local marketing teams buy this list to find prospects with visible workflow gaps."
+  },
+  "Website Opportunity": {
+    description: (title) => "A website-opportunity CSV focused on businesses with missing, outdated, slow, broken, or underpowered web conversion paths. This product focuses on " + titleFocus(title) + " and is delivered as a CSV download link by email once available.",
+    fields: "Business name, website or source profile, city, state, category, website issue spotted, conversion gap, contact page, phone, public email where available, source URL, notes.",
+    bestFor: "Web design agencies, SEO consultants, maintenance agencies, booking tools, ordering platforms, and local marketing teams buy this list to find businesses with visible website gaps they can fix."
+  }
+};
+
+[
+  ["500 Dentists Without Online Booking","Software Gap","$99","500 records","https://buy.athena.live/b/00wcMY3Uq1SH2qcebSgAa0j"],
+  ["500 HVAC Companies Running Google Ads","Ad Spend Signal","$149","500 records","https://buy.athena.live/b/28EbIU3Uq40P4yk3xegAa0k"],
+  ["500 Roofers Running Google Ads","Ad Spend Signal","$149","500 records","https://buy.athena.live/b/fZu8wI62y7d1gh2c3KgAa0l"],
+  ["500 CPAs Without Online Scheduling","Professional Services","$129","500 records","https://buy.athena.live/b/8x24gsaiOfJx4yk6JqgAa0m"],
+  ["500 Auto Repair Shops With Bad Websites","Website Opportunity","$79","500 records","https://buy.athena.live/b/eVq14g62y0OD6Gs6JqgAa0n"],
+  ["500 Nonprofits With Outdated Donation Pages","Website Opportunity","$129","500 records","https://buy.athena.live/b/3cI14g62y8h56Gs1p6gAa0o"],
+  ["1,000 YouTubers by Niche With Business Emails","Creator Intelligence","$299","1,000 records","https://buy.athena.live/b/aFa6oA1Micxld4Q9VCgAa0p"],
+  ["1,000 Bloggers by Niche With Contact Pages","Creator Intelligence","$199","1,000 records","https://buy.athena.live/b/dRm14gbmSeFtaWIebSgAa0q"],
+  ["500 Businesses With Bad Reviews","Reputation Signal","$99","500 records","https://buy.athena.live/b/dRm00caiO2WLe8U0l2gAa0r"],
+  ["500 Businesses Using Old WordPress / Broken SSL / Slow Website","Website Opportunity","$99","500 records","https://buy.athena.live/b/9B67sE2Qm9l91m8ffWgAa0s"]
+].forEach(([title, category, price, records, paymentLink]) => {
+  const content = followupProductContent[category];
+  products.push({
+    title,
+    category,
+    price,
+    records,
+    description: content.description(title),
+    fields: content.fields,
+    bestFor: content.bestFor,
+    paymentLink
+  });
+});
+
 const productGrid = document.querySelector("[data-product-grid]");
 const productCount = document.querySelector("[data-product-count]");
 const productSearch = document.querySelector("[data-product-search]");
