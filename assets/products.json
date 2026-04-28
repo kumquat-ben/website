@@ -1,8 +1,20 @@
 {
-  "generatedAt": "2026-04-28T07:08:38.725Z",
+  "generatedAt": "2026-04-28T19:30:12.821Z",
   "source": "https://kumquat.info/assets/main.js",
-  "count": 361,
+  "count": 362,
   "products": [
+    {
+      "title": "California Gyms OSM Seeds",
+      "category": "Local Service",
+      "price": "Free",
+      "records": "500 records",
+      "description": "A free CSV seed list of California gyms sourced from OpenStreetMap public business records. Includes business identity, website/domain, location where available, phone, source URL, raw OSM ID, and acquisition timestamp.",
+      "fields": "Name, website, domain, city, state, category, phone, public email where available, source type, source URL, raw source ID, acquired at.",
+      "bestFor": "Founders, agencies, local SEO teams, gym software vendors, and data builders use this free seed file to inspect California gym prospects and test enrichment or outbound workflows.",
+      "paymentLink": "california_gyms_osm_seeds.csv",
+      "downloadLink": "california_gyms_osm_seeds.csv",
+      "previewLink": "california-gyms-osm-seeds.html"
+    },
     {
       "title": "500 Restaurants in LA Without Online Ordering",
       "category": "Website Opportunity",

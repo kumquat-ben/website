@@ -44,7 +44,7 @@ const pages = [
     title: "Local Service Lists",
     eyebrow: "Local operators",
     description: "Dentists, vets, salons, gyms, auto repair shops, tattoo shops, HVAC companies, roofers, plumbers, contractors, and other local service businesses.",
-    categories: ["Website Opportunity", "Software Gap", "Ad Spend Signal", "AI Automation Opportunity", "High-Review Website Gap", "Platform Migration", "Agent Stats"],
+    categories: ["Website Opportunity", "Software Gap", "Ad Spend Signal", "AI Automation Opportunity", "High-Review Website Gap", "Platform Migration", "Agent Stats", "Local Service"],
     include: /(dentist|dentists|vet|vets|salon|salons|gym|gyms|fitness|auto repair|auto shop|auto shops|tattoo|hvac|roofer|roofers|plumber|plumbers|contractor|contractors|home service|med spa|med spas|barber|barbers|chiropractor|repair)/i
   },
   {
@@ -68,7 +68,8 @@ function escapeHtml(value) {
 }
 
 function priceNumber(price) {
-  return String(price).replace(/[^0-9]/g, "");
+  const value = String(price).replace(/[^0-9]/g, "");
+  return value || "0";
 }
 
 function productMatches(product, page) {
@@ -115,6 +116,13 @@ function footer(prefix) {
 }
 
 function card(product) {
+  const action = product.downloadLink ? [
+    '<div class="product-actions">',
+    '<a class="button button-full" href="' + escapeHtml("../" + product.downloadLink) + '" download>Download CSV</a>',
+    product.previewLink ? '<a class="button button-secondary button-full" href="' + escapeHtml("../" + product.previewLink) + '">Preview Data</a>' : '',
+    '</div>'
+  ].join("\n") : '<a class="button button-full" href="' + escapeHtml(product.paymentLink) + '" target="_blank" rel="noreferrer">Buy CSV</a>';
+
   return [
     '<article class="product-card">',
     '<div class="product-meta"><span>' + escapeHtml(product.records) + '</span><span>' + escapeHtml(product.price) + '</span></div>',
@@ -123,7 +131,7 @@ function card(product) {
     '<p>' + escapeHtml(product.description) + '</p>',
     '<p class="best-for"><strong>Who buys this:</strong> ' + escapeHtml(product.bestFor) + '</p>',
     '<p class="best-for"><strong>Expected fields:</strong> ' + escapeHtml(product.fields) + '</p>',
-    '<a class="button button-full" href="' + escapeHtml(product.paymentLink) + '" target="_blank" rel="noreferrer">Buy CSV</a>',
+    action,
     '</article>'
   ].join("\n");
 }
@@ -157,7 +165,7 @@ function schema(page, products) {
               price: priceNumber(product.price),
               priceCurrency: "USD",
               availability: "https://schema.org/InStock",
-              url: product.paymentLink
+              url: product.downloadLink ? `https://kumquat.info/${product.downloadLink}` : product.paymentLink
             }
           }
         }))
@@ -221,7 +229,7 @@ ${nav(prefix)}
     <section class="section section-soft" id="products">
       <div class="container">
         <div class="catalog-summary">
-          <p><strong>${products.length}</strong> matching CSV products, each with buyer context, expected fields, and a dedicated checkout.</p>
+          <p><strong>${products.length}</strong> matching CSV products, each with buyer context, expected fields, and a dedicated checkout or download.</p>
           <p class="summary-detail">These category pages group products by buyer intent so a prospect can quickly see why the lead should be contacted now.</p>
         </div>
         <div class="product-grid catalog-grid">
@@ -243,7 +251,7 @@ ${related.map((item) => `          <div><a href="${prefix}${item.slug}/">${escap
     </section>
   </main>
 ${footer(prefix)}
-  <script src="${prefix}assets/main.js?v=20260428-products-361"></script>
+  <script src="${prefix}assets/main.js?v=20260428-products-362"></script>
 </body>
 </html>
 `;

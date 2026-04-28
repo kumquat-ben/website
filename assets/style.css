@@ -179,6 +179,16 @@ h3 {
   margin-top: auto;
 }
 
+.product-actions {
+  display: grid;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.product-actions .button-full {
+  margin-top: 0;
+}
+
 .hero {
   padding: clamp(88px, 10vw, 128px) 0 clamp(84px, 9vw, 112px);
   background:

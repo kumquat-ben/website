@@ -91,6 +91,18 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://kumquat.info/california-gyms-osm-seeds.html</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://kumquat.info/california_gyms_osm_seeds.csv</loc>
+    <lastmod>2026-04-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
     <loc>https://kumquat.info/assets/products.json</loc>
     <lastmod>2026-04-28</lastmod>
     <changefreq>daily</changefreq>

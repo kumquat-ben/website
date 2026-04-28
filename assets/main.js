@@ -10,6 +10,18 @@ if (toggle && menu) {
 
 const products = [
   {
+    "title": "California Gyms OSM Seeds",
+    "category": "Local Service",
+    "price": "Free",
+    "records": "500 records",
+    "description": "A free CSV seed list of California gyms sourced from OpenStreetMap public business records. Includes business identity, website/domain, location where available, phone, source URL, raw OSM ID, and acquisition timestamp.",
+    "fields": "Name, website, domain, city, state, category, phone, public email where available, source type, source URL, raw source ID, acquired at.",
+    "bestFor": "Founders, agencies, local SEO teams, gym software vendors, and data builders use this free seed file to inspect California gym prospects and test enrichment or outbound workflows.",
+    "paymentLink": "california_gyms_osm_seeds.csv",
+    "downloadLink": "california_gyms_osm_seeds.csv",
+    "previewLink": "california-gyms-osm-seeds.html"
+  },
+  {
     "title": "500 Restaurants in LA Without Online Ordering",
     "category": "Website Opportunity",
     "price": "$49",
@@ -2401,6 +2413,19 @@ function renderProducts() {
   const query = activeSearch.trim().toLowerCase();
   const visibleProducts = products.filter((product) => productMatchesSearch(product, query));
 
+  function productActions(product) {
+    if (product.downloadLink) {
+      return [
+        '<div class="product-actions">',
+        '<a class="button button-full" href="' + escapeHtml(product.downloadLink) + '" download>Download CSV</a>',
+        product.previewLink ? '<a class="button button-secondary button-full" href="' + escapeHtml(product.previewLink) + '">Preview Data</a>' : '',
+        '</div>'
+      ].join('');
+    }
+
+    return '<a class="button button-full" href="' + escapeHtml(product.paymentLink) + '" target="_blank" rel="noreferrer">Buy CSV</a>';
+  }
+
   productGrid.innerHTML = visibleProducts.length ? visibleProducts.map((product) => [
     '<article class="product-card">',
     '<div class="product-meta"><span>' + escapeHtml(product.records) + '</span><span>' + escapeHtml(product.price) + '</span></div>',
@@ -2409,7 +2434,7 @@ function renderProducts() {
     '<p>' + escapeHtml(product.description) + '</p>',
     '<p class="best-for"><strong>Who buys this:</strong> ' + escapeHtml(product.bestFor) + '</p>',
     '<p class="best-for"><strong>Expected fields:</strong> ' + escapeHtml(product.fields) + '</p>',
-    '<a class="button button-full" href="' + product.paymentLink + '" target="_blank" rel="noreferrer">Buy CSV</a>',
+    productActions(product),
     '</article>'
   ].join('')) .join("") : [
     '<div class="empty-state">',

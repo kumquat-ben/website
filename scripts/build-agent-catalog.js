@@ -39,6 +39,10 @@ function escapeHtml(value) {
 }
 
 function renderProduct(product, index) {
+  const urlLabel = product.downloadLink ? "Download URL" : "Checkout URL";
+  const url = product.downloadLink ? product.downloadLink : product.paymentLink;
+  const preview = product.previewLink ? `      <p><strong>Preview URL:</strong> <a href="${escapeHtml(product.previewLink)}">${escapeHtml(product.previewLink)}</a></p>` : "";
+
   return [
     '    <article class="agent-product">',
     `      <h2>${index + 1}. ${escapeHtml(product.title)}</h2>`,
@@ -48,9 +52,10 @@ function renderProduct(product, index) {
     `      <p><strong>Description:</strong> ${escapeHtml(product.description)}</p>`,
     `      <p><strong>Expected fields:</strong> ${escapeHtml(product.fields)}</p>`,
     `      <p><strong>Who buys this:</strong> ${escapeHtml(product.bestFor)}</p>`,
-    `      <p><strong>Checkout URL:</strong> <a href="${escapeHtml(product.paymentLink)}">${escapeHtml(product.paymentLink)}</a></p>`,
+    `      <p><strong>${urlLabel}:</strong> <a href="${escapeHtml(url)}">${escapeHtml(url)}</a></p>`,
+    preview,
     "    </article>"
-  ].join("\n");
+  ].filter(Boolean).join("\n");
 }
 
 function renderHtml(products) {
