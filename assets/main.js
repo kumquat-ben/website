@@ -2556,6 +2556,44 @@ function escapeHtml(value) {
   })[char]);
 }
 
+function renderHomeCarousel() {
+  const carousel = document.querySelector("[data-home-carousel]");
+  const carouselCount = document.querySelector("[data-carousel-count]");
+
+  if (!carousel) return;
+
+  const featuredTitles = [
+    "California Gyms OSM Seeds",
+    "500 Restaurants in LA Without Online Ordering",
+    "500 Shopify Stores Without Live Chat - Agent Stats Edition",
+    "500 Medspas With Weak Booking Pages - Agent Stats Edition",
+    "500 Corporate Event Planners",
+    "500 Law Firms With Slow Websites - Agent Stats Edition",
+    "500 Home Service Companies Missing Quote Automation",
+    "500 Creators With Sponsor Signals - Agent Stats Edition"
+  ];
+
+  const featuredProducts = featuredTitles
+    .map((title) => products.find((product) => product.title === title))
+    .filter(Boolean);
+  const fallbackProducts = products.slice(0, 8);
+  const carouselProducts = featuredProducts.length >= 4 ? featuredProducts : fallbackProducts;
+  // Duplicate the cards so the CSS animation can loop without a visible jump.
+  const loopProducts = [...carouselProducts, ...carouselProducts];
+
+  carousel.innerHTML = loopProducts.map((product) => [
+    '<article class="carousel-item">',
+    '<span>' + escapeHtml(product.category) + '</span>',
+    '<h3>' + escapeHtml(product.title) + '</h3>',
+    '<p>' + escapeHtml(product.records) + ' &middot; ' + escapeHtml(product.price) + '</p>',
+    '</article>'
+  ].join('')).join('');
+
+  if (carouselCount) {
+    carouselCount.textContent = products.length + " lists";
+  }
+}
+
 function productMatchesSearch(product, query) {
   if (!query) return true;
 
@@ -2621,4 +2659,5 @@ if (productSearch) {
   });
 }
 
+renderHomeCarousel();
 renderProducts();

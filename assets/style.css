@@ -264,6 +264,101 @@ h3 {
   color: var(--green);
 }
 
+.data-carousel {
+  position: relative;
+  height: 336px;
+  margin-top: 20px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0) 68%, #ffffff 100%),
+    var(--soft);
+}
+
+.data-carousel::before,
+.data-carousel::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  height: 58px;
+  pointer-events: none;
+}
+
+.data-carousel::before {
+  top: 0;
+  background: linear-gradient(180deg, var(--soft), rgba(247, 250, 244, 0));
+}
+
+.data-carousel::after {
+  bottom: 0;
+  background: linear-gradient(0deg, var(--soft), rgba(247, 250, 244, 0));
+}
+
+.carousel-track {
+  display: grid;
+  gap: 12px;
+  padding: 16px;
+  animation: carousel-scroll 30s linear infinite;
+}
+
+.data-carousel:hover .carousel-track {
+  animation-play-state: paused;
+}
+
+.carousel-item {
+  display: grid;
+  gap: 8px;
+  min-height: 106px;
+  padding: 16px;
+  border: 1px solid rgba(231, 236, 228, 0.92);
+  border-radius: 16px;
+  background: var(--white);
+  box-shadow: 0 12px 28px rgba(30, 48, 28, 0.06);
+}
+
+.carousel-item span {
+  width: fit-content;
+  max-width: 100%;
+  padding: 5px 9px;
+  border-radius: 999px;
+  color: var(--accent-dark);
+  background: #fff1e5;
+  font-size: 0.72rem;
+  font-weight: 800;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.carousel-item h3 {
+  display: -webkit-box;
+  overflow: hidden;
+  color: var(--ink);
+  font-size: 1.02rem;
+  letter-spacing: 0;
+  line-height: 1.18;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.carousel-item p {
+  color: #41513e;
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+@keyframes carousel-scroll {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-50%);
+  }
+}
+
 .table-card {
   margin-top: 20px;
   overflow: hidden;
@@ -1031,7 +1126,17 @@ code {
     grid-template-columns: 1fr;
   }
 
+  .data-carousel {
+    height: 304px;
+  }
+
   .row {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carousel-track {
+    animation: none;
   }
 }
