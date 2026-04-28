@@ -461,13 +461,6 @@ h3 {
   font-size: 1.08rem;
 }
 
-.filter-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 28px;
-}
-
 .search-panel {
   max-width: 760px;
   margin-top: 30px;
@@ -488,22 +481,6 @@ h3 {
   background: var(--white);
   box-shadow: var(--shadow);
   font-size: 1rem;
-}
-
-.filter-row button {
-  border: 1px solid var(--border, var(--line));
-  border-radius: 999px;
-  background: var(--white);
-  color: var(--ink);
-  padding: 10px 14px;
-  font: inherit;
-  font-weight: 800;
-}
-
-.filter-row button.is-active {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: white;
 }
 
 .catalog-summary {

@@ -2074,9 +2074,7 @@ function creatorDescription(title, type) {
 
 const productGrid = document.querySelector("[data-product-grid]");
 const productCount = document.querySelector("[data-product-count]");
-const filterWrap = document.querySelector("[data-catalog-filters]");
 const productSearch = document.querySelector("[data-product-search]");
-let activeFilter = "All";
 let activeSearch = "";
 
 function escapeHtml(value) {
@@ -2109,11 +2107,7 @@ function renderProducts() {
   if (!productGrid) return;
 
   const query = activeSearch.trim().toLowerCase();
-  const activeCategories = activeFilter === "All" ? [] : activeFilter.split("|");
-  const visibleProducts = products.filter((product) => {
-    const matchesFilter = activeFilter === "All" || activeCategories.includes(product.category);
-    return matchesFilter && productMatchesSearch(product, query);
-  });
+  const visibleProducts = products.filter((product) => productMatchesSearch(product, query));
 
   productGrid.innerHTML = visibleProducts.length ? visibleProducts.map((product) => [
     '<article class="product-card">',
@@ -2136,18 +2130,6 @@ function renderProducts() {
   if (productCount) {
     productCount.textContent = String(visibleProducts.length);
   }
-}
-
-if (filterWrap) {
-  filterWrap.addEventListener("click", (event) => {
-    const button = event.target.closest("button[data-filter]");
-    if (!button) return;
-
-    filterWrap.querySelectorAll("button").forEach((item) => item.classList.remove("is-active"));
-    button.classList.add("is-active");
-    activeFilter = button.dataset.filter;
-    renderProducts();
-  });
 }
 
 if (productSearch) {
