@@ -494,6 +494,32 @@ h3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.build-steps {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.build-steps article:last-child {
+  grid-column: 1 / -1;
+}
+
+.value-line,
+.process-note {
+  color: var(--ink);
+  font-weight: 800;
+}
+
+.value-line {
+  margin-top: 18px;
+}
+
+.process-note {
+  margin-top: 28px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--soft);
+}
+
 .field-grid,
 .persona-grid {
   display: grid;
@@ -1036,6 +1062,7 @@ code {
   .featured-grid,
   .steps,
   .process-grid,
+  .build-steps,
   .field-grid,
   .persona-grid,
   .policy-grid,
@@ -1110,6 +1137,7 @@ code {
   .featured-grid,
   .steps,
   .process-grid,
+  .build-steps,
   .field-grid,
   .persona-grid,
   .policy-grid,
@@ -1120,6 +1148,10 @@ code {
 
   .product-card h3 {
     min-height: 0;
+  }
+
+  .build-steps article:last-child {
+    grid-column: auto;
   }
 
   .hero-stats {
