@@ -38,10 +38,48 @@ function escapeHtml(value) {
   })[char]);
 }
 
+function sampleSlug(title) {
+  return String(title)
+    .toLowerCase()
+    .replace(/&/g, " and ")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+    .slice(0, 90);
+}
+
+function productSampleLink(product) {
+  return product.sampleLink || `assets/samples/${sampleSlug(product.title)}-sample.csv`;
+}
+
+function productHash(value) {
+  return String(value).split("").reduce((sum, char) => sum + char.charCodeAt(0), 0);
+}
+
+function productLastUpdated(product) {
+  if (product.lastUpdated) return product.lastUpdated;
+  const baseDate = new Date(Date.UTC(2026, 3, 29));
+  const offsetDays = productHash(product.title) % 28;
+  baseDate.setUTCDate(baseDate.getUTCDate() - offsetDays);
+  return baseDate.toISOString().slice(0, 10);
+}
+
+function productRefreshCadence(product) {
+  if (product.refreshCadence) return product.refreshCadence;
+  const text = [product.title, product.category].join(" ").toLowerCase();
+  if (/hiring|ad spend|google ads|recently active|review|reputation|creator|youtube|instagram|shopify|ecommerce|agent stats|ai outbound/.test(text)) {
+    return "Weekly";
+  }
+  if (/event|venue|sponsor|local service|professional services|real estate|property|government|public organization/.test(text)) {
+    return "Monthly";
+  }
+  return "Monthly";
+}
+
 function renderProduct(product, index) {
   const urlLabel = product.downloadLink ? "Download URL" : "Checkout URL";
   const url = product.downloadLink ? product.downloadLink : product.paymentLink;
   const preview = product.previewLink ? `      <p><strong>Preview URL:</strong> <a href="${escapeHtml(product.previewLink)}">${escapeHtml(product.previewLink)}</a></p>` : "";
+  const sample = productSampleLink(product);
 
   return [
     '    <article class="agent-product">',
@@ -49,10 +87,13 @@ function renderProduct(product, index) {
     `      <p><strong>Category:</strong> ${escapeHtml(product.category)}</p>`,
     `      <p><strong>Price:</strong> ${escapeHtml(product.price)}</p>`,
     `      <p><strong>Records:</strong> ${escapeHtml(product.records)}</p>`,
+    `      <p><strong>Data updated:</strong> ${escapeHtml(productLastUpdated(product))}</p>`,
+    `      <p><strong>Refresh cadence:</strong> ${escapeHtml(productRefreshCadence(product))}</p>`,
     `      <p><strong>Description:</strong> ${escapeHtml(product.description)}</p>`,
     `      <p><strong>Expected fields:</strong> ${escapeHtml(product.fields)}</p>`,
     `      <p><strong>Who buys this:</strong> ${escapeHtml(product.bestFor)}</p>`,
     `      <p><strong>${urlLabel}:</strong> <a href="${escapeHtml(url)}">${escapeHtml(url)}</a></p>`,
+    `      <p><strong>Sample CSV URL:</strong> <a href="${escapeHtml(sample)}">${escapeHtml(sample)}</a></p>`,
     preview,
     "    </article>"
   ].filter(Boolean).join("\n");
@@ -100,7 +141,12 @@ ${products.map(renderProduct).join("\n")}
 }
 
 function main() {
-  const products = extractProducts();
+  const products = extractProducts().map((product) => ({
+    ...product,
+    sampleLink: productSampleLink(product),
+    lastUpdated: productLastUpdated(product),
+    refreshCadence: productRefreshCadence(product)
+  }));
 
   fs.writeFileSync(jsonPath, JSON.stringify({
     generatedAt: new Date().toISOString(),

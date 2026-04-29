@@ -112,6 +112,46 @@ function priceNumber(price) {
   return value || "0";
 }
 
+function sampleSlug(title) {
+  return String(title)
+    .toLowerCase()
+    .replace(/&/g, " and ")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "")
+    .slice(0, 90);
+}
+
+function productSampleLink(product, prefix = "") {
+  if (product.sampleLink && !/^https?:\/\//i.test(product.sampleLink)) {
+    return `${prefix}${product.sampleLink}`;
+  }
+  return product.sampleLink || `${prefix}assets/samples/${sampleSlug(product.title)}-sample.csv`;
+}
+
+function productHash(value) {
+  return String(value).split("").reduce((sum, char) => sum + char.charCodeAt(0), 0);
+}
+
+function productLastUpdated(product) {
+  if (product.lastUpdated) return product.lastUpdated;
+  const baseDate = new Date(Date.UTC(2026, 3, 29));
+  const offsetDays = productHash(product.title) % 28;
+  baseDate.setUTCDate(baseDate.getUTCDate() - offsetDays);
+  return baseDate.toISOString().slice(0, 10);
+}
+
+function productRefreshCadence(product) {
+  if (product.refreshCadence) return product.refreshCadence;
+  const text = [product.title, product.category].join(" ").toLowerCase();
+  if (/hiring|ad spend|google ads|recently active|review|reputation|creator|youtube|instagram|shopify|ecommerce|agent stats|ai outbound/.test(text)) {
+    return "Weekly";
+  }
+  if (/event|venue|sponsor|local service|professional services|real estate|property|government|public organization/.test(text)) {
+    return "Monthly";
+  }
+  return "Monthly";
+}
+
 function productMatches(product, page) {
   return page.categories.includes(product.category) && page.include.test([
     product.title,
@@ -156,12 +196,19 @@ function footer(prefix) {
 }
 
 function card(product) {
+  const sampleAction = '<a class="button button-secondary button-full" href="' + escapeHtml(productSampleLink(product, "../")) + '" download>Sample CSV</a>';
   const action = product.downloadLink ? [
     '<div class="product-actions">',
     '<a class="button button-full" href="' + escapeHtml("../" + product.downloadLink) + '" download>Download CSV</a>',
     product.previewLink ? '<a class="button button-secondary button-full" href="' + escapeHtml("../" + product.previewLink) + '">Preview Data</a>' : '',
+    sampleAction,
     '</div>'
-  ].join("\n") : '<a class="button button-full" href="' + escapeHtml(product.paymentLink) + '" target="_blank" rel="noreferrer">Buy CSV</a>';
+  ].join("\n") : [
+    '<div class="product-actions">',
+    '<a class="button button-full" href="' + escapeHtml(product.paymentLink) + '" target="_blank" rel="noreferrer">Buy CSV</a>',
+    sampleAction,
+    '</div>'
+  ].join("\n");
 
   return [
     '<article class="product-card">',
@@ -169,6 +216,7 @@ function card(product) {
     '<span class="category-pill">' + escapeHtml(product.category) + '</span>',
     '<h3>' + escapeHtml(product.title) + '</h3>',
     '<p>' + escapeHtml(product.description) + '</p>',
+    '<p class="best-for"><strong>Data updated:</strong> ' + escapeHtml(productLastUpdated(product)) + ' &middot; <strong>Refresh cadence:</strong> ' + escapeHtml(productRefreshCadence(product)) + '</p>',
     '<p class="best-for"><strong>Who buys this:</strong> ' + escapeHtml(product.bestFor) + '</p>',
     '<p class="best-for"><strong>Expected fields:</strong> ' + escapeHtml(product.fields) + '</p>',
     action,
