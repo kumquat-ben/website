@@ -101,7 +101,7 @@ const pages = [
     eyebrow: "Political data",
     description: "Public-source political datasets for campaign vendors, consultants, fundraisers, PACs, advocacy groups, lobbyists, PR teams, media companies, and campaign software sellers.",
     categories: ["Political Data"],
-    include: /(political|campaign|candidate|donor|elected official|school board|ballot|pac|committee|newsletter|media|advocacy|public meeting|agenda|development|union|endorsement|election|lobbying|technology stack|donation page)/i
+    include: /./
   }
 ];
 
@@ -347,7 +347,7 @@ ${related.map((item) => `          <div><a href="${prefix}${item.slug}/">${escap
     </section>
   </main>
 ${footer(prefix)}
-  <script src="${prefix}assets/main.js?v=20260501-products-478"></script>
+  <script src="${prefix}assets/main.js?v=20260501-products-539"></script>
 </body>
 </html>
 `;
