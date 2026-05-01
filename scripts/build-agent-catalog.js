@@ -66,7 +66,7 @@ function productLastUpdated(product) {
 function productRefreshCadence(product) {
   if (product.refreshCadence) return product.refreshCadence;
   const text = [product.title, product.category].join(" ").toLowerCase();
-  if (/hiring|ad spend|google ads|recently active|review|reputation|creator|youtube|instagram|shopify|ecommerce|agent stats|ai outbound/.test(text)) {
+  if (/hiring|ad spend|google ads|recently active|review|reputation|creator|youtube|instagram|shopify|ecommerce|agent stats|ai outbound|political|campaign|election|donor|ad buyer|agenda|lobbying/.test(text)) {
     return "Weekly";
   }
   if (/event|venue|sponsor|local service|professional services|real estate|property|government|public organization/.test(text)) {

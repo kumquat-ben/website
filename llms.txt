@@ -1,6 +1,6 @@
 # Kumquat
 
-Kumquat sells 458 curated niche B2B business lists and Creator Intelligence datasets delivered as CSV files for sales outreach, market research, partnerships, sponsorship, software sales, agency prospecting, and business discovery.
+Kumquat sells 478 curated niche B2B business lists and Creator Intelligence datasets delivered as CSV files for sales outreach, market research, partnerships, sponsorship, software sales, agency prospecting, political research, and business discovery.
 
 ## Core Pages
 
@@ -17,6 +17,7 @@ Kumquat sells 458 curated niche B2B business lists and Creator Intelligence data
 - Professional services lists: https://kumquat.info/professional-services-lists/
 - Local service lists: https://kumquat.info/local-service-lists/
 - Agent Stats lists: https://kumquat.info/agent-stats-lists/
+- Political data lists: https://kumquat.info/political-data-lists/
 - Curl-ready catalog JSON: https://kumquat.info/assets/products.json
 - No-JavaScript catalog HTML: https://kumquat.info/agent-catalog.html
 - Browser catalog renderer source: https://kumquat.info/assets/main.js
@@ -28,7 +29,7 @@ Kumquat sells 458 curated niche B2B business lists and Creator Intelligence data
 
 ## What Kumquat Sells
 
-Kumquat sells downloadable CSV business lists and Creator Intelligence datasets organized by niche, geography, industry, buyer type, and use case. Categories include Agent Stats, recently active, high-review website gap, AI automation opportunity, AI outbound prospect, ecommerce / Shopify buyer, hiring signal, platform migration, website opportunity, software gap, ad spend signal, reputation signal, events and venues, professional services, real estate and property, Creator Intelligence, government and public organization, local sponsorship, and high-signal opportunity lists.
+Kumquat sells downloadable CSV business lists and Creator Intelligence datasets organized by niche, geography, industry, buyer type, and use case. Categories include Agent Stats, recently active, high-review website gap, AI automation opportunity, AI outbound prospect, ecommerce / Shopify buyer, hiring signal, platform migration, website opportunity, software gap, ad spend signal, reputation signal, events and venues, professional services, political data, real estate and property, Creator Intelligence, government and public organization, local sponsorship, and high-signal opportunity lists.
 
 ## Common Dataset Fields
 

@@ -13,6 +13,7 @@ Creator lists: https://kumquat.info/creator-lists/
 Professional services lists: https://kumquat.info/professional-services-lists/
 Local service lists: https://kumquat.info/local-service-lists/
 Agent Stats lists: https://kumquat.info/agent-stats-lists/
+Political data lists: https://kumquat.info/political-data-lists/
 Curl-ready catalog JSON: https://kumquat.info/assets/products.json
 No-JavaScript catalog HTML: https://kumquat.info/agent-catalog.html
 Browser catalog renderer source: https://kumquat.info/assets/main.js

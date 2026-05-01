@@ -94,6 +94,14 @@ const pages = [
     description: "Premium versions of high-intent lists with lead score, outreach angle, AI prompt, opportunity reason, website gap, booking gap, and ad spend or activity signal.",
     categories: ["Agent Stats"],
     include: /agent stats/i
+  },
+  {
+    slug: "political-data-lists",
+    title: "Political Data Lists",
+    eyebrow: "Political data",
+    description: "Public-source political datasets for campaign vendors, consultants, fundraisers, PACs, advocacy groups, lobbyists, PR teams, media companies, and campaign software sellers.",
+    categories: ["Political Data"],
+    include: /(political|campaign|candidate|donor|elected official|school board|ballot|pac|committee|newsletter|media|advocacy|public meeting|agenda|development|union|endorsement|election|lobbying|technology stack|donation page)/i
   }
 ];
 
@@ -143,7 +151,7 @@ function productLastUpdated(product) {
 function productRefreshCadence(product) {
   if (product.refreshCadence) return product.refreshCadence;
   const text = [product.title, product.category].join(" ").toLowerCase();
-  if (/hiring|ad spend|google ads|recently active|review|reputation|creator|youtube|instagram|shopify|ecommerce|agent stats|ai outbound/.test(text)) {
+  if (/hiring|ad spend|google ads|recently active|review|reputation|creator|youtube|instagram|shopify|ecommerce|agent stats|ai outbound|political|campaign|election|donor|ad buyer|agenda|lobbying/.test(text)) {
     return "Weekly";
   }
   if (/event|venue|sponsor|local service|professional services|real estate|property|government|public organization/.test(text)) {
@@ -339,7 +347,7 @@ ${related.map((item) => `          <div><a href="${prefix}${item.slug}/">${escap
     </section>
   </main>
 ${footer(prefix)}
-  <script src="${prefix}assets/main.js?v=20260428-products-458"></script>
+  <script src="${prefix}assets/main.js?v=20260501-products-478"></script>
 </body>
 </html>
 `;
